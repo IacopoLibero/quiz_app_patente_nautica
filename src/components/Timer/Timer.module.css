@@ -1,0 +1,26 @@
+.timer {
+  font-size: 18px;
+  font-weight: 700;
+  color: #94a3b8;
+  font-variant-numeric: tabular-nums;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #0f172a;
+  transition: color 0.3s, background 0.3s;
+}
+
+.warning {
+  color: #f59e0b;
+  background: #451a03;
+}
+
+.danger {
+  color: #ef4444;
+  background: #450a0a;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(npm install:*)",
+      "mcp__openmemory__openmemory_store",
+      "mcp__openmemory__openmemory_query",
+      "mcp__openmemory__openmemory_delete",
+      "Bash(npm run:*)"
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+.page {
+  min-height: 100vh;
+}
+
+.main {
+  padding: 20px 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.esito {
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  border: 2px solid;
+}
+
+.esitoProm {
+  background: #052e16;
+  border-color: #22c55e;
+}
+
+.esitoBocc {
+  background: #450a0a;
+  border-color: #ef4444;
+}
+
+.esitoIcon {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.esitoTitle {
+  font-size: 28px;
+  font-weight: 800;
+  color: #f1f5f9;
+}
+
+.esitoMsg {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+.scoreCard {
+  background: #1e293b;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #334155;
+}
+
+.scoreMain {
+  margin-bottom: 12px;
+}
+
+.scoreNum {
+  font-size: 56px;
+  font-weight: 800;
+  color: #3b82f6;
+  line-height: 1;
+}
+
+.scoreDen {
+  font-size: 28px;
+  color: #475569;
+}
+
+.scoreDetails {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.section {}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.wrongList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrongItem {
+  background: #1e293b;
+  border: 1px solid #450a0a;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.wrongDomanda {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.wrongRisposta {
+  font-size: 14px;
+  color: #86efac;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 24px;
+}
+
+.btnPrimary {
+  width: 100%;
+  min-height: 52px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.btnPrimary:hover {
+  background: #2563eb;
+}
+
+.btnSecondary {
+  width: 100%;
+  min-height: 52px;
+  background: transparent;
+  color: #94a3b8;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btnSecondary:hover {
+  background: #1e293b;
+  color: #f1f5f9;
+}
