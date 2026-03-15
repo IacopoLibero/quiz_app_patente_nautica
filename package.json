@@ -2,6 +2,7 @@
   "name": "quiz-nautica",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://iacopolibero.github.io/quiz_app_patente_nautica",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",

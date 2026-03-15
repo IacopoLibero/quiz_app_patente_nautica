@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import NauticaMenu from './pages/NauticaMenu/NauticaMenu';
 import VelaMenu from './pages/VelaMenu/VelaMenu';
@@ -9,7 +9,7 @@ import Statistiche from './pages/Statistiche/Statistiche';
 
 function App() {
   return (
-    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <HashRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nautica" element={<NauticaMenu />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/risultato" element={<Risultato />} />
         <Route path="/statistiche" element={<Statistiche />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

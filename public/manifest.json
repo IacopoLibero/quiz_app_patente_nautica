@@ -1,6 +1,7 @@
 {
-  "short_name": "NauticaQuiz",
+  "short_name": "Quiz Nautica",
   "name": "Quiz Patente Nautica",
+  "description": "Preparati all'esame per la patente nautica con domande ufficiali.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +9,23 @@
       "type": "image/x-icon"
     },
     {
-      "src": "icon-192.png",
+      "src": "logo192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "icon-512.png",
+      "src": "logo512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#3b82f6"
+  "orientation": "portrait",
+  "background_color": "#f6f3ee",
+  "theme_color": "#f6f3ee",
+  "lang": "it",
+  "categories": ["education"]
 }

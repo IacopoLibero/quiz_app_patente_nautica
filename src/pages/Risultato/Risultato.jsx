@@ -31,11 +31,10 @@ export default function Risultato() {
   } = location.state || {};
 
   const totale = domande.length;
-  const isEsame = modalita === 'esame';
-  let promosso = null; // null = non-exam (no pass/fail)
-  if (isEsame) {
-    if (tipo === 'vela') promosso = !failed && !timerExpired && sbagliate.length <= 1;
-    else promosso = !failed && !timerExpired && sbagliate.length <= 4;
+  // Show pass/fail whenever maxErrori is set (exam and all vela modes)
+  let promosso = null;
+  if (maxErrori !== null && maxErrori !== undefined) {
+    promosso = !failed && !timerExpired && sbagliate.length <= maxErrori;
   }
 
   useEffect(() => {
@@ -57,10 +56,10 @@ export default function Risultato() {
   }
 
   const failReason = failed
-    ? `Superato il limite di ${maxErrori} errori`
+    ? `Superato il limite di ${maxErrori} ${maxErrori === 1 ? 'errore' : 'errori'}`
     : timerExpired
       ? 'Tempo scaduto'
-      : `${sbagliate.length} ${sbagliate.length === 1 ? 'errore' : 'errori'} su ${tipo === 'vela' ? 1 : 4} consentiti`;
+      : `${sbagliate.length} ${sbagliate.length === 1 ? 'errore' : 'errori'} (max ${maxErrori} consentit${maxErrori === 1 ? 'o' : 'i'})`;
 
   return (
     <div className={styles.page}>
@@ -82,7 +81,7 @@ export default function Risultato() {
             {' · '}
             {sbagliate.length} {sbagliate.length === 1 ? 'errore' : 'errori'}
           </p>
-          {isEsame && !promosso && (
+          {promosso === false && (
             <p className={styles.failReason}>{failReason}</p>
           )}
         </div>

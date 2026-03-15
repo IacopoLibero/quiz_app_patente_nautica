@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, X } from 'lucide-react';
 import Header from '../../components/Header/Header';
-import { selectSpread, selectShuffle, selectSbagliate, selectCategoria } from '../../utils/selectQuestions';
+import { selectSbagliate, selectCategoria, selectShuffle } from '../../utils/selectQuestions';
 import { getVelaStats } from '../../utils/localStorage';
 import styles from './VelaMenu.module.css';
 
@@ -10,36 +10,48 @@ import velaData from '../../data/quiz_vela.json';
 
 export default function VelaMenu() {
   const navigate = useNavigate();
-  const [errorMsg, setErrorMsg] = React.useState(null);
+  const [errorMsg, setErrorMsg] = useState(null);
+  const [escludiCorrette, setEscludiCorrette] = useState(false);
+
   const stats = getVelaStats();
   const numSbagliate = stats.domandeSbagliate.length;
+  const corretteSet = new Set(stats.domandeCorrette || []);
+  const numCorrette = corretteSet.size;
 
-  function startQuiz(domande, modalita, timerMinuti = null, maxErrori = null) {
+  function filterPool(questions) {
+    if (!escludiCorrette) return questions;
+    return questions.filter(q => !corretteSet.has(q.id));
+  }
+
+  function startQuiz(domande, modalita, timerMinuti = null) {
     if (domande.length === 0) {
-      setErrorMsg('Nessuna domanda disponibile per questa modalità.');
+      setErrorMsg('Nessuna domanda disponibile. Disattiva il filtro per ripassarle.');
       return;
     }
     setErrorMsg(null);
     navigate('/quiz', {
-      state: { domande, modalita, timerMinuti, maxErrori, tipo: 'vela' },
+      state: { domande, modalita, timerMinuti, maxErrori: 1, tipo: 'vela' },
     });
   }
 
   function handleEsame() {
-    const domande = selectSpread(velaData, 5);
-    startQuiz(domande, 'esame', 15, 1);
+    const pool = filterPool(velaData);
+    const domande = selectCategoria(pool, 5);
+    startQuiz(domande, 'esame', 15);
   }
 
   function handleStudia() {
-    startQuiz(selectCategoria(velaData, velaData.length), 'studio');
+    const pool = filterPool(velaData);
+    startQuiz(selectCategoria(pool, 5), 'studio');
   }
 
   function handleShuffle() {
-    startQuiz(selectShuffle(velaData), 'studio');
+    const pool = filterPool(velaData);
+    startQuiz(selectShuffle(pool, 5), 'studio');
   }
 
   function handleSbagliate() {
-    const domande = selectSbagliate(velaData, stats.domandeSbagliate);
+    const domande = selectSbagliate(velaData, stats.domandeSbagliate, 5);
     startQuiz(domande, 'sbagliate');
   }
 
@@ -55,9 +67,32 @@ export default function VelaMenu() {
               className={styles.errorClose}
               onClick={() => setErrorMsg(null)}
               aria-label="Chiudi messaggio"
-          ><X size={14} strokeWidth={2} aria-hidden="true" /></button>
+            ><X size={14} strokeWidth={2} aria-hidden="true" /></button>
           </div>
         )}
+
+        {/* Toggle */}
+        <div className={styles.toggleRow}>
+          <div className={styles.toggleInfo}>
+            <span className={styles.toggleLabel}>Escludi già corrette</span>
+            <span className={styles.toggleSub}>
+              {numCorrette > 0
+                ? `${numCorrette} domande completate`
+                : 'Nessuna domanda completata ancora'}
+            </span>
+          </div>
+          <button
+            className={`${styles.toggle} ${escludiCorrette ? styles.toggleOn : ''}`}
+            onClick={() => setEscludiCorrette(v => !v)}
+            aria-pressed={escludiCorrette}
+            aria-label="Escludi domande già risposte correttamente"
+            disabled={numCorrette === 0}
+          >
+            <span className={styles.toggleThumb} />
+          </button>
+        </div>
+
+        <div className={styles.rule} role="separator" />
 
         {/* Simulazione Esame — primary */}
         <button className={styles.examBtn} onClick={handleEsame}>
@@ -73,7 +108,7 @@ export default function VelaMenu() {
         <button className={styles.modeRow} onClick={handleStudia}>
           <div>
             <p className={styles.modeTitle}>Studia Tutto</p>
-            <p className={styles.modeDesc}>Tutte le 250 domande in sequenza</p>
+            <p className={styles.modeDesc}>5 domande · max 1 errore</p>
           </div>
           <ArrowRight size={16} strokeWidth={1.5} aria-hidden="true" className={styles.modeArrow} />
         </button>
@@ -83,7 +118,7 @@ export default function VelaMenu() {
         <button className={styles.modeRow} onClick={handleShuffle}>
           <div>
             <p className={styles.modeTitle}>Shuffle</p>
-            <p className={styles.modeDesc}>Domande in ordine casuale</p>
+            <p className={styles.modeDesc}>5 domande casuali · max 1 errore</p>
           </div>
           <ArrowRight size={16} strokeWidth={1.5} aria-hidden="true" className={styles.modeArrow} />
         </button>

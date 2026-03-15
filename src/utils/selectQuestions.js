@@ -80,9 +80,11 @@ export function selectCategoria(catData, total = 20) {
   return sorted.slice(0, total);
 }
 
-// Select wrong questions from stats
-export function selectSbagliate(allQuestions, wrongIds) {
+// Select wrong questions from stats (shuffled, max count)
+export function selectSbagliate(allQuestions, wrongIds, count = 20) {
   if (!wrongIds || wrongIds.length === 0) return [];
   const wrongSet = new Set(wrongIds);
-  return allQuestions.filter(q => wrongSet.has(q.id));
+  const filtered = allQuestions.filter(q => wrongSet.has(q.id));
+  const shuffled = shuffle(filtered);
+  return count ? shuffled.slice(0, count) : shuffled;
 }

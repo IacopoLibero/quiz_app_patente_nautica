@@ -40,6 +40,7 @@ export default function NauticaMenu() {
   const navigate = useNavigate();
   const [mode, setMode] = useState(null);
   const [shuffleSelected, setShuffleSelected] = useState([]);
+  const [sbagliateSelected, setSbagliateSelected] = useState([]);
   const [escludiCorrette, setEscludiCorrette] = useState(false);
   const [errorMsg, setErrorMsg] = useState(null);
 
@@ -88,10 +89,24 @@ export default function NauticaMenu() {
     startQuiz(domande, 'studio');
   }
 
-  function handleSbagliate() {
-    const domande = selectSbagliate(ALL_QUESTIONS, stats.domandeSbagliate);
+  function handleSbagliate(catKeys = null) {
+    let pool = ALL_QUESTIONS;
+    if (catKeys && catKeys.length > 0) {
+      const catData = CATEGORIE
+        .filter(c => catKeys.includes(c.key))
+        .flatMap(c => c.data);
+      pool = catData;
+    }
+    const domande = selectSbagliate(pool, stats.domandeSbagliate, 20);
     startQuiz(domande, 'sbagliate');
   }
+
+  function sbagliateCountForCat(cat) {
+    const wrongSet = new Set(stats.domandeSbagliate);
+    return cat.data.filter(q => wrongSet.has(q.id)).length;
+  }
+
+  const totalSbagliate = numSbagliate;
 
   const toggleMode = (m) => setMode(prev => prev === m ? null : m);
 
@@ -239,22 +254,62 @@ export default function NauticaMenu() {
 
         {/* Domande Sbagliate */}
         <button
-          className={`${styles.modeRow} ${numSbagliate === 0 ? styles.modeDisabled : ''}`}
-          onClick={handleSbagliate}
-          disabled={numSbagliate === 0}
+          className={`${styles.modeRow} ${totalSbagliate === 0 ? styles.modeDisabled : ''}`}
+          onClick={() => { if (totalSbagliate > 0) toggleMode('sbagliate'); }}
+          aria-expanded={mode === 'sbagliate'}
+          disabled={totalSbagliate === 0}
         >
           <div>
             <p className={styles.modeTitle}>Domande Sbagliate</p>
             <p className={styles.modeDesc}>
-              {numSbagliate > 0
-                ? `${numSbagliate} domande da ripassare`
+              {totalSbagliate > 0
+                ? `${totalSbagliate} domande da ripassare`
                 : 'Nessuna domanda sbagliata'}
             </p>
           </div>
-          {numSbagliate > 0 && (
-            <ArrowRight size={16} strokeWidth={1.5} aria-hidden="true" className={styles.modeArrow} />
+          {totalSbagliate > 0 && (
+            mode === 'sbagliate'
+              ? <ChevronUp size={16} strokeWidth={2} aria-hidden="true" className={styles.chevron} />
+              : <ChevronDown size={16} strokeWidth={2} aria-hidden="true" className={styles.chevron} />
           )}
         </button>
+
+        {mode === 'sbagliate' && (
+          <div className={styles.subPanel}>
+            <p className={styles.subHint}>Filtra per categoria (opzionale):</p>
+            <div className={styles.catGrid}>
+              {CATEGORIE.map(cat => {
+                const count = sbagliateCountForCat(cat);
+                if (count === 0) return null;
+                const active = sbagliateSelected.includes(cat.key);
+                return (
+                  <button
+                    key={cat.key}
+                    className={`${styles.catBtn} ${active ? styles.catBtnActive : ''}`}
+                    onClick={() => setSbagliateSelected(prev =>
+                      prev.includes(cat.key) ? prev.filter(k => k !== cat.key) : [...prev, cat.key]
+                    )}
+                    aria-pressed={active}
+                  >
+                    <span className={styles.catLabel}>
+                      {active && <Check size={13} strokeWidth={2.5} aria-hidden="true" className={styles.check} />}
+                      {cat.label}
+                    </span>
+                    <span className={styles.catCount}>{count}</span>
+                  </button>
+                );
+              })}
+            </div>
+            <button
+              className={styles.startBtn}
+              onClick={() => handleSbagliate(sbagliateSelected.length > 0 ? sbagliateSelected : null)}
+            >
+              {sbagliateSelected.length > 0
+                ? `Inizia · ${sbagliateSelected.length} ${sbagliateSelected.length === 1 ? 'categoria' : 'categorie'}`
+                : 'Inizia · tutte le categorie'}
+            </button>
+          </div>
+        )}
 
         <div className={styles.rule} role="separator" />
       </main>

@@ -53,8 +53,9 @@ export default function Statistiche() {
     const stats = tipo === 'nautica' ? getNauticaStats() : getVelaStats();
     const allQ = tipo === 'nautica' ? ALL_NAUTICA : velaData;
     const wrongSet = new Set(stats.domandeSbagliate);
-    const domande = allQ.filter(q => wrongSet.has(q.id));
-    if (domande.length === 0) return;
+    const all = allQ.filter(q => wrongSet.has(q.id));
+    if (all.length === 0) return;
+    const domande = all.sort(() => Math.random() - 0.5).slice(0, 20);
     navigate('/quiz', { state: { domande, modalita: 'sbagliate', timerMinuti: null, maxErrori: null, tipo } });
   }
 
