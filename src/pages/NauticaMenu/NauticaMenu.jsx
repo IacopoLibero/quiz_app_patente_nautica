@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ArrowRight, ChevronDown, ChevronUp, Check, X } from 'lucide-react';
 import Header from '../../components/Header/Header';
 import {
   selectEsameNautica,
@@ -25,21 +26,22 @@ const ALL_QUESTIONS = [
 ];
 
 const CATEGORIE = [
-  { key: 'scafo', label: 'Scafo', data: scafo },
-  { key: 'motori', label: 'Motori', data: motori },
-  { key: 'sicurezza', label: 'Sicurezza', data: sicurezza },
-  { key: 'manovre', label: 'Manovre', data: manovre },
-  { key: 'colreg', label: 'Colreg', data: colreg },
-  { key: 'meteorologia', label: 'Meteorologia', data: meteorologia },
-  { key: 'navigazione', label: 'Navigazione', data: navigazione },
-  { key: 'normativa', label: 'Normativa', data: normativa },
+  { key: 'scafo',       label: 'Scafo',        data: scafo },
+  { key: 'motori',      label: 'Motori',        data: motori },
+  { key: 'sicurezza',   label: 'Sicurezza',     data: sicurezza },
+  { key: 'manovre',     label: 'Manovre',       data: manovre },
+  { key: 'colreg',      label: 'Colreg',        data: colreg },
+  { key: 'meteorologia',label: 'Meteorologia',  data: meteorologia },
+  { key: 'navigazione', label: 'Navigazione',   data: navigazione },
+  { key: 'normativa',   label: 'Normativa',     data: normativa },
 ];
 
 export default function NauticaMenu() {
   const navigate = useNavigate();
-  const [mode, setMode] = useState(null); // null | 'categoria' | 'shuffle'
+  const [mode, setMode] = useState(null);
   const [shuffleSelected, setShuffleSelected] = useState([]);
   const [escludiCorrette, setEscludiCorrette] = useState(false);
+  const [errorMsg, setErrorMsg] = useState(null);
 
   const stats = getNauticaStats();
   const numSbagliate = stats.domandeSbagliate.length;
@@ -53,9 +55,10 @@ export default function NauticaMenu() {
 
   function startQuiz(domande, modalita, timerMinuti = null, maxErrori = null) {
     if (domande.length === 0) {
-      alert('Hai già risposto correttamente a tutte le domande disponibili in questa selezione!\nDisattiva il filtro per ripassarle.');
+      setErrorMsg('Hai già risposto correttamente a tutte le domande in questa selezione. Disattiva il filtro per ripassarle.');
       return;
     }
+    setErrorMsg(null);
     navigate('/quiz', {
       state: { domande, modalita, timerMinuti, maxErrori, tipo: 'nautica' },
     });
@@ -97,8 +100,18 @@ export default function NauticaMenu() {
       <Header title="Patente Nautica" />
 
       <main className={styles.main}>
+        {errorMsg && (
+          <div className={styles.errorBanner} role="alert">
+            <span>{errorMsg}</span>
+            <button
+              className={styles.errorClose}
+              onClick={() => setErrorMsg(null)}
+              aria-label="Chiudi messaggio"
+          ><X size={14} strokeWidth={2} aria-hidden="true" /></button>
+          </div>
+        )}
 
-        {/* Toggle globale */}
+        {/* Toggle */}
         <div className={styles.toggleRow}>
           <div className={styles.toggleInfo}>
             <span className={styles.toggleLabel}>Escludi già corrette</span>
@@ -119,32 +132,37 @@ export default function NauticaMenu() {
           </button>
         </div>
 
-        <div className={styles.grid}>
+        <div className={styles.rule} role="separator" />
 
-          {/* Simulazione Esame */}
-          <button className={`${styles.card} ${styles.esame}`} onClick={handleEsame}>
-            <span className={styles.icon}>📝</span>
-            <div>
-              <div className={styles.cardTitle}>Simulazione Esame</div>
-              <div className={styles.cardDesc}>20 domande · 30 min · max 4 errori</div>
-            </div>
-          </button>
+        {/* Simulazione Esame — primary action */}
+        <button className={styles.examBtn} onClick={handleEsame}>
+          <div>
+            <p className={styles.examTitle}>Simulazione Esame</p>
+            <p className={styles.examDesc}>20 domande · 30 min · max 4 errori</p>
+          </div>
+          <ArrowRight size={18} strokeWidth={1.5} aria-hidden="true" className={styles.examArrow} />
+        </button>
 
-          {/* Per Categoria */}
-          <button
-            className={`${styles.card} ${mode === 'categoria' ? styles.cardActive : ''}`}
-            onClick={() => toggleMode('categoria')}
-          >
-            <span className={styles.icon}>📚</span>
-            <div>
-              <div className={styles.cardTitle}>Per Categoria</div>
-              <div className={styles.cardDesc}>20 domande in sequenza per materia</div>
-            </div>
-            <span className={styles.chevron}>{mode === 'categoria' ? '▲' : '▼'}</span>
-          </button>
+        <div className={styles.rule} role="separator" />
 
-          {mode === 'categoria' && (
-            <div className={styles.categorieGrid}>
+        {/* Per Categoria */}
+        <button
+          className={styles.modeRow}
+          onClick={() => toggleMode('categoria')}
+          aria-expanded={mode === 'categoria'}
+        >
+          <div>
+            <p className={styles.modeTitle}>Per Categoria</p>
+            <p className={styles.modeDesc}>20 domande in sequenza per materia</p>
+          </div>
+          {mode === 'categoria'
+            ? <ChevronUp size={16} strokeWidth={2} aria-hidden="true" className={styles.chevron} />
+            : <ChevronDown size={16} strokeWidth={2} aria-hidden="true" className={styles.chevron} />}
+        </button>
+
+        {mode === 'categoria' && (
+          <div className={styles.subPanel}>
+            <div className={styles.catGrid}>
               {CATEGORIE.map(cat => {
                 const available = filterPool(cat.data).length;
                 return (
@@ -153,78 +171,92 @@ export default function NauticaMenu() {
                     className={styles.catBtn}
                     onClick={() => handleCategoria(cat)}
                   >
-                    {cat.label}
+                    <span className={styles.catLabel}>{cat.label}</span>
                     <span className={styles.catCount}>
-                      {escludiCorrette ? `${available}` : cat.data.length}
+                      {escludiCorrette ? available : cat.data.length}
                     </span>
                   </button>
                 );
               })}
             </div>
-          )}
+          </div>
+        )}
 
-          {/* Shuffle */}
-          <button
-            className={`${styles.card} ${mode === 'shuffle' ? styles.cardActive : ''}`}
-            onClick={() => { toggleMode('shuffle'); setShuffleSelected([]); }}
-          >
-            <span className={styles.icon}>🔀</span>
-            <div>
-              <div className={styles.cardTitle}>Shuffle</div>
-              <div className={styles.cardDesc}>20 domande casuali · scegli le categorie</div>
-            </div>
-            <span className={styles.chevron}>{mode === 'shuffle' ? '▲' : '▼'}</span>
-          </button>
+        <div className={styles.rule} role="separator" />
 
-          {mode === 'shuffle' && (
-            <div className={styles.shufflePanel}>
-              <p className={styles.shuffleHint}>Seleziona una o più categorie:</p>
-              <div className={styles.categorieGrid}>
-                {CATEGORIE.map(cat => {
-                  const active = shuffleSelected.includes(cat.key);
-                  const available = filterPool(cat.data).length;
-                  return (
-                    <button
-                      key={cat.key}
-                      className={`${styles.catBtn} ${active ? styles.catBtnActive : ''}`}
-                      onClick={() => toggleShuffleCat(cat.key)}
-                      aria-pressed={active}
-                    >
-                      {active && <span className={styles.check}>✓ </span>}
+        {/* Shuffle */}
+        <button
+          className={styles.modeRow}
+          onClick={() => { toggleMode('shuffle'); setShuffleSelected([]); }}
+          aria-expanded={mode === 'shuffle'}
+        >
+          <div>
+            <p className={styles.modeTitle}>Shuffle</p>
+            <p className={styles.modeDesc}>20 domande casuali · scegli le categorie</p>
+          </div>
+          {mode === 'shuffle'
+            ? <ChevronUp size={16} strokeWidth={2} aria-hidden="true" className={styles.chevron} />
+            : <ChevronDown size={16} strokeWidth={2} aria-hidden="true" className={styles.chevron} />}
+        </button>
+
+        {mode === 'shuffle' && (
+          <div className={styles.subPanel}>
+            <p className={styles.subHint}>Seleziona una o più categorie:</p>
+            <div className={styles.catGrid}>
+              {CATEGORIE.map(cat => {
+                const active = shuffleSelected.includes(cat.key);
+                const available = filterPool(cat.data).length;
+                return (
+                  <button
+                    key={cat.key}
+                    className={`${styles.catBtn} ${active ? styles.catBtnActive : ''}`}
+                    onClick={() => toggleShuffleCat(cat.key)}
+                    aria-pressed={active}
+                  >
+                    <span className={styles.catLabel}>
+                      {active && <Check size={13} strokeWidth={2.5} aria-hidden="true" className={styles.check} />}
                       {cat.label}
-                      <span className={styles.catCount}>
-                        {escludiCorrette ? available : cat.data.length}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-              {shuffleSelected.length > 0 && (
-                <button className={styles.startShuffleBtn} onClick={handleStartShuffle}>
-                  Inizia Shuffle · {shuffleSelected.length > 1
-                    ? `~${Math.floor(20 / shuffleSelected.length)} dom/categoria`
-                    : '20 domande'}
-                </button>
-              )}
+                    </span>
+                    <span className={styles.catCount}>
+                      {escludiCorrette ? available : cat.data.length}
+                    </span>
+                  </button>
+                );
+              })}
             </div>
+            {shuffleSelected.length > 0 && (
+              <button className={styles.startBtn} onClick={handleStartShuffle}>
+                Inizia Shuffle
+                {shuffleSelected.length > 1
+                  ? ` · ~${Math.floor(20 / shuffleSelected.length)} dom/cat.`
+                  : ' · 20 domande'}
+              </button>
+            )}
+          </div>
+        )}
+
+        <div className={styles.rule} role="separator" />
+
+        {/* Domande Sbagliate */}
+        <button
+          className={`${styles.modeRow} ${numSbagliate === 0 ? styles.modeDisabled : ''}`}
+          onClick={handleSbagliate}
+          disabled={numSbagliate === 0}
+        >
+          <div>
+            <p className={styles.modeTitle}>Domande Sbagliate</p>
+            <p className={styles.modeDesc}>
+              {numSbagliate > 0
+                ? `${numSbagliate} domande da ripassare`
+                : 'Nessuna domanda sbagliata'}
+            </p>
+          </div>
+          {numSbagliate > 0 && (
+            <ArrowRight size={16} strokeWidth={1.5} aria-hidden="true" className={styles.modeArrow} />
           )}
+        </button>
 
-          {/* Domande Sbagliate */}
-          <button
-            className={`${styles.card} ${numSbagliate === 0 ? styles.disabled : ''}`}
-            onClick={handleSbagliate}
-            disabled={numSbagliate === 0}
-          >
-            <span className={styles.icon}>🔁</span>
-            <div>
-              <div className={styles.cardTitle}>Domande Sbagliate</div>
-              <div className={styles.cardDesc}>
-                {numSbagliate > 0 ? `${numSbagliate} domande da ripassare` : 'Nessuna domanda sbagliata'}
-              </div>
-            </div>
-          </button>
-
-        </div>
+        <div className={styles.rule} role="separator" />
       </main>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CheckCircle, XCircle } from 'lucide-react';
 import styles from './QuestionCard.module.css';
 
 export default function QuestionCard({ question, onAnswer, answered, selectedAnswer }) {
@@ -25,6 +26,7 @@ export default function QuestionCard({ question, onAnswer, answered, selectedAns
           src={`${process.env.PUBLIC_URL}${question.immagine}`}
           alt="Immagine domanda"
           className={styles.img}
+          loading="lazy"
           onError={() => setImgError(true)}
         />
       )}
@@ -35,12 +37,19 @@ export default function QuestionCard({ question, onAnswer, answered, selectedAns
       <p className={styles.domanda}>{question.domanda}</p>
 
       {answered && (
-        <div className={`${styles.feedback} ${isCorrect ? styles.feedbackCorrect : styles.feedbackWrong}`}>
-          {isCorrect ? '✅ Risposta corretta!' : '❌ Risposta sbagliata'}
+        <div
+          className={`${styles.feedback} ${isCorrect ? styles.feedbackCorrect : styles.feedbackWrong}`}
+          role="status"
+          aria-live="polite"
+        >
+          {isCorrect
+            ? <CheckCircle size={15} strokeWidth={2} aria-hidden="true" />
+            : <XCircle size={15} strokeWidth={2} aria-hidden="true" />}
+          {isCorrect ? ' Risposta corretta!' : ' Risposta sbagliata'}
         </div>
       )}
 
-      <div className={styles.options}>
+      <div className={`${styles.options} ${isVF ? styles.optionsVF : ''}`}>
         {isVF ? (
           <>
             <button

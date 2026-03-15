@@ -1,26 +1,23 @@
 .timer {
-  font-size: 18px;
-  font-weight: 700;
-  color: #94a3b8;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
   font-variant-numeric: tabular-nums;
-  padding: 6px 12px;
-  border-radius: 8px;
-  background: #0f172a;
-  transition: color 0.3s, background 0.3s;
+  color: var(--ink-2);
+  letter-spacing: 0.5px;
+  transition: color 0.4s;
 }
 
 .warning {
-  color: #f59e0b;
-  background: #451a03;
+  color: var(--accent);
 }
 
 .danger {
-  color: #ef4444;
-  background: #450a0a;
-  animation: pulse 1s infinite;
+  color: var(--error);
+  animation: blink 1.2s ease-in-out infinite;
 }
 
-@keyframes pulse {
+@keyframes blink {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
+  50%       { opacity: 0.5; }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ArrowRight, X } from 'lucide-react';
 import Header from '../../components/Header/Header';
 import { selectSpread, selectShuffle, selectSbagliate, selectCategoria } from '../../utils/selectQuestions';
 import { getVelaStats } from '../../utils/localStorage';
@@ -9,14 +10,16 @@ import velaData from '../../data/quiz_vela.json';
 
 export default function VelaMenu() {
   const navigate = useNavigate();
+  const [errorMsg, setErrorMsg] = React.useState(null);
   const stats = getVelaStats();
   const numSbagliate = stats.domandeSbagliate.length;
 
   function startQuiz(domande, modalita, timerMinuti = null, maxErrori = null) {
     if (domande.length === 0) {
-      alert('Nessuna domanda disponibile per questa modalità.');
+      setErrorMsg('Nessuna domanda disponibile per questa modalità.');
       return;
     }
+    setErrorMsg(null);
     navigate('/quiz', {
       state: { domande, modalita, timerMinuti, maxErrori, tipo: 'vela' },
     });
@@ -45,45 +48,67 @@ export default function VelaMenu() {
       <Header title="Integrazione Vela" />
 
       <main className={styles.main}>
-        <div className={styles.grid}>
-          <button className={`${styles.card} ${styles.esame}`} onClick={handleEsame}>
-            <span className={styles.icon}>📝</span>
-            <div>
-              <div className={styles.cardTitle}>Simulazione Esame Vela</div>
-              <div className={styles.cardDesc}>5 domande sparse · 15 min · max 1 errore</div>
-            </div>
-          </button>
+        {errorMsg && (
+          <div className={styles.errorBanner} role="alert">
+            <span>{errorMsg}</span>
+            <button
+              className={styles.errorClose}
+              onClick={() => setErrorMsg(null)}
+              aria-label="Chiudi messaggio"
+          ><X size={14} strokeWidth={2} aria-hidden="true" /></button>
+          </div>
+        )}
 
-          <button className={styles.card} onClick={handleStudia}>
-            <span className={styles.icon}>📖</span>
-            <div>
-              <div className={styles.cardTitle}>Studia Tutto</div>
-              <div className={styles.cardDesc}>Tutte le 250 domande in sequenza</div>
-            </div>
-          </button>
+        {/* Simulazione Esame — primary */}
+        <button className={styles.examBtn} onClick={handleEsame}>
+          <div>
+            <p className={styles.examTitle}>Simulazione Esame Vela</p>
+            <p className={styles.examDesc}>5 domande · 15 min · max 1 errore</p>
+          </div>
+          <ArrowRight size={18} strokeWidth={1.5} aria-hidden="true" className={styles.examArrow} />
+        </button>
 
-          <button className={styles.card} onClick={handleShuffle}>
-            <span className={styles.icon}>🔀</span>
-            <div>
-              <div className={styles.cardTitle}>Shuffle Vela</div>
-              <div className={styles.cardDesc}>Domande in ordine casuale</div>
-            </div>
-          </button>
+        <div className={styles.rule} role="separator" />
 
-          <button
-            className={`${styles.card} ${numSbagliate === 0 ? styles.disabled : ''}`}
-            onClick={handleSbagliate}
-            disabled={numSbagliate === 0}
-          >
-            <span className={styles.icon}>🔁</span>
-            <div>
-              <div className={styles.cardTitle}>Domande Sbagliate Vela</div>
-              <div className={styles.cardDesc}>
-                {numSbagliate > 0 ? `${numSbagliate} domande da ripassare` : 'Nessuna domanda sbagliata'}
-              </div>
-            </div>
-          </button>
-        </div>
+        <button className={styles.modeRow} onClick={handleStudia}>
+          <div>
+            <p className={styles.modeTitle}>Studia Tutto</p>
+            <p className={styles.modeDesc}>Tutte le 250 domande in sequenza</p>
+          </div>
+          <ArrowRight size={16} strokeWidth={1.5} aria-hidden="true" className={styles.modeArrow} />
+        </button>
+
+        <div className={styles.rule} role="separator" />
+
+        <button className={styles.modeRow} onClick={handleShuffle}>
+          <div>
+            <p className={styles.modeTitle}>Shuffle</p>
+            <p className={styles.modeDesc}>Domande in ordine casuale</p>
+          </div>
+          <ArrowRight size={16} strokeWidth={1.5} aria-hidden="true" className={styles.modeArrow} />
+        </button>
+
+        <div className={styles.rule} role="separator" />
+
+        <button
+          className={`${styles.modeRow} ${numSbagliate === 0 ? styles.modeDisabled : ''}`}
+          onClick={handleSbagliate}
+          disabled={numSbagliate === 0}
+        >
+          <div>
+            <p className={styles.modeTitle}>Domande Sbagliate</p>
+            <p className={styles.modeDesc}>
+              {numSbagliate > 0
+                ? `${numSbagliate} domande da ripassare`
+                : 'Nessuna domanda sbagliata'}
+            </p>
+          </div>
+          {numSbagliate > 0 && (
+            <ArrowRight size={16} strokeWidth={1.5} aria-hidden="true" className={styles.modeArrow} />
+          )}
+        </button>
+
+        <div className={styles.rule} role="separator" />
       </main>
     </div>
   );

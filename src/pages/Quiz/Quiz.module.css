@@ -1,42 +1,49 @@
 .page {
   min-height: 100vh;
+  background: var(--bg);
   display: flex;
   flex-direction: column;
 }
 
 .timerRow {
   display: flex;
-  justify-content: center;
-  margin-bottom: 12px;
+  justify-content: flex-end;
+  padding: 12px clamp(20px, 5vw, 48px) 0;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .main {
   flex: 1;
-  padding: 16px;
+  padding: 20px clamp(20px, 5vw, 48px) 40px;
   max-width: 600px;
   margin: 0 auto;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .nextBtn {
   width: 100%;
   min-height: 52px;
-  background: #3b82f6;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
   border: none;
-  border-radius: 12px;
-  font-size: 17px;
-  font-weight: 700;
-  transition: background 0.2s, transform 0.1s;
+  border-radius: 3px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  transition: opacity 0.15s;
+  letter-spacing: 0.1px;
 }
 
-.nextBtn:hover, .nextBtn:focus-visible {
-  background: #2563eb;
+.nextBtn:hover,
+.nextBtn:focus-visible {
+  opacity: 0.86;
 }
 
 .nextBtn:active {
-  transform: scale(0.98);
+  transform: scale(0.99);
 }

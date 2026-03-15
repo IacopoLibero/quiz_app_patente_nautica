@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { Clock, CornerDownRight } from 'lucide-react';
 import Header from '../../components/Header/Header';
 import { useNauticaStats, useVelaStats } from '../../hooks/useStats';
 import styles from './Risultato.module.css';
@@ -7,7 +8,7 @@ import styles from './Risultato.module.css';
 function formatTime(seconds) {
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
-  return `${m}m ${s}s`;
+  return `${m}m ${String(s).padStart(2, '0')}s`;
 }
 
 export default function Risultato() {
@@ -20,7 +21,6 @@ export default function Risultato() {
   const {
     domande = [],
     modalita,
-    // timerMinuti unused here
     maxErrori,
     tipo,
     sbagliate = [],
@@ -32,27 +32,16 @@ export default function Risultato() {
 
   const totale = domande.length;
   const isEsame = modalita === 'esame';
-  let promosso = false;
+  let promosso = null; // null = non-exam (no pass/fail)
   if (isEsame) {
     if (tipo === 'vela') promosso = !failed && !timerExpired && sbagliate.length <= 1;
     else promosso = !failed && !timerExpired && sbagliate.length <= 4;
-  } else {
-    promosso = true;
   }
 
-  // Save stats once
   useEffect(() => {
     if (savedRef.current || domande.length === 0) return;
     savedRef.current = true;
-
-    const sessione = {
-      modalita,
-      punteggio: corrette,
-      totale,
-      tempoSecondi,
-      sbagliate,
-    };
-
+    const sessione = { modalita, punteggio: corrette, totale, tempoSecondi, sbagliate };
     if (tipo === 'vela') {
       velaStats.saveSessione(sessione, sbagliate, domande);
     } else {
@@ -67,40 +56,45 @@ export default function Risultato() {
     navigate(tipo === 'vela' ? '/vela' : '/nautica');
   }
 
+  const failReason = failed
+    ? `Superato il limite di ${maxErrori} errori`
+    : timerExpired
+      ? 'Tempo scaduto'
+      : `${sbagliate.length} ${sbagliate.length === 1 ? 'errore' : 'errori'} su ${tipo === 'vela' ? 1 : 4} consentiti`;
+
   return (
     <div className={styles.page}>
       <Header title="Risultato" showBack={false} />
 
       <main className={styles.main}>
-        {/* Esito */}
-        <div className={`${styles.esito} ${promosso ? styles.esitoProm : styles.esitoBocc}`}>
-          <div className={styles.esitoIcon}>{promosso ? '✅' : '❌'}</div>
-          <div className={styles.esitoTitle}>{promosso ? 'Promosso!' : 'Bocciato'}</div>
+        {/* Verdict */}
+        <div className={`${styles.verdict} ${promosso === null ? '' : promosso ? styles.verdictPass : styles.verdictFail}`}>
+          <h1 className={styles.verdictTitle}>
+            {promosso === null ? 'Completato' : promosso ? 'Promosso' : 'Bocciato'}
+          </h1>
+          <p className={styles.verdictScore}>
+            <span className={styles.scoreNum}>{corrette}</span>
+            <span className={styles.scoreSep}> su </span>
+            <span className={styles.scoreTot}>{totale}</span>
+          </p>
+          <p className={styles.verdictMeta}>
+            <Clock size={13} strokeWidth={1.75} aria-hidden="true" className={styles.metaIcon} /> {formatTime(tempoSecondi)}
+            {' · '}
+            {sbagliate.length} {sbagliate.length === 1 ? 'errore' : 'errori'}
+          </p>
           {isEsame && !promosso && (
-            <div className={styles.esitoMsg}>
-              {failed ? `Superato il limite di ${maxErrori} errori` :
-               timerExpired ? 'Tempo scaduto' :
-               `${sbagliate.length} errori (max ${maxErrori})`}
-            </div>
+            <p className={styles.failReason}>{failReason}</p>
           )}
         </div>
 
-        {/* Score */}
-        <div className={styles.scoreCard}>
-          <div className={styles.scoreMain}>
-            <span className={styles.scoreNum}>{corrette}</span>
-            <span className={styles.scoreDen}>/{totale}</span>
-          </div>
-          <div className={styles.scoreDetails}>
-            <span>⏱ {formatTime(tempoSecondi)}</span>
-            <span>❌ {sbagliate.length} errori</span>
-          </div>
-        </div>
-
-        {/* Wrong questions list */}
+        {/* Wrong questions */}
         {domandeSbagliate.length > 0 && (
-          <div className={styles.section}>
-            <h3 className={styles.sectionTitle}>Domande sbagliate ({domandeSbagliate.length})</h3>
+          <section className={styles.section}>
+            <div className={styles.rule} role="separator" />
+            <h2 className={styles.sectionTitle}>
+              Risposte sbagliate
+              <span className={styles.sectionCount}>{domandeSbagliate.length}</span>
+            </h2>
             <div className={styles.wrongList}>
               {domandeSbagliate.map(q => {
                 const correctText = q.risposte
@@ -108,24 +102,26 @@ export default function Risultato() {
                   : q.risposta ? 'VERO' : 'FALSO';
                 return (
                   <div key={q.id} className={styles.wrongItem}>
-                    <p className={styles.wrongDomanda}>{q.domanda}</p>
-                    <p className={styles.wrongRisposta}>
-                      ✅ {correctText}
+                    <p className={styles.wrongQ}>{q.domanda}</p>
+                    <p className={styles.wrongA}>
+                      <CornerDownRight size={12} strokeWidth={2} aria-hidden="true" className={styles.wrongIcon} /> {correctText}
                     </p>
                   </div>
                 );
               })}
             </div>
-          </div>
+          </section>
         )}
+
+        <div className={styles.rule} role="separator" />
 
         {/* Actions */}
         <div className={styles.actions}>
           <button className={styles.btnPrimary} onClick={handleRiprova}>
-            🔄 Riprova
+            Riprova
           </button>
           <button className={styles.btnSecondary} onClick={() => navigate('/')}>
-            🏠 Home
+            Home
           </button>
         </div>
       </main>

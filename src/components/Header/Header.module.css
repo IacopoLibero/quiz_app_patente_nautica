@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 16px;
-  background: #1e293b;
-  border-bottom: 1px solid #334155;
+  padding: 0 clamp(16px, 4vw, 32px);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -14,44 +14,58 @@
 .left {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
 }
 
 .backBtn {
   background: none;
   border: none;
-  color: #94a3b8;
+  color: var(--ink-3);
   font-size: 20px;
+  font-family: var(--font-body);
   padding: 8px;
-  min-width: 40px;
-  min-height: 40px;
+  min-width: 44px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  transition: background 0.2s;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+  margin-left: -8px;
 }
 
-.backBtn:hover, .backBtn:focus-visible {
-  background: #334155;
-  color: #f1f5f9;
+.backBtn:hover,
+.backBtn:focus-visible {
+  background: var(--bg-raised);
+  color: var(--ink);
 }
 
 .title {
-  font-size: 16px;
+  font-family: var(--font-display);
+  font-size: 15px;
   font-weight: 600;
-  color: #f1f5f9;
+  color: var(--ink);
+  letter-spacing: -0.1px;
 }
 
 .progress {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  color: #94a3b8;
+  font-family: var(--font-body);
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
 }
 
 .errori {
-  color: #ef4444;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--error);
+}
+
+.erroriIcon {
+  flex-shrink: 0;
 }
