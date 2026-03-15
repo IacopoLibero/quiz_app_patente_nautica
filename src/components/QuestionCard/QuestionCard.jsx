@@ -22,7 +22,7 @@ export default function QuestionCard({ question, onAnswer, answered, selectedAns
     <div className={`${styles.card} ${answered ? (isCorrect ? styles.cardCorrect : styles.cardWrong) : ''}`}>
       {question.immagine && !imgError && (
         <img
-          src={`${process.env.PUBLIC_URL}/${question.immagine}`}
+          src={`${process.env.PUBLIC_URL}${question.immagine}`}
           alt="Immagine domanda"
           className={styles.img}
           onError={() => setImgError(true)}
