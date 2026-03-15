@@ -6,7 +6,10 @@
       "mcp__openmemory__openmemory_store",
       "mcp__openmemory__openmemory_query",
       "mcp__openmemory__openmemory_delete",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(mkdir -p /tmp/pdf_extract)",
+      "Bash(pdfimages -j /home/iacopolibero/Downloads/domande_quiz_patente_nautica.pdf /tmp/pdf_extract/img)",
+      "Read(//tmp/**)"
     ]
   }
 }
