@@ -76,11 +76,26 @@ export default function Quiz() {
           />
         )}
 
-        {quiz.answered && !quiz.finished && (
-          <button className={styles.nextBtn} onClick={quiz.next}>
-            {quiz.currentIndex >= quiz.totalDomande - 1 ? 'Vedi risultato' : 'Avanti →'}
-          </button>
-        )}
+        <div className={styles.navRow}>
+          {quiz.currentIndex > 0 && (
+            <button className={styles.prevBtn} onClick={quiz.prev}>
+              ← Indietro
+            </button>
+          )}
+          {quiz.answered && !quiz.finished && (
+            quiz.currentIndex >= quiz.totalDomande - 1 ? (
+              quiz.allAnswered && (
+                <button className={styles.nextBtn} onClick={quiz.next}>
+                  Vedi risultato
+                </button>
+              )
+            ) : (
+              <button className={styles.nextBtn} onClick={quiz.next}>
+                Avanti →
+              </button>
+            )
+          )}
+        </div>
       </main>
     </div>
   );

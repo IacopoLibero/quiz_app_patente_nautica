@@ -25,8 +25,34 @@
   gap: 20px;
 }
 
+.navRow {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.prevBtn {
+  min-height: 52px;
+  padding: 0 20px;
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--border);
+  border-radius: 3px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.12s;
+  flex-shrink: 0;
+}
+
+.prevBtn:hover,
+.prevBtn:focus-visible {
+  background: var(--bg-raised);
+}
+
 .nextBtn {
-  width: 100%;
+  flex: 1;
   min-height: 52px;
   background: var(--ink);
   color: var(--bg);

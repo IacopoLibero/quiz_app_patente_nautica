@@ -27,7 +27,7 @@ export default function Home() {
             <span className={styles.navNum} aria-hidden="true">01</span>
             <div className={styles.navContent}>
               <span className={styles.navTitle}>Patente D1</span>
-              <span className={styles.navDesc}>792 domande · 8 materie</span>
+              <span className={styles.navDesc}>792 domande · 8 argomenti</span>
             </div>
             <ArrowRight className={styles.navArrow} size={20} strokeWidth={1.5} aria-hidden="true" />
           </button>
@@ -41,7 +41,7 @@ export default function Home() {
             <span className={styles.navNum} aria-hidden="true">02</span>
             <div className={styles.navContent}>
               <span className={styles.navTitle}>Patente Nautica</span>
-              <span className={styles.navDesc}>1.472 domande · 8 materie</span>
+              <span className={styles.navDesc}>1.472 domande · 8 argomenti</span>
             </div>
             <ArrowRight className={styles.navArrow} size={20} strokeWidth={1.5} aria-hidden="true" />
           </button>

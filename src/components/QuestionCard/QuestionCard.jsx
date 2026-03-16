@@ -51,16 +51,16 @@ export default function QuestionCard({ question, onAnswer, answered, selectedAns
           <>
             <button
               className={getButtonClass(true)}
-              onClick={() => !answered && onAnswer(true)}
-              disabled={answered}
+              onClick={() => (hideResult || !answered) && onAnswer(true)}
+              disabled={!hideResult && answered}
               aria-label="Risposta: Vero"
             >
               VERO
             </button>
             <button
               className={getButtonClass(false)}
-              onClick={() => !answered && onAnswer(false)}
-              disabled={answered}
+              onClick={() => (hideResult || !answered) && onAnswer(false)}
+              disabled={!hideResult && answered}
               aria-label="Risposta: Falso"
             >
               FALSO
@@ -71,8 +71,8 @@ export default function QuestionCard({ question, onAnswer, answered, selectedAns
             <button
               key={i}
               className={getButtonClass(i)}
-              onClick={() => !answered && onAnswer(i)}
-              disabled={answered}
+              onClick={() => (hideResult || !answered) && onAnswer(i)}
+              disabled={!hideResult && answered}
               aria-label={`Opzione ${String.fromCharCode(65 + i)}: ${risposta}`}
             >
               <span className={styles.optionLetter}>{String.fromCharCode(65 + i)}</span>

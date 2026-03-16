@@ -9,10 +9,12 @@ import {
 } from '../utils/localStorage';
 
 export function useNauticaStats() {
-  const saveSessione = useCallback((sessione, domandeSbagliate, domandeTotali) => {
+  const saveSessione = useCallback((sessione, domandeSbagliate, domandeTotali, skipSession = false) => {
     const stats = getNauticaStats();
 
-    stats.sessioni.push({ ...sessione, data: new Date().toISOString() });
+    if (!skipSession) {
+      stats.sessioni.push({ ...sessione, data: new Date().toISOString() });
+    }
 
     const sbagliateSet = new Set(stats.domandeSbagliate);
     const corretteSet = new Set(stats.domandeCorrette || []);
@@ -42,11 +44,15 @@ export function useNauticaStats() {
     stats.questionCategories = qMap;
 
     const rpc = {};
-    for (const [id, cat] of Object.entries(qMap)) {
+    for (const [idKey, cat] of Object.entries(qMap)) {
+      // Object.entries always returns string keys; IDs in Sets may be numbers
+      const idNum = Number(idKey);
+      const inSbagl = sbagliateSet.has(idKey) || sbagliateSet.has(idNum);
+      const inCorr  = corretteSet.has(idKey)  || corretteSet.has(idNum);
       if (!rpc[cat]) rpc[cat] = { corrette: 0, totale: 0 };
-      if (corretteSet.has(id) || sbagliateSet.has(id)) {
+      if (inSbagl || inCorr) {
         rpc[cat].totale += 1;
-        if (corretteSet.has(id) && !sbagliateSet.has(id)) rpc[cat].corrette += 1;
+        if (inCorr && !inSbagl) rpc[cat].corrette += 1;
       }
     }
     stats.rispostePerCategoria = rpc;
@@ -77,13 +83,12 @@ export function useNauticaStats() {
 }
 
 export function useVelaStats() {
-  const saveSessione = useCallback((sessione, domandeSbagliate, domandeTotali) => {
+  const saveSessione = useCallback((sessione, domandeSbagliate, domandeTotali, skipSession = false) => {
     const stats = getVelaStats();
 
-    stats.sessioni.push({
-      ...sessione,
-      data: new Date().toISOString(),
-    });
+    if (!skipSession) {
+      stats.sessioni.push({ ...sessione, data: new Date().toISOString() });
+    }
 
     const sbagliateSet = new Set(stats.domandeSbagliate);
     const corretteSet = new Set(stats.domandeCorrette || []);
@@ -123,10 +128,12 @@ export function useVelaStats() {
 }
 
 export function useD1Stats() {
-  const saveSessione = useCallback((sessione, domandeSbagliate, domandeTotali) => {
+  const saveSessione = useCallback((sessione, domandeSbagliate, domandeTotali, skipSession = false) => {
     const stats = getD1Stats();
 
-    stats.sessioni.push({ ...sessione, data: new Date().toISOString() });
+    if (!skipSession) {
+      stats.sessioni.push({ ...sessione, data: new Date().toISOString() });
+    }
 
     const sbagliateSet = new Set(stats.domandeSbagliate);
     const corretteSet = new Set(stats.domandeCorrette || []);
@@ -155,11 +162,14 @@ export function useD1Stats() {
     stats.questionCategories = qMap;
 
     const rpc = {};
-    for (const [id, cat] of Object.entries(qMap)) {
+    for (const [idKey, cat] of Object.entries(qMap)) {
+      const idNum = Number(idKey);
+      const inSbagl = sbagliateSet.has(idKey) || sbagliateSet.has(idNum);
+      const inCorr  = corretteSet.has(idKey)  || corretteSet.has(idNum);
       if (!rpc[cat]) rpc[cat] = { corrette: 0, totale: 0 };
-      if (corretteSet.has(id) || sbagliateSet.has(id)) {
+      if (inSbagl || inCorr) {
         rpc[cat].totale += 1;
-        if (corretteSet.has(id) && !sbagliateSet.has(id)) rpc[cat].corrette += 1;
+        if (inCorr && !inSbagl) rpc[cat].corrette += 1;
       }
     }
     stats.rispostePerCategoria = rpc;

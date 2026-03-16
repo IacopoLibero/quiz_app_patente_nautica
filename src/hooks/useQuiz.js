@@ -2,12 +2,9 @@ import { useState, useCallback, useEffect, useRef } from 'react';
 
 export default function useQuiz({ domande, timerMinuti, maxErrori }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [risposte, setRisposte] = useState({}); // { [id]: boolean (corretto/sbagliato) }
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [answered, setAnswered] = useState(false);
-  const [errori, setErrori] = useState(0);
+  // { [id]: answerIndex } — tracks selected answer per question
+  const [selectedAnswers, setSelectedAnswers] = useState({});
   const [finished, setFinished] = useState(false);
-  const [failed, setFailed] = useState(false);
   const [timerExpired, setTimerExpired] = useState(false);
   const [secondsLeft, setSecondsLeft] = useState(timerMinuti ? timerMinuti * 60 : null);
   const startTimeRef = useRef(Date.now());
@@ -31,34 +28,17 @@ export default function useQuiz({ domande, timerMinuti, maxErrori }) {
   }, [timerMinuti]);
 
   const currentQuestion = domande[currentIndex];
+  const selectedAnswer = currentQuestion != null
+    ? (selectedAnswers[currentQuestion.id] ?? null)
+    : null;
+  const answered = selectedAnswer !== null && selectedAnswer !== undefined;
+
+  const allAnswered = domande.every(q => selectedAnswers[q.id] !== undefined && selectedAnswers[q.id] !== null);
 
   const answer = useCallback((answerIndex) => {
-    if (answered) return;
-    setSelectedAnswer(answerIndex);
-    setAnswered(true);
-
     const q = domande[currentIndex];
-    let isCorrect;
-    if (q.risposte) {
-      // Multiple choice
-      isCorrect = answerIndex === q.risposta;
-    } else {
-      // Vero/Falso: answerIndex is true/false
-      isCorrect = answerIndex === q.risposta;
-    }
-
-    setRisposte(prev => ({ ...prev, [q.id]: isCorrect }));
-
-    if (!isCorrect) {
-      const newErrori = errori + 1;
-      setErrori(newErrori);
-      if (maxErrori !== null && newErrori > maxErrori) {
-        clearInterval(timerRef.current);
-        setFailed(true);
-        setFinished(true);
-      }
-    }
-  }, [answered, currentIndex, domande, errori, maxErrori]);
+    setSelectedAnswers(prev => ({ ...prev, [q.id]: answerIndex }));
+  }, [currentIndex, domande]);
 
   const next = useCallback(() => {
     if (currentIndex >= domande.length - 1) {
@@ -66,10 +46,14 @@ export default function useQuiz({ domande, timerMinuti, maxErrori }) {
       setFinished(true);
     } else {
       setCurrentIndex(prev => prev + 1);
-      setSelectedAnswer(null);
-      setAnswered(false);
     }
   }, [currentIndex, domande.length]);
+
+  const prev = useCallback(() => {
+    if (currentIndex > 0) {
+      setCurrentIndex(prev => prev - 1);
+    }
+  }, [currentIndex]);
 
   const getElapsedSeconds = useCallback(() => {
     return Math.round((Date.now() - startTimeRef.current) / 1000);
@@ -77,23 +61,40 @@ export default function useQuiz({ domande, timerMinuti, maxErrori }) {
 
   const getSbagliate = useCallback(() => {
     return domande
-      .filter(q => risposte[q.id] === false)
+      .filter(q => {
+        const sel = selectedAnswers[q.id];
+        return sel === undefined || sel === null || sel !== q.risposta;
+      })
       .map(q => q.id);
-  }, [domande, risposte]);
+  }, [domande, selectedAnswers]);
+
+  // risposte for compatibility: { [id]: boolean }
+  const risposte = {};
+  for (const [id, sel] of Object.entries(selectedAnswers)) {
+    const q = domande.find(q => String(q.id) === String(id));
+    if (q) risposte[q.id] = sel === q.risposta;
+  }
+
+  const errori = domande.filter(q => {
+    const sel = selectedAnswers[q.id];
+    return sel !== undefined && sel !== null && sel !== q.risposta;
+  }).length;
 
   return {
     currentIndex,
     currentQuestion,
     selectedAnswer,
     answered,
+    allAnswered,
     errori,
     finished,
-    failed,
+    failed: false,
     timerExpired,
     secondsLeft,
     risposte,
     answer,
     next,
+    prev,
     getElapsedSeconds,
     getSbagliate,
     totalDomande: domande.length,

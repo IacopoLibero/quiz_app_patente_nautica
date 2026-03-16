@@ -165,7 +165,7 @@ export default function D1Menu() {
         >
           <div>
             <p className={styles.modeTitle}>Per Categoria</p>
-            <p className={styles.modeDesc}>15 domande in sequenza per materia</p>
+            <p className={styles.modeDesc}>15 domande in sequenza per argomento</p>
           </div>
           {mode === 'categoria'
             ? <ChevronUp size={16} strokeWidth={2} aria-hidden="true" className={styles.chevron} />
@@ -204,7 +204,7 @@ export default function D1Menu() {
         >
           <div>
             <p className={styles.modeTitle}>Shuffle</p>
-            <p className={styles.modeDesc}>15 domande casuali · scegli le categorie</p>
+            <p className={styles.modeDesc}>15 domande casuali · scegli gli argomenti</p>
           </div>
           {mode === 'shuffle'
             ? <ChevronUp size={16} strokeWidth={2} aria-hidden="true" className={styles.chevron} />
@@ -302,8 +302,8 @@ export default function D1Menu() {
               onClick={() => handleSbagliate(sbagliateSelected.length > 0 ? sbagliateSelected : null)}
             >
               {sbagliateSelected.length > 0
-                ? `Inizia · ${sbagliateSelected.length} ${sbagliateSelected.length === 1 ? 'categoria' : 'categorie'}`
-                : 'Inizia · tutte le categorie'}
+                ? `Inizia · ${sbagliateSelected.length} ${sbagliateSelected.length === 1 ? 'argomento' : 'argomenti'}`
+                : 'Inizia · tutti gli argomenti'}
             </button>
           </div>
         )}

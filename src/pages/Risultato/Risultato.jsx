@@ -42,12 +42,13 @@ export default function Risultato() {
     if (savedRef.current || domande.length === 0) return;
     savedRef.current = true;
     const sessione = { modalita, punteggio: corrette, totale, tempoSecondi, sbagliate };
+    const isSbagliate = modalita === 'sbagliate';
     if (tipo === 'vela') {
-      velaStats.saveSessione(sessione, sbagliate, domande);
+      velaStats.saveSessione(sessione, sbagliate, domande, isSbagliate);
     } else if (tipo === 'd1') {
-      d1Stats.saveSessione(sessione, sbagliate, domande);
+      d1Stats.saveSessione(sessione, sbagliate, domande, isSbagliate);
     } else {
-      nauticaStats.saveSessione(sessione, sbagliate, domande);
+      nauticaStats.saveSessione(sessione, sbagliate, domande, isSbagliate);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
