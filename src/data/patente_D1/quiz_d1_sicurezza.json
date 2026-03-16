@@ -1,0 +1,1658 @@
+[
+  {
+    "id": 230,
+    "categoria": "sicurezza",
+    "domanda": "Per quale classi di incendio (A, B, C, D) risulta idoneo l'impiego dell'estintore a polvere?",
+    "risposte": [
+      "tutte le classi",
+      "fuochi da solidi e fuochi da gas",
+      "fuochi da liquidi"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 231,
+    "categoria": "sicurezza",
+    "domanda": "Per quale tipologia di incendio risulta idoneo l'impiego dell'estintore a schiuma?",
+    "risposte": [
+      "fuochi da impianti elettrici",
+      "fuochi da gas",
+      "fuochi da solidi e fuochi da liquidi"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 233,
+    "categoria": "sicurezza",
+    "domanda": "Quali estintori devono essere omologati a norma CE?",
+    "risposte": [
+      "tutti",
+      "solo quelli a CO2",
+      "nessuno"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 234,
+    "categoria": "sicurezza",
+    "domanda": "Avuto riguardo alla prevenzione sugli incendi, quale tra queste affermazioni è corretta?",
+    "risposte": [
+      "determinate sostanze, quali stracci unti di olio abbandonati in coperta, possono raggiungere rapidamente la temperatura di infiammabilità",
+      "determinate sostanze, quali stracci unti di olio abbandonati in coperta, possono raggiungere rapidamente la temperatura di ignizione determinando una combustione spontanea",
+      "determinate sostanze, quali stracci unti di olio abbandonati nel vano motore o in gavoni scarsamente ventilati, possono riscaldarsi lentamente determinando una combustione spontanea"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 235,
+    "categoria": "sicurezza",
+    "domanda": "Quale mezzo antincendio risulta più opportuno impiegare per estinguere incendi generati da apparecchiature o quadri elettrici?",
+    "risposte": [
+      "acqua di mare",
+      "estintore a polvere ad anidride carbonica",
+      "estintore a schiuma"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 236,
+    "categoria": "sicurezza",
+    "domanda": "Quale tra queste affermazioni è corretta?",
+    "risposte": [
+      "il getto degli estintori a schiuma deve essere diretto alla base delle fiamme e non deve essere impiegato per estinguere incendi di materiale elettrico sotto tensione",
+      "il getto degli estintori a schiuma deve essere diretto verso la superficie delle fiamme ed impiegato principalmente per estinguere incendi di materiale elettrico sotto tensione",
+      "l'estintore ad anidride carbonica va utilizzato solo all'aperto, perché agisce per raffreddamento"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 237,
+    "categoria": "sicurezza",
+    "domanda": "Utilizzo dell'acqua per spegnere fuochi da metalli:",
+    "risposte": [
+      "non ottengo lo spegnimento",
+      "è un utilizzo efficace",
+      "è un utilizzo pericoloso"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 238,
+    "categoria": "sicurezza",
+    "domanda": "Da cosa è generato un incendio di classe B?",
+    "risposte": [
+      "da apparecchiature elettriche in tensione",
+      "da gas infiammabili",
+      "da liquidi infiammabili"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 239,
+    "categoria": "sicurezza",
+    "domanda": "Viene introdotta aria in un locale aggredito da incendio:",
+    "risposte": [
+      "non accade nulla di nuovo",
+      "il locale si raffredda",
+      "si alimenta l'incendio"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 240,
+    "categoria": "sicurezza",
+    "domanda": "La sigla 13B sugli estintori indica:",
+    "risposte": [
+      "la classe di costruzione e confezionamento secondo la normativa CE",
+      "dopo quanti mesi va revisionato",
+      "classe di incendio e capacità estinguente"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 241,
+    "categoria": "sicurezza",
+    "domanda": "Gli estintori a polvere si utilizzano per:",
+    "risposte": [
+      "estinguere incendi di sostanze liquide o gassose, nonché incendi di apparecchiature elettriche sotto tensione",
+      "estinguere incendi di sostanze solide",
+      "estinguere incendi di materiale in vetroresina o in legno"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 242,
+    "categoria": "sicurezza",
+    "domanda": "L'estintore a CO2 è utilizzabile per incendi di:",
+    "risposte": [
+      "materiali solidi o metalli combustibili",
+      "gas inerti idraulici e materiali solidi",
+      "liquidi infiammabili e materiali elettrici sotto tensione"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 243,
+    "categoria": "sicurezza",
+    "domanda": "Da cosa è generato un incendio di classe E?",
+    "risposte": [
+      "da liquidi infiammabili",
+      "da apparecchiature elettriche in tensione",
+      "da combustibili solidi"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 244,
+    "categoria": "sicurezza",
+    "domanda": "Un estintore a schiuma è utilizzabile per incendi:",
+    "risposte": [
+      "delle classi A e B",
+      "di classe E",
+      "di tutti i tipi"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 245,
+    "categoria": "sicurezza",
+    "domanda": "Da cosa è generato un incendio di classe A?",
+    "risposte": [
+      "da combustibili solidi",
+      "da alcuni particolari metalli infiammabili",
+      "da gas infiammabili"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 246,
+    "categoria": "sicurezza",
+    "domanda": "L'incendio di gas infiammabili è un incendio di:",
+    "risposte": [
+      "classe A",
+      "classe B",
+      "classe C"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 247,
+    "categoria": "sicurezza",
+    "domanda": "Per incendi da gas e da impianti elettrici (classi C ed E) è preferibile utilizzare:",
+    "risposte": [
+      "un estintore a schiuma",
+      "un estintore a CO2",
+      "un estintore a polvere"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 248,
+    "categoria": "sicurezza",
+    "domanda": "Principio d'incendio all'apparato radio VHF:",
+    "risposte": [
+      "si getta una secchiata d'acqua fresca sull'apparato radio",
+      "si rimuove la radio il più velocemente possibile e la si getta in acqua",
+      "si raffredda la radio utilizzando l'estintore ad anidride carbonica (CO2)"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 249,
+    "categoria": "sicurezza",
+    "domanda": "Utilizzo dell'acqua per spegnere un incendio da impianti elettrici (classe E):",
+    "risposte": [
+      "non ottengo lo spegnimento",
+      "è un utilizzo molto pericoloso",
+      "è un utilizzo efficace"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 250,
+    "categoria": "sicurezza",
+    "domanda": "Ogni quanto tempo va revisionato un estintore?",
+    "risposte": [
+      "ogni 4 anni",
+      "quando la lancetta del manometro è sul rosso",
+      "ogni 2 anni"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 251,
+    "categoria": "sicurezza",
+    "domanda": "Va revisionato un estintore?",
+    "risposte": [
+      "sì, ogni 2 anni",
+      "sì, ogni anno",
+      "mai, salvo che non sia stato utilizzato o vi sia stata perdita di pressione, è sufficiente verificare periodicamente che la lancetta del manometro stia sul verde"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 252,
+    "categoria": "sicurezza",
+    "domanda": "Ogni quanto tempo si deve sostituire un estintore?",
+    "risposte": [
+      "ogni 2 anni",
+      "ogni anno",
+      "quando è in cattivo stato"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 253,
+    "categoria": "sicurezza",
+    "domanda": "Quali sono gli elementi del cosiddetto 'triangolo del fuoco' che alimentano un incendio?",
+    "risposte": [
+      "combustione, estinzione, reazione",
+      "estintore, pressione, schiuma",
+      "combustibile, comburente, calore"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 254,
+    "categoria": "sicurezza",
+    "domanda": "Come si può estinguere un incendio?",
+    "risposte": [
+      "esponendo la fiamma all'aria aperta",
+      "se piove",
+      "abbassando sensibilmente la temperatura"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 255,
+    "categoria": "sicurezza",
+    "domanda": "Un incendio si estingue:",
+    "risposte": [
+      "mancando l'ossigeno",
+      "aumentando la temperatura",
+      "aumentando la forza del vento"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 256,
+    "categoria": "sicurezza",
+    "domanda": "Come può definirsi la combustione?",
+    "risposte": [
+      "l'improvvisa emissione di gas inerte da parte di un liquido, generata da un'istantanea variazione di temperatura",
+      "la reazione chimica che produce calore e che avviene tra il comburente ed il combustibile",
+      "la reazione meccanica che produce una variazione di temperatura e che avviene tra un liquido più caldo e un solido più freddo"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 257,
+    "categoria": "sicurezza",
+    "domanda": "Da che cosa dipende la maggiore o minore combustibilità di un liquido?",
+    "risposte": [
+      "dalla temperatura di infiammabilità del liquido",
+      "dalla temperatura dei solidi con cui il liquido viene a contatto",
+      "dalla temperatura alla quale il liquido sublima"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 258,
+    "categoria": "sicurezza",
+    "domanda": "Il numero e il posizionamento degli estintori di una unità marcata CE è stabilito dalle ordinanze dell'Autorità marittima?",
+    "risposte": [
+      "si",
+      "no, è stabilito dal proprietario",
+      "no, stabilito nel Manuale del proprietario"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 259,
+    "categoria": "sicurezza",
+    "domanda": "Per le imbarcazioni da diporto NON marcata CE (immesse sul mercato prima del 17 giugno 1998):",
+    "risposte": [
+      "il numero e il posizionamento degli estintori non è stabilito",
+      "il numero e il posizionamento degli estintori è fissato dal Regolamento di attuazione al Codice della nautica secondo la potenza del motore e prevede un minimo di 1 estintore al posto di guida e 1 estintore in ciascuno degli altri locali",
+      "il numero e il posizionamento degli estintori è stabilito dalle ordinanze dell'Autorità marittima, con il minimo di 1 estintore"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 260,
+    "categoria": "sicurezza",
+    "domanda": "Cos'è il comburente?",
+    "risposte": [
+      "la sostanza che alimenta la combustione mediante ossidazione del combustibile, generalmente l'ossigeno",
+      "il materiale infiammabile",
+      "il nome della fiamma"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 262,
+    "categoria": "sicurezza",
+    "domanda": "Chiunque assume o ritiene il comando o la condotta ovvero la direzione nautica di un'unità da diporto in stato di ebbrezza è punito:",
+    "risposte": [
+      "con una sanzione amministrativa che varia da 1.000 euro a 5.000 euro in relazione al tasso alcolemico rilevato e la sanzione accessoria della revisione",
+      "con una sanzione amministrativa che varia da 500 euro a 1.500 euro qualunque sia il tasso alcolemico rilevato",
+      "con una sanzione amministrativa che varia da 2.755 euro a 15.000 euro in relazione al tasso alcolemico rilevato"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 263,
+    "categoria": "sicurezza",
+    "domanda": "Circa la condotta di un'unità da diporto in stato di ebbrezza:",
+    "risposte": [
+      "è sempre disposta la sospensione della patente nautica da 3 mesi a 24 mesi, in relazione al tasso alcolemico rilevato",
+      "è disposta la sospensione della patente nautica da 3 mesi a 24 mesi in caso di sinistro marittimo",
+      "è disposta la sospensione della patente nautica da 3 mesi a 24 mesi solo se ne deriva danno o pericolo di danno ambientale"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 266,
+    "categoria": "sicurezza",
+    "domanda": "In caso di conduzione sotto l'influenza dell'alcool di unità da diporto adibita a noleggio:",
+    "risposte": [
+      "le sanzioni previste sono aumentate di un terzo, qualora sia stato accertato un valore corrispondente a un tasso alcolemico superiore a 0,5 e non superiore a 0,8",
+      "le sanzioni previste sono aumentate solo qualora sia stato accertato un valore corrispondente a un tasso alcolemico superiore a 1,5 grammi per litro",
+      "è disposta la vendita coatta dell'unità da diporto"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 268,
+    "categoria": "sicurezza",
+    "domanda": "La sanzione per chi assume il comando o la condotta di un'unità da diporto in stato di alterazione psico-fisica:",
+    "risposte": [
+      "raddoppia in caso di sinistro",
+      "è stabilita dalla Capitaneria di porto all'atto del fermo",
+      "aumentata del 25% in caso di sinistro"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 271,
+    "categoria": "sicurezza",
+    "domanda": "L'assunzione di farmaci sedativi:",
+    "risposte": [
+      "non compromette le facoltà mentali se si soffre d'ansia",
+      "ha effetti molto pericolosi se contemporaneamente si assumono bevande alcoliche",
+      "aiuta la concentrazione specialmente di notte"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 272,
+    "categoria": "sicurezza",
+    "domanda": "In caso di assunzione di una quantità eccessiva di bevande alcoliche:",
+    "risposte": [
+      "si recupera velocemente l'idoneità fisica se si assume caffè amaro",
+      "si ha un livello di attenzione molto basso",
+      "si recupera velocemente l'idoneità fisica se si assumono cibi piuttosto salati"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 274,
+    "categoria": "sicurezza",
+    "domanda": "A bordo del natante da diporto, durante la navigazione entro le 6 miglia dalla costa, quanti estintori devono essere presenti a bordo?",
+    "risposte": [
+      "almeno 1",
+      "non meno di 2",
+      "non più di 4"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 275,
+    "categoria": "sicurezza",
+    "domanda": "La 'boetta fumogena arancione' è un segnale:",
+    "risposte": [
+      "diurno",
+      "notturno",
+      "che si può utilizzare solo in presenza di nebbia"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 278,
+    "categoria": "sicurezza",
+    "domanda": "Secondo il Regolamento per la sicurezza della navigazione da diporto, quali sono i mezzi individuali di salvataggio?",
+    "risposte": [
+      "apparecchi galleggianti per tutte le persone imbarcabili a bordo",
+      "cinture di salvataggio per ogni persona imbarcata",
+      "zattere di salvataggio per tutte le persone imbarcabili a bordo"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 280,
+    "categoria": "sicurezza",
+    "domanda": "In base alla Tabella delle dotazioni di sicurezza minime da tenere a bordo, i fanali regolamentari di navigazione sono obbligatoriamente prescritti:",
+    "risposte": [
+      "in navigazione notturna entro 1 miglio dalla costa",
+      "in navigazione notturna oltre 1 miglio dalla costa",
+      "comunque e sempre, a prescindere dal tipo di navigazione effettuata"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 283,
+    "categoria": "sicurezza",
+    "domanda": "Quante boette fumogene deve mantenere a bordo un natante da diporto che naviga entro le 3 miglia nautiche dalla costa?",
+    "risposte": [
+      "2",
+      "3",
+      "1"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 284,
+    "categoria": "sicurezza",
+    "domanda": "L'obbligo di legge di avere una cintura di salvataggio per ogni persona imbarcata è prescritto:",
+    "risposte": [
+      "non è prescritto per i natanti da diporto a motore",
+      "per ogni tipo di navigazione oltre i 300 metri dalla costa",
+      "per la navigazione entro le 12 miglia dalla costa"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 285,
+    "categoria": "sicurezza",
+    "domanda": "Per le imbarcazioni da diporto in navigazione entro le 3 miglia dalla costa, quale mezzo collettivo di salvataggio è prescritto?",
+    "risposte": [
+      "non è previsto il mezzo collettivo di salvataggio",
+      "1 zattera di salvataggio costiera",
+      "1 zattera di salvataggio omologata"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 286,
+    "categoria": "sicurezza",
+    "domanda": "Navigando entro le 3 miglia dalla costa, si deve tenere a bordo dell'unità:",
+    "risposte": [
+      "il mezzo collettivo di salvataggio",
+      "i 2 fuochi a mano a luce rossa",
+      "i 2 razzi a paracadute a luce rossa"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 287,
+    "categoria": "sicurezza",
+    "domanda": "In navigazione entro 300 metri dalla costa non vi è obbligo di alcuna dotazione di sicurezza e di salvataggio. Quanto detto vale anche per la navigazione nei fiumi?",
+    "risposte": [
+      "si, in quanto trattasi di navigazione fluviale, essa è considerata più sicura rispetto alla navigazione in mare",
+      "no, bisogna avere a bordo almeno 1 salvagente anulare con cima e cinture di salvataggio per ogni persona presente a bordo",
+      "no, sono sufficienti almeno 2 salvagenti anulari con cima"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 288,
+    "categoria": "sicurezza",
+    "domanda": "Normalmente, qual è la portata in miglia dei fuochi a mano a luce rossa?",
+    "risposte": [
+      "7 miglia",
+      "6 miglia",
+      "5 miglia"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 289,
+    "categoria": "sicurezza",
+    "domanda": "Normalmente, di quanto è la portata notturna in miglia dei razzi a paracadute a luce rossa?",
+    "risposte": [
+      "6 miglia",
+      "7 miglia",
+      "25 miglia"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 290,
+    "categoria": "sicurezza",
+    "domanda": "Quanti fuochi a mano a luce rossa deve mantenere a bordo un'imbarcazione da diporto che naviga entro le 6 miglia nautiche dalla costa?",
+    "risposte": [
+      "2",
+      "3",
+      "4"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 291,
+    "categoria": "sicurezza",
+    "domanda": "Su un'unità con a bordo 4 persone, abilitata al trasporto di 8 persone, quante cinture di salvataggio devono essere presenti?",
+    "risposte": [
+      "12",
+      "8",
+      "4"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 292,
+    "categoria": "sicurezza",
+    "domanda": "Il fumo emesso dalla boetta fumogena, una volta attivata, è di colore:",
+    "risposte": [
+      "rosso",
+      "giallo",
+      "arancione"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 293,
+    "categoria": "sicurezza",
+    "domanda": "In genere, che scadenza hanno i segnali di emergenza e soccorso come i fuochi a mano, i razzi a paracadute e le boette fumogene?",
+    "risposte": [
+      "ogni 10 anni",
+      "ogni anno",
+      "ogni 4 anni"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 299,
+    "categoria": "sicurezza",
+    "domanda": "La quantità di cinture di salvataggio da tenere a bordo:",
+    "risposte": [
+      "deve essere il 20% in più del numero massimo di persone imbarcabili",
+      "è in relazione al numero di persone imbarcate",
+      "è in relazione al numero massimo di persone imbarcabili"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 300,
+    "categoria": "sicurezza",
+    "domanda": "Normalmente, qual è all'incirca la portata diurna dei razzi a paracadute a luce rossa?",
+    "risposte": [
+      "9 miglia",
+      "7 miglia",
+      "5 miglia"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 301,
+    "categoria": "sicurezza",
+    "domanda": "Normalmente, qual è la durata di accensione dei razzi a paracadute a luce rossa?",
+    "risposte": [
+      "circa 2 minuti",
+      "circa 3 minuti",
+      "meno di 1 minuto"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 309,
+    "categoria": "sicurezza",
+    "domanda": "Su quale documento è riportato il numero delle persone trasportabili sui natanti da diporto prodotti in serie?",
+    "risposte": [
+      "certificato di stazza",
+      "certificazione di omologazione",
+      "manuale del proprietario"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 310,
+    "categoria": "sicurezza",
+    "domanda": "A che distanza dalla costa i conduttori di tavole a vela hanno l'obbligo di indossare il mezzo di salvataggio individuale?",
+    "risposte": [
+      "entro 1 miglia dalla costa",
+      "indipendentemente dalla distanza dalla costa",
+      "entro 300 metri dalla costa"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 316,
+    "categoria": "sicurezza",
+    "domanda": "I conduttori di tavole a vela, acquascooter e unità similari:",
+    "risposte": [
+      "indossano permanentemente un mezzo di salvataggio individuale, comprese le persone trasportate, indipendentemente dalla distanza dalla costa",
+      "indossano permanentemente un mezzo di salvataggio individuale, indipendentemente dalla distanza dalla costa, a esclusione delle persone trasportate",
+      "indossano permanentemente un mezzo di salvataggio individuale, esclusivamente in navigazione entro le sei miglia nautiche dalla costa, incluse le persone trasportate"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 321,
+    "categoria": "sicurezza",
+    "domanda": "Dove è possibile convalidare il certificato di sicurezza?",
+    "risposte": [
+      "presso qualsiasi agenzia di sicurezza per la navigazione",
+      "non è possibile convalidare il certificato di sicurezza",
+      "presso qualsiasi STED (Sportello Telematico del Diportista) in seguito alla visita ispettiva dell'Organismo tecnico"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 322,
+    "categoria": "sicurezza",
+    "domanda": "Un'unità da diporto deve essere sottoposta a visita occasionale:",
+    "risposte": [
+      "solo se l'unità viene messa a mare dopo essere stata a secco",
+      "solo se l'unità viene fermata per un controllo della Capitaneria di porto - Guardia costiera",
+      "a seguito di danni o mutamenti dello scafo o dell'apparato motore, se sono mutate le condizioni di navigabilità o di sicurezza"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 323,
+    "categoria": "sicurezza",
+    "domanda": "Un'imbarcazione da diporto munita di Marcatura CE, è soggetta a visite:",
+    "risposte": [
+      "periodiche ed occasionali",
+      "solo su richiesta dell'Autorità marittima",
+      "in caso di ritiro della licenza di navigazione"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 324,
+    "categoria": "sicurezza",
+    "domanda": "Quali unità da diporto sono soggette alle visite periodiche di sicurezza?",
+    "risposte": [
+      "solo le imbarcazioni da diporto",
+      "solo i natanti da diporto",
+      "solo le imbarcazioni e le navi da diporto"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 325,
+    "categoria": "sicurezza",
+    "domanda": "Il certificato di sicurezza per imbarcazioni da diporto è rilasciato:",
+    "risposte": [
+      "dall'Archivio telematico delle unità da diporto attraverso lo STED, Sportello telematico del diportista",
+      "dalla ditta costruttrice",
+      "dall'Organismo tecnico notificato o autorizzato"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 326,
+    "categoria": "sicurezza",
+    "domanda": "Nel corso della visita iniziale di sicurezza, l'Organismo tecnico notificato o autorizzato:",
+    "risposte": [
+      "rilascia la licenza di esercizio RTF",
+      "determina il numero massimo delle persone trasportabili",
+      "rilascia la Licenza di Navigazione"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 327,
+    "categoria": "sicurezza",
+    "domanda": "L'imbarcazione da diporto iscritta è sottoposta a visita occasionale:",
+    "risposte": [
+      "l'unità stessa viene iscritta in un registro straniero",
+      "l'unità stessa deve affrontare una navigazione di trasferimento",
+      "se ne verifica la necessità"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 328,
+    "categoria": "sicurezza",
+    "domanda": "Superata la prima scadenza del certificato di sicurezza, ogni quanti anni deve essere sottoposta a visita un'imbarcazione da diporto ai fini del rinnovo del certificato medesimo?",
+    "risposte": [
+      "8 anni",
+      "5 anni",
+      "10 anni"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 329,
+    "categoria": "sicurezza",
+    "domanda": "La licenza è sottoposta a convalida?",
+    "risposte": [
+      "si, ogni 3 anni",
+      "si, ogni 5 anni",
+      "no, si convalida il certificato di sicurezza"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 330,
+    "categoria": "sicurezza",
+    "domanda": "I natanti da diporto sono soggetti al rilascio del certificato di sicurezza?",
+    "risposte": [
+      "sì, ogni 3 anni",
+      "sì, ogni 5 anni",
+      "no, non sono soggetti"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 331,
+    "categoria": "sicurezza",
+    "domanda": "La convalida del Certificato di Sicurezza di un'imbarcazione da diporto va effettuata:",
+    "risposte": [
+      "ogni qualvolta viene varata",
+      "ogni 20 anni",
+      "nel caso in cui l'unità abbia subito gravi avarie o siano state apportate innovazioni"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 332,
+    "categoria": "sicurezza",
+    "domanda": "Quali tra questi requisiti sono necessari per il rinnovo del Certificato di Sicurezza di un'unità da diporto?",
+    "risposte": [
+      "rilascio di apposita attestazione di idoneità da parte della Motorizzazione Civile territoriale",
+      "rilascio di apposita attestazione di idoneità da parte di un Organismo Tecnico affidato",
+      "rilascio di apposita attestazione di idoneità da parte dell'Ufficio Marittimo"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 333,
+    "categoria": "sicurezza",
+    "domanda": "Il Certificato di Sicurezza:",
+    "risposte": [
+      "si rinnova di diritto ogni 3 anni",
+      "si rinnova ogni 5 anni",
+      "si rinnova quando richiesto dall'Organismo Tecnico affidato"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 334,
+    "categoria": "sicurezza",
+    "domanda": "Il Certificato di Sicurezza di un'unità da diporto, in caso di primo rilascio:",
+    "risposte": [
+      "ha validità di otto anni dall'immatricolazione per le unità appartenenti alle categorie di progettazione A e B",
+      "ha validità di cinque anni dall'immatricolazione per le unità appartenenti alle categorie di progettazione A e B",
+      "ha validità di cinque anni dall'immatricolazione per le unità appartenenti alle categorie di progettazione A, B e C"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 335,
+    "categoria": "sicurezza",
+    "domanda": "Il Certificato di Sicurezza di un'unità da diporto, in caso di primo rilascio:",
+    "risposte": [
+      "ha validità di otto anni dall'immatricolazione per le unità appartenenti alle categorie di progettazione C e D",
+      "ha validità di dieci anni dall'immatricolazione per le unità appartenenti alle categorie di progettazione C e D",
+      "ha validità di cinque anni dall'immatricolazione per le unità appartenenti alle categorie di progettazione B, C e D"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 336,
+    "categoria": "sicurezza",
+    "domanda": "Il certificato di sicurezza di un'unità da diporto:",
+    "risposte": [
+      "riporta il certificato di stazza per le imbarcazioni non omologate",
+      "è rinnovato con cadenza annuale",
+      "è rinnovato in occasione delle visite periodiche"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 337,
+    "categoria": "sicurezza",
+    "domanda": "Un'unità da diporto munita di marcatura CE classe B effettua la prescritta visita periodica dopo:",
+    "risposte": [
+      "10 anni dalla data di immatricolazione; le successive ogni 5 anni",
+      "8 anni dalla data di immatricolazione; le successive ogni 5 anni",
+      "10 anni dalla data di costruzione; le successive ogni 8 anni"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 338,
+    "categoria": "sicurezza",
+    "domanda": "In quale documento viene annotato l'esito della visita eseguita dall'Organismo Tecnico notificato o autorizzato?",
+    "risposte": [
+      "certificato di sicurezza",
+      "licenza di navigazione",
+      "manuale del proprietario"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 339,
+    "categoria": "sicurezza",
+    "domanda": "Quale affermazione è vera tra le alternative di risposta sotto riportate?",
+    "risposte": [
+      "la patente nautica è sempre obbligatoria",
+      "il certificato di sicurezza è soggetto a scadenza",
+      "la licenza di navigazione è soggetta a scadenza"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 341,
+    "categoria": "sicurezza",
+    "domanda": "In caso di falla, quale operazione è la più corretta tra quelle riportate:",
+    "risposte": [
+      "imbarcare acqua per compensare la pressione",
+      "tamponare la falla dall'esterno in modo che la pressione dell'acqua non faccia spostare il 'tappo' di fortuna",
+      "sbandare l'unità sul lato della falla"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 342,
+    "categoria": "sicurezza",
+    "domanda": "Quando può verificarsi l'incaglio volontario?",
+    "risposte": [
+      "quando si arrestano gli apparati di radio comunicazione",
+      "quando si decide volontariamente di disattivare gli apparati di radio navigazione",
+      "quando si conduce volontariamente l'unità navale ad incagliarsi per scongiurare un potenziale naufragio derivante da una falla, un incendio o una collisione"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 343,
+    "categoria": "sicurezza",
+    "domanda": "Quali fattori devono essere tenuti in debita considerazione per procedere alle operazioni di disincaglio?",
+    "risposte": [
+      "tipo e rilievo dei fondali, entità dell'avaria subita, manovra più idonea da porre in essere in relazione alle caratteristiche dell'unità e del luogo",
+      "altezza del bordo libero",
+      "tipo di timone di cui dispone l'unità navale"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 345,
+    "categoria": "sicurezza",
+    "domanda": "Avuto riguardo alla falla, quale tra queste affermazioni è corretta?",
+    "risposte": [
+      "se si verifica una falla nella parte prodiera è opportuno arrestare il moto dell'unità navale per evitare che l'avanzamento della stessa possa incrementare l'afflusso d'acqua nel suo interno",
+      "se si verifica una falla a prua è opportuno aumentare la velocità dell'unità navale per diminuire il flusso dell'acqua che tende ad allagare i compartimenti prodieri",
+      "se si verifica una falla a prua è opportuno spostare i pesi longitudinalmente verso proravia"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 346,
+    "categoria": "sicurezza",
+    "domanda": "Quale tra queste procedure può essere effettuata nel caso in cui un'unità abbia subito una falla di lieve entità?",
+    "risposte": [
+      "azionare la pompa di alimentazione",
+      "azionare la pompa di sentina",
+      "azionare la pompa di iniezione"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 347,
+    "categoria": "sicurezza",
+    "domanda": "Quale tra queste affermazioni è corretta?",
+    "risposte": [
+      "a seguito della presenza di una falla può aumentare la rigidità dello scafo dovuta all'effetto osmotico",
+      "la falla può compromettere la galleggiabilità dell'unità navale in quanto si verifica una riduzione della riserva di spinta dell'unità stessa",
+      "a seguito della presenza di una falla può aumentare la rigidità del fasciame dovuta all'effetto capillare"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 348,
+    "categoria": "sicurezza",
+    "domanda": "Quale soluzione può essere adottata al fine di disincagliare un'unità navale?",
+    "risposte": [
+      "attendere il sopraggiungere dell'alta marea",
+      "mettere in folle il motore",
+      "imbarcare pesi lungo la verticale del punto d'incaglio"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 349,
+    "categoria": "sicurezza",
+    "domanda": "Quale accorgimento può essere adottato al fine di ostruire al meglio una falla di notevoli dimensioni?",
+    "risposte": [
+      "travasare carburante nella zona ubicata a proravia della linea trasversale dell'unità navale",
+      "tamponare la via d'acqua servendosi di materiali ingombranti quali, tele cerate, materassi ecc.",
+      "limitare l'ingresso d'acqua dalla falla sbandando l'unità navale sul medesimo lato a quello dove si è verificata la stessa"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 350,
+    "categoria": "sicurezza",
+    "domanda": "Quale tra le seguenti manovre può essere la più efficace per limitare i danni allorquando due unità sono in procinto di collidere?",
+    "risposte": [
+      "appennellare l'ancora e filare a mare l'ancora galleggiante",
+      "azionare preventivamente tutti gli apparati di radiocomunicazione",
+      "fermare il motore ed eventualmente ingranare la marcia indietro accostando contemporaneamente, per attenuare l'impatto"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 351,
+    "categoria": "sicurezza",
+    "domanda": "Si sviluppa un incendio a bordo e siamo in vicinanza di un porto: è giusto accelerare per raggiungere al più presto il porto?",
+    "risposte": [
+      "no",
+      "sì, se il porto è attrezzato per l'estinzione di incendi a bordo di unità",
+      "sì, sempre"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 352,
+    "categoria": "sicurezza",
+    "domanda": "In caso di incendio nel vano motore, è necessario:",
+    "risposte": [
+      "per prima cosa tentare di chiudere la valvola del carburante",
+      "aerare il più possibile il vano motore per spegnere le fiamme",
+      "per prima cosa porre l'imbarcazione con le fiamme sopravento"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 353,
+    "categoria": "sicurezza",
+    "domanda": "In caso di incendio in coperta, è essenziale:",
+    "risposte": [
+      "porre l'imbarcazione con le fiamme sottovento",
+      "spegnere il motore",
+      "scollegare le batterie"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 354,
+    "categoria": "sicurezza",
+    "domanda": "In caso d'incendio con fiamma alta, dove dirigiamo il getto dell'estintore?",
+    "risposte": [
+      "sopra le fiamme in modo tale da allontanare anche il fumo",
+      "al centro della fiamma",
+      "alla base della fiamma"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 355,
+    "categoria": "sicurezza",
+    "domanda": "In caso di grave incendio a bordo:",
+    "risposte": [
+      "bisogna porre subito l'imbarcazione con le fiamme sopravento",
+      "appronto le procedure per l'abbandono nave",
+      "bisogna spegnere immediatamente le strumentazioni di bordo"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 356,
+    "categoria": "sicurezza",
+    "domanda": "Un quadro elettrico di bordo ha preso fuoco; estinguo l'incendio:",
+    "risposte": [
+      "utilizzando acqua di mare",
+      "utilizzando un estintore a polvere",
+      "utilizzando un estintore a schiuma"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 357,
+    "categoria": "sicurezza",
+    "domanda": "Il comandante a bordo, in caso di incendio, che ordine primario deve dare?",
+    "risposte": [
+      "gettate subito acqua sul fuoco",
+      "indossare i giubbetti di salvataggio e allontanarsi dall'incendio",
+      "abbandonare l'unità"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 358,
+    "categoria": "sicurezza",
+    "domanda": "C'è un incendio al vano poppiero motore, conduco l'unità in modo da:",
+    "risposte": [
+      "mettere la prora sottovento",
+      "mettere l'incendio sottovento",
+      "mettere l'incendio sopravento"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 359,
+    "categoria": "sicurezza",
+    "domanda": "In caso di incendio, mentre si manovra in porto, il primo intervento più opportuno è quello di:",
+    "risposte": [
+      "spegnere il motore e richiedere soccorso emettendo 5 o più suoni brevi",
+      "tentare di allontanare l'unità dal porto operando per lo spegnimento",
+      "dirigersi rapidamente verso l'ormeggio più vicino per ricevere dai servizi portuali l'aiuto allo spegnimento"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 360,
+    "categoria": "sicurezza",
+    "domanda": "A quale funzione assolve la ventilazione forzata a bordo delle unità navali da diporto dotate di motore a benzina?",
+    "risposte": [
+      "assicurare, prima dell'avvio del motore, il completo ricambio dell'aria",
+      "sovralimentare l'impianto di alimentazione del carburante",
+      "mantenere costante la temperatura della testata dell'apparato motore"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 361,
+    "categoria": "sicurezza",
+    "domanda": "Come si estingue un incendio derivante da combustione di sostanze comuni (legno, tessuti e carta)?",
+    "risposte": [
+      "con ossigeno ad alta pressione",
+      "mediante azione di raffreddamento ottenuta attraverso getti d'acqua",
+      "attraverso l'intensa aspirazione di vapori"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 362,
+    "categoria": "sicurezza",
+    "domanda": "Quale accorgimento è necessario adottare se l'incendio si sviluppa nella zona poppiera dell'unità navale?",
+    "risposte": [
+      "orientare la poppa al vento",
+      "prendere il mare al giardinetto",
+      "orientare la prua al vento"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 363,
+    "categoria": "sicurezza",
+    "domanda": "Come si estingue un incendio derivante da combustione di sostanze liquide?",
+    "risposte": [
+      "mediante l'azione di soffocamento generata da polvere chimica, schiuma, anidride carbonica (CO2) o altro gas inerte",
+      "mediante la ventilazione forzata del locale interessato, riducendo il numero di giri del motore, azionando il circuito di condizionamento",
+      "intercettando il pacco batterie e disattivando il gruppo generatore"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 364,
+    "categoria": "sicurezza",
+    "domanda": "Quali contromisure possono essere adottate in caso di incendio sviluppatosi nel locale apparato motore?",
+    "risposte": [
+      "chiudere immediatamente le vie d'aria e l'alimentazione del combustibile",
+      "azionare immediatamente le turbine di sovralimentazione per favorire l'estinzione dell'incendio",
+      "aprire tutti i boccaporti del locale motore per favorirne l'aerazione"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 365,
+    "categoria": "sicurezza",
+    "domanda": "Quale manovra può essere adottata in caso di incendio verificatosi nella zona prodiera di un'unità navale da diporto?",
+    "risposte": [
+      "porre la prora al vento e quindi la poppa sottovento",
+      "incrementare repentinamente la velocità dell'unità navale",
+      "porre la poppa al vento e quindi la prora sottovento"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 366,
+    "categoria": "sicurezza",
+    "domanda": "Il numero e il posizionamento degli estintori di una unità marcata CE:",
+    "risposte": [
+      "è fissato dal Codice della navigazione",
+      "è stabilito dalle ordinanze dell'Autorità marittima",
+      "è stabilito nel Manuale del proprietario"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 367,
+    "categoria": "sicurezza",
+    "domanda": "Per le imbarcazioni da diporto NON marcata CE (immesse sul mercato prima del 17 giugno 1998) il numero e il posizionamento degli estintori è stabilito dal Regolamento di attuazione al Codice della nautica secondo la potenza del motore?",
+    "risposte": [
+      "no, non è stabilito",
+      "si, e prevede un minimo di 1 estintore al posto di guida e 1 estintore in ciascuno degli altri locali",
+      "no, è stabilito dalle ordinanze dell'Autorità marittima, con il minimo di 1 estintore"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 368,
+    "categoria": "sicurezza",
+    "domanda": "Durante la manovra a motore di recupero di uomo a mare, come deve essere effettuato l'avvicinamento finale verso il naufrago?",
+    "risposte": [
+      "a velocità costante",
+      "rapidamente, riducendo la velocità con l'elica a marcia indietro quando giunti in prossimità del naufrago, possibilmente sgasando",
+      "con prudenza, dopo aver smaltito la velocità iniziale"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 369,
+    "categoria": "sicurezza",
+    "domanda": "Quali tra queste azioni è la più opportuna da compiere in caso di uomo in mare?",
+    "risposte": [
+      "arrestare immediatamente i motori dell'unità navale ingranando la marcia indietro",
+      "aumentare al massimo la velocità con il timone alla banda per compiere un'evoluzione di 360°",
+      "lanciare il salvagente anulare presente a bordo in direzione del naufrago"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 370,
+    "categoria": "sicurezza",
+    "domanda": "Un uomo cade in mare di prora lato dritto, da una imbarcazione che procede a motore, quale delle tre manovre in figura è corretta?",
+    "risposte": [
+      "la manovra in figura A",
+      "la manovra in figura B",
+      "la manovra in figura C"
+    ],
+    "risposta": 1,
+    "immagine": "/img/motore/img_370.jpg"
+  },
+  {
+    "id": 371,
+    "categoria": "sicurezza",
+    "domanda": "Al grido 'uomo in mare a ... (sinistra o a dritta)':",
+    "risposte": [
+      "si accosta rapidamente dallo stesso lato dell'uomo in mare",
+      "si accosta rapidamente dal lato opposto dell'uomo in mare",
+      "si accelera per recuperare rapidamente l'uomo a mare, accostando indifferentemente a dritta oppure a sinistra"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 372,
+    "categoria": "sicurezza",
+    "domanda": "Quale tra queste precauzioni è la più opportuna adottare in caso di uomo in mare?",
+    "risposte": [
+      "dare fondo all'ancora",
+      "mantenere un costante controllo visivo del naufrago",
+      "collocare tutti i parabordi lungo l'opera morta"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 373,
+    "categoria": "sicurezza",
+    "domanda": "Qual è il motivo per cui in caso di uomo a mare si accosta tempestivamente dallo stesso lato dal quale è caduto il naufrago?",
+    "risposte": [
+      "per allontanare subito le eliche dell'unità quanto più possibile dal naufrago",
+      "per orientare l'unità controvento",
+      "per offrire al naufrago il ridosso dagli agenti meteomarini"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 374,
+    "categoria": "sicurezza",
+    "domanda": "Qual è il motivo per cui è opportuno mantenere il controllo visivo del naufrago subito dopo la sua caduta in mare?",
+    "risposte": [
+      "confortare il naufrago rassicurandolo circa l'intendimento dell'unità navale di trarlo in salvo",
+      "per determinare la lunghezza di cima necessaria per lanciare il salvagente individuale",
+      "agevolare le operazioni di recupero del naufrago durante la manovra evolutiva effettuata dall'unità, scongiurando il rischio che lo stesso possa disperdersi"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 375,
+    "categoria": "sicurezza",
+    "domanda": "Quale tra queste azioni è la più opportuna intraprendere durante le fasi di recupero di un uomo caduto in mare da un'unità navale?",
+    "risposte": [
+      "dare fondo all'ancora per mantenere fissa la posizione dell'unità navale durante le operazioni di recupero",
+      "filare a mare l'ancora galleggiante in modo da mantenere la prua al vento durante le operazioni di recupero",
+      "lanciare in mare il salvagente anulare quanto più possibile nelle vicinanze del naufrago per agevolarne il recupero"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 376,
+    "categoria": "sicurezza",
+    "domanda": "Nel caso in cui un membro dell'equipaggio cada in mare dal lato dritto dell'unità:",
+    "risposte": [
+      "occorre accostare immediatamente a sinistra mantenendo un adeguato servizio di vedetta sul medesimo lato al fine di prevenire eventuali collisioni",
+      "si deve mettere immediatamente a folle il motore e successivamente ingranarlo a marcia indietro al fine di allontanarsi il meno possibile dal naufrago",
+      "occorre accostare immediatamente il timone a dritta mantenendo il costante controllo visivo del naufrago"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 377,
+    "categoria": "sicurezza",
+    "domanda": "In caso di sinistro e conseguente abbandono dell'unità il comandante:",
+    "risposte": [
+      "spegne il motore",
+      "fa indossare a ciascuna persona a bordo il giubbotto di salvataggio",
+      "prepara le bandiere di segnalamento"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 383,
+    "categoria": "sicurezza",
+    "domanda": "Cosa si intende per soccorso marittimo?",
+    "risposte": [
+      "le attività tese a prendere a rimorchio un'unità in avaria",
+      "tutte le attività finalizzate alla ricerca ed al salvataggio della vita umana in mare",
+      "l'evacuazione medica a bordo di un'unità"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 384,
+    "categoria": "sicurezza",
+    "domanda": "Qual è l'organismo nazionale che assicura il coordinamento generale dei servizi di soccorso marittimo?",
+    "risposte": [
+      "il Comando Generale del Corpo delle Capitanerie di Porto",
+      "il Dipartimento della Protezione Civile",
+      "la stazione radio costiera"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 387,
+    "categoria": "sicurezza",
+    "domanda": "In quali condizioni è obbligatorio per un comandante di un'unità da diporto prestare assistenza ad un'altra unità in pericolo?",
+    "risposte": [
+      "quando la distanza tra le due unità non è superiore alle 12 miglia nautiche e quando non sussiste il rischio per l'unità soccorritrice e delle persone ivi imbarcate",
+      "quando a bordo dell'unita in difficoltà vi sono persone in pericolo di vita e quando non sussiste il rischio per l'unità soccorritrice e delle persone ivi imbarcate",
+      "quando la distanza tra le due unità non è superiore alle 6 miglia nautiche e quando non sussiste il rischio per l'unità soccorritrice e delle persone ivi imbarcate"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 388,
+    "categoria": "sicurezza",
+    "domanda": "Ai sensi del Codice della Navigazione, quale tra queste affermazioni è la più corretta per quanto concerne 'l'abbandono nave'?",
+    "risposte": [
+      "il comandante dell'unità ordina 'l'abbandono' della stessa solo dopo aver accertato di persona che tutti i mezzi suggeriti dall'arte nautica non sono in grado di salvarla",
+      "il comandante dell'unità ordina 'l'abbandono' della stessa solo dopo aver verificato di persona che oltre alla presenza di infiltrazioni nello scafo si sia verificata la contemporanea avaria degli organi propulsivi",
+      "il comandante ordina 'l'abbandono' della stessa solo dopo aver verificato di persona il mancato funzionamento di tutti gli apparati di navigazione"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 389,
+    "categoria": "sicurezza",
+    "domanda": "In caso di urto tra due o più unità navali, i Comandanti delle stesse sono obbligati a fornire alle altre unità navali coinvolte le notizie per identificare la propria?",
+    "risposte": [
+      "no",
+      "si, nei limiti del possibile",
+      "solo previo accordo tra i Comandanti delle unità navali coinvolte"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 390,
+    "categoria": "sicurezza",
+    "domanda": "Quale accorgimento deve adottare il comandante dell'unità da diporto prima di ordinare l'abbandono della stessa?",
+    "risposte": [
+      "accertarsi che tutte le persone imbarcate indossino le cinture di salvataggio e che l'eventuale mezzo collettivo di salvataggio (zattera) sia equipaggiato con le previste dotazioni",
+      "accertarsi che i serbatoi di carburante siano stati svuotati",
+      "accertarsi che sia stata intercettata la linea di alimentazione elettrica"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 391,
+    "categoria": "sicurezza",
+    "domanda": "Quale effetto si genera in navigazione abbassando il piede (trim negativo), in un'unità spinta da un motore fuoribordo?",
+    "risposte": [
+      "l'inclinazione della prua verso il basso per attutire gli impatti sulle onde con il mare formato",
+      "si migliora il rendimento del circuito di raffreddamento",
+      "si riduce la possibilità che l'imbarcazione possa ingavonarsi"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 392,
+    "categoria": "sicurezza",
+    "domanda": "Quali possono essere i principali accorgimenti che un'unità navale da diporto dovrà adottare qualora interessata da un brusco peggioramento delle condizioni meteo-marine?",
+    "risposte": [
+      "trasferire quanto più possibile il peso a prua",
+      "chiudere immediatamente la presa a mare del raffreddamento motore ed intercettare la linea di alimentazione",
+      "rizzare (fissare) tutti gli oggetti di bordo, chiudere accuratamente oblò e osterigi, istruire le persone imbarcate in merito al corretto uso dei mezzi collettivi e individuali di salvataggio"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 393,
+    "categoria": "sicurezza",
+    "domanda": "Quale accorgimento sarà opportuno adottare in caso di tempesta proveniente dalla terra ferma?",
+    "risposte": [
+      "appennellare l'ancora",
+      "dirigersi in sicurezza verso la costa ove il moto ondoso è più attenuato",
+      "prendere il mare solo al giardinetto"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 395,
+    "categoria": "sicurezza",
+    "domanda": "Quale accorgimento potrà essere adottato nel caso in cui un'unità navale da diporto navighi con mare particolarmente grosso in poppa causando brusche variazioni del motore?",
+    "risposte": [
+      "controllare il livello di carburante nel serbatoio",
+      "aumentare la velocità",
+      "ridurre opportunamente la velocità"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 396,
+    "categoria": "sicurezza",
+    "domanda": "Navigando in presenza di nebbia fitta, quali fattori possono indicare la possibile vicinanza della costa?",
+    "risposte": [
+      "aumento della corrente di superficie e brusca riduzione della temperatura dell'acqua",
+      "mutamento del colore dell'acqua ed il fragore dei frangenti",
+      "forti escursioni di marea e repentino abbassamento della temperatura delle acque"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 398,
+    "categoria": "sicurezza",
+    "domanda": "Navigando a motore con mare molto mosso:",
+    "risposte": [
+      "di poppa, sfrutto la spinta delle onde per aumentare la velocità di fuga",
+      "faccio il possibile per non prendere le onde al traverso",
+      "di prora, cerco di tagliare le onde esattamente con la prua"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 399,
+    "categoria": "sicurezza",
+    "domanda": "Per attenuare l'impatto con l'onda formata:",
+    "risposte": [
+      "è necessario prendere l'onda al traverso",
+      "è necessario tagliare la cresta esattamente con la prua perpendicolare all'onda",
+      "è opportuno puntare leggermente verso la cresta, per poi allontanarsene quando la barca scende nel cavo dell'onda"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 400,
+    "categoria": "sicurezza",
+    "domanda": "In navigazione con onda di poppa:",
+    "risposte": [
+      "si tiene il trim positivo (elica più sollevata) per alzare la prua e limitare i colpi sull'onda",
+      "si tiene il trim neutro, per non alterare l'assetto della barca",
+      "si tiene il trim negativo (elica più immersa) per alzare la prua e limitare i colpi sull'onda"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 401,
+    "categoria": "sicurezza",
+    "domanda": "In merito alla regolazione dei flaps, con moto ondoso contrario è opportuno:",
+    "risposte": [
+      "tenerli più o meno abbassati, secondo la tipologia di scafo, per contrastare la tendenza della carena ad alzare la prua a causa della massa d'acqua che scorre sotto la stessa",
+      "tenerli più o meno alzati, secondo la tipologia di scafo, per aiutare ad alzare la prua e favorire il passaggio sull'onda",
+      "disattivarli, poiché si tratta di dispositivi da usare solo con mare piatto"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 402,
+    "categoria": "sicurezza",
+    "domanda": "In merito alla regolazione dei flaps, con mare formato di poppa, è opportuno:",
+    "risposte": [
+      "disattivarli, poiché si tratta di dispositivi da usare solo con mare piatto",
+      "tenere i flaps abbassati, per consentire alla prua di alzarsi sull'onda",
+      "tenere i flaps alzati, per schiacciare la poppa verso il basso, per contrastare l'onda che tende a sollevare la poppa e a far immergere la prua"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 403,
+    "categoria": "sicurezza",
+    "domanda": "Normalmente, quando l'indicatore del flap è sullo zero, ciò significa:",
+    "risposte": [
+      "che in quel momento il flap è 'neutro', ovvero orizzontale, quando invece vengono segnalati dei numeri negativi ciò significa che i flaps sono inclinati verso il basso",
+      "che è regolato per alzare la prua sull'acqua",
+      "che è regolato per abbassare la prua sull'acqua"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 404,
+    "categoria": "sicurezza",
+    "domanda": "In merito alla regolazione dei flaps, è possibile affermare:",
+    "risposte": [
+      "che possono essere regolati solo in maniera identica",
+      "che generalmente possono essere regolati in maniera indipendente, così da poter variare non solo la regolazione della prua, ma anche l'equilibrio trasversale",
+      "che se regolati in maniera indipendente possono compromettere l'equilibrio dell'unità"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 405,
+    "categoria": "sicurezza",
+    "domanda": "Alzando il flap sinistro o abbassando il flap destro, si ottiene:",
+    "risposte": [
+      "di inclinare lo scafo verso il lato dritto",
+      "di inclinare lo scafo il lato sinistro",
+      "di abbassare la prua"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 406,
+    "categoria": "sicurezza",
+    "domanda": "Lo 'stacco di sicurezza' è:",
+    "risposte": [
+      "l'interruttore collegato tramite un cordino a spirale rosso (o con un dispositivo elettronico) a chi governa un fuoribordo, che spegne 'automaticamente' il motore",
+      "il 'cordone ombelicale' della cintura di sicurezza con cui ci si assicura allo scafo",
+      "la valvola di chiusura del carburante"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 407,
+    "categoria": "sicurezza",
+    "domanda": "Improvvisamente la visibilità diviene scarsa:",
+    "risposte": [
+      "si emette un segnale acustico prolungato ogni 2 minuti",
+      "si rallenta, si accendono i fanali e si emettono i segnali prescritti",
+      "ci si deve fermare"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 410,
+    "categoria": "sicurezza",
+    "domanda": "Cos'è la risacca?",
+    "risposte": [
+      "onde di riflusso",
+      "è condizione che nasce da mare e vento incrociati",
+      "è un vento locale di debole intensità"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 412,
+    "categoria": "sicurezza",
+    "domanda": "In caso di navigazione in solitario:",
+    "risposte": [
+      "avvisare il 1530",
+      "indossare la cintura di sicurezza e assicurarsi al ponte",
+      "accendere le luci di via anche di giorno"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 413,
+    "categoria": "sicurezza",
+    "domanda": "In caso di navigazione con cattivo tempo, qual è il provvedimento da adottare:",
+    "risposte": [
+      "si chiudono gli ombrinali",
+      "si chiudono oblò, boccaporti e prese a mare, lasciando aperta solo quelle del motore",
+      "si chiudono necessariamente le prese a mare del motore"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 414,
+    "categoria": "sicurezza",
+    "domanda": "Per attirare l'attenzione di un'altra unità in caso di pericolo:",
+    "risposte": [
+      "dopo l'installazione è necessaria un'ispezione dell'Autorità Marittima del luogo ove è stata eseguita l'installazione",
+      "si effettua un movimento lento e ripetuto di entrambe le braccia allargate, dall'alto in basso",
+      "è necessario il collaudo di un tecnico abilitato appartenente al Ministero dello Sviluppo Economico"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 415,
+    "categoria": "sicurezza",
+    "domanda": "Quale affermazione è corretta?",
+    "risposte": [
+      "per attirare l'attenzione di notte è possibile usare le boette fumogene",
+      "per effettuare una chiamata di soccorso con il VHF è necessario un abbonamento",
+      "il 1530 è il numero telefonico di emergenza della Guardia Costiera"
+    ],
+    "risposta": 2,
+    "immagine": null
+  }
+]

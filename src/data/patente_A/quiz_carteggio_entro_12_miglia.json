@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "progressivo": "4.1.1-1",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza alle ore 09:00 da Capo di S. Andrea (Nord Isola d'Elba) diretti a Capo d'Enfola con velocità 5.5 nodi, considerando che il consumo orario del motore è pari a 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 5.2, "max": 5.8 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "09:57", "max": "10:03" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 12.3, "max": 13.7 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°48'.2÷48'.8 N  long.010°08'.1÷08'.7 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°49'.4÷50'.0 N  long.010°15'.4÷16'.0 E" }
+    ]
+  },
+  {
+    "id": 2,
+    "progressivo": "4.1.1-2",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Capo di Poro (Sud Isola d'Elba) alle ore 11:00 diretti a Punta Morcone (Elba). La nostra velocità è di 5.7 nodi ed il consumo del motore è pari a 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 5.4, "max": 6.0 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "11:57", "max": "12:03" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 12.3, "max": 13.7 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.3÷43'.9 N  long.010°14'.0÷14'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.6÷44'.2 N  long.010°21'.7÷22'.3 E" }
+    ]
+  },
+  {
+    "id": 3,
+    "progressivo": "4.1.1-3",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Isola Corbelli (Sud Isola d'Elba) alle ore 16:00 con una rotta per Capo di Poro. La nostra velocità è pari a 5.5 nodi, il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 5.2, "max": 5.8 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "16:57", "max": "17:03" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 12.3, "max": 13.7 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°42'.5÷43'.1 N  long.010°21'.4÷22'.0 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.3÷43'.9 N  long.010°14'.0÷14'.6 E" }
+    ]
+  },
+  {
+    "id": 4,
+    "progressivo": "4.1.1-4",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Punta di Fetovaia (Isola d'Elba) alle ore 08:00 diretti a Isola Corbelli con velocità di 6 nodi, il consumo orario del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 8.7, "max": 9.3 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "09:27", "max": "09:33" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 18.85, "max": 20.15 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.2÷43'.8 N  long.010°09'.2÷09'.8 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°42'.5÷43'.1 N  long.010°21'.4÷22'.0 E" }
+    ]
+  },
+  {
+    "id": 5,
+    "progressivo": "4.1.1-5",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Marina di Campo (Sud Isola d'Elba) alle ore 08:00 con una rotta per Isola Corbelli dove bisogna arrivare alle ore 09:00. Il consumo orario del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 5.4, "max": 6.0 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 5.4, "max": 6.0 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 13, "max": 13 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°44'.2÷44'.8 N  long.010°14'.0÷14'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°42'.5÷43'.1 N  long.010°21'.4÷22'.0 E" }
+    ]
+  },
+  {
+    "id": 6,
+    "progressivo": "4.1.1-6",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza alle ore 10:00 da Marciana Marina (fanale) diretti a Capo d'Enfola dove si vuole arrivare alle ore 10:30. Il motore ha un consumo orario di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 2.9, "max": 3.5 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 5.8, "max": 7.0 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 6.5, "max": 6.5 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°48'.2÷48'.8 N  long.010°11'.5÷12'.1 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°49'.4÷50'.0 N  long.010°15'.4÷16'.0 E" }
+    ]
+  },
+  {
+    "id": 7,
+    "progressivo": "4.1.1-7",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Capo di Fonza (Sud Elba) alle ore 10:00 con una rotta per raggiungere Isola Corbelli alle ore 10:30. Il consumo orario del motore è di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 3.3, "max": 3.9 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 6.6, "max": 7.8 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 13, "max": 13 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.8÷44'.4 N  long.010°16'.9÷17'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°42'.5÷43'.1 N  long.010°21'.4÷22'.0 E" }
+    ]
+  },
+  {
+    "id": 8,
+    "progressivo": "4.1.1-8",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Marina di Campo (Sud Isola d'Elba) alle ore 08:00 con una rotta per Isola Corbelli. La nostra velocità è pari a 5.7 nodi, il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 5.4, "max": 6.0 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "08:57", "max": "09:03" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 12.3, "max": 13.7 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°44'.2÷44'.8 N  long.010°14'.0÷14'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°42'.5÷43'.1 N  long.010°21'.4÷22'.0 E" }
+    ]
+  },
+  {
+    "id": 9,
+    "progressivo": "4.1.1-9",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Capo di Poro (Sud Isola d'Elba) alle ore 11:00 con una rotta per raggiungere Punta di Fetovaia dopo 1 ora di navigazione. Il consumo orario del motore è di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 3.2, "max": 3.8 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 3.2, "max": 3.8 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 26, "max": 26 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.3÷43'.9 N  long.010°14'.0÷14'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.2÷43'.8 N  long.010°09'.2÷09'.8 E" }
+    ]
+  },
+  {
+    "id": 10,
+    "progressivo": "4.1.1-10",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Scoglietto (Nord Elba) alle ore 09:00 con una rotta per raggiungere Capo d'Enfola, dove dobbiamo arrivare alle ore 09:30. Il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 2.7, "max": 3.3 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 5.4, "max": 6.6 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 6.5, "max": 6.5 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°49'.4÷50'.0 N  long.010°19'.5÷20'.1 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°49'.4÷50'.0 N  long.010°15'.4÷16'.0 E" }
+    ]
+  },
+  {
+    "id": 11,
+    "progressivo": "4.1.1-11",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Isola Corbella (Sud Isola d'Elba) alle ore 10:00 diretti a Capo di Poro che si vuole raggiungere in mezz'ora. Il motore ha un consumo orario di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 3.3, "max": 3.9 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 6.6, "max": 7.8 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 13, "max": 13 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.7÷44'.3 N  long.010°18'.9÷19'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.3÷43'.9 N  long.010°14'.0÷14'.6 E" }
+    ]
+  },
+  {
+    "id": 12,
+    "progressivo": "4.1.1-12",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Punta Morcone (Sud Isola d'Elba) alle ore 10:00 diretti a Capo di Poro. La nostra velocità è pari a 11.4 nodi, il consumo medio del motore è di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 5.4, "max": 6.0 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "10:28", "max": "10:32" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 12.3, "max": 13.7 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.6÷44'.2 N  long.010°21'.7÷22'.3 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.3÷43'.9 N  long.010°14'.0÷14'.6 E" }
+    ]
+  },
+  {
+    "id": 13,
+    "progressivo": "4.1.1-13",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza alle ore 10:00 da Punta di Fetovaia (Sud Elba) con una rotta per Isola Corbelli. La nostra velocità è pari a 18 nodi, il consumo medio del motore è di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 8.7, "max": 9.3 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "10:29", "max": "10:31" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 12.6, "max": 13.4 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.2÷43'.8 N  long.010°09'.2÷09'.8 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°42'.5÷43'.1 N  long.010°21'.4÷22'.0 E" }
+    ]
+  },
+  {
+    "id": 14,
+    "progressivo": "4.1.1-14",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Capo di Fonza (Sud Elba) alle ore 10:00 con una rotta per Isola Corbelli. La nostra velocità è pari a 7 nodi, il consumo medio del motore è di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 3.2, "max": 3.8 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "10:27", "max": "10:33" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 11.9, "max": 14.1 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.8÷44'.4 N  long.010°16'.9÷17'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°42'.5÷43'.1 N  long.010°21'.4÷22'.0 E" }
+    ]
+  },
+  {
+    "id": 15,
+    "progressivo": "4.1.1-15",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza da Capo di Poro (Sud Elba) alle ore 11:00 con una rotta per raggiungere Punta di Fetovaia dopo 1 ora di navigazione. Il consumo orario del motore è di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 3.2, "max": 3.8 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 3.2, "max": 3.8 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 26, "max": 26 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.3÷43'.9 N  long.010°14'.0÷14'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.2÷43'.8 N  long.010°09'.2÷09'.8 E" }
+    ]
+  },
+  {
+    "id": 16,
+    "progressivo": "4.1.1-16",
+    "settore": "Nord Ovest Orizzontale",
+    "domanda": "Partenza alle ore 10:00 da Punta di Fetovaia (Sud Elba) con una rotta per Isola Corbelli da raggiungere in mezz'ora di navigazione. Il consumo orario del motore è di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 8.7, "max": 9.3 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 17.4, "max": 18.6 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 13, "max": 13 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.2÷43'.8 N  long.010°09'.2÷09'.8 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°42'.5÷43'.1 N  long.010°21'.4÷22'.0 E" }
+    ]
+  },
+  {
+    "id": 17,
+    "progressivo": "4.1.1-17",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza alle ore 10:00 da Punta del Marchese (Isola Pianosa) diretti a Punta le Tombe (Isola d'Elba). La nostra velocità è di 7.2 nodi, il consumo orario del motore è pari a 15 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.9, "max": 7.5 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "10:57", "max": "11:03" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 18.7, "max": 20.3 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°36'.8÷37'.4 N  long.010°04'.5÷05'.1 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.6÷44'.2 N  long.010°07'.9÷08'.5 E" }
+    ]
+  },
+  {
+    "id": 18,
+    "progressivo": "4.1.1-18",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Punta Nera (Isola d'Elba) alle ore 09:00 diretti a Punta del Marchese (Isola Pianosa) da raggiungere alle ore 10:00. Il consumo orario del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 8.5, "max": 9.1 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 8.5, "max": 9.1 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 13, "max": 13 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°45'.6÷46'.2 N  long.010°05'.9÷06'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°36'.8÷37'.4 N  long.010°04'.5÷05'.1 E" }
+    ]
+  },
+  {
+    "id": 19,
+    "progressivo": "4.1.1-19",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Punta del Marchese (Isola Pianosa) alle ore 10:00 diretti a Punta della Testa (Isola d'Elba) con velocità 8.1 nodi. Il consumo orario del motore è di 15 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 7.8, "max": 8.4 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "10:58", "max": "11:02" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 18.7, "max": 20.2 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°36'.8÷37'.4 N  long.010°04'.5÷05'.1 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°44'.8÷45'.4 N  long.010°06'.6÷07'.2 E" }
+    ]
+  },
+  {
+    "id": 20,
+    "progressivo": "4.1.1-20",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Punta di Fetovaia (Isola d'Elba) alle ore 08:00 con una rotta per Punta del Grottone (Isola Pianosa) navigando con una velocità pari a 4.8 nodi. Il motore ha un consumo orario di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.9, "max": 7.5 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "09:26", "max": "09:34" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 37.4, "max": 40.6 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.2÷43'.8 N  long.010°09'.2÷09'.8 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°36'.5÷37'.1 N  long.010°05'.1÷05'.7 E" }
+    ]
+  },
+  {
+    "id": 21,
+    "progressivo": "4.1.1-21",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Si parte alle ore 10:00 da Punta del Grottone (Isola di Pianosa) diretti a Punta di Fetovaia con velocità 14.4 nodi. Il consumo medio del motore è pari a 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.9, "max": 7.5 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "10:29", "max": "10:31" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 6.2, "max": 6.8 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°36'.5÷37'.1 N  long.010°05'.1÷05'.7 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.2÷43'.8 N  long.010°09'.2÷09'.8 E" }
+    ]
+  },
+  {
+    "id": 22,
+    "progressivo": "4.1.1-22",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Capo S. Andrea (Nord Isola d'Elba) alle ore 12:00 con una rotta per raggiungere Punta del Nasuto alle ore 12:30. Il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 1.7, "max": 2.3 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 3.4, "max": 4.6 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 6.5, "max": 6.5 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°48'.2÷48'.8 N  long.010°08'.1÷08'.7 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°48'.4÷49'.0 N  long.010°10'.9÷11'.5 E" }
+    ]
+  },
+  {
+    "id": 23,
+    "progressivo": "4.1.1-23",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Punta Nera (Ovest Elba) alle ore 08:00 con una rotta per raggiungere Punta del Marchese (Isola Pianosa). La nostra velocità è di 8.8 nodi, il consumo medio del motore è di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 8.5, "max": 9.1 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "08:58", "max": "09:02" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 25.1, "max": 26.9 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°45'.6÷46'.2 N  long.010°05'.9÷06'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°36'.8÷37'.4 N  long.010°04'.5÷05'.1 E" }
+    ]
+  },
+  {
+    "id": 24,
+    "progressivo": "4.1.1-24",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Scoglio Forano (Isola Pianosa) alle ore 07:00 diretti a Punta di Fetovaia (Isola d'Elba), dove si deve arrivare alle ore 08:00. Il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.9, "max": 7.5 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 6.9, "max": 7.5 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 13, "max": 13 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°36'.7÷37'.3 N  long.010°04'.9÷05'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.2÷43'.8 N  long.010°09'.2÷09'.8 E" }
+    ]
+  },
+  {
+    "id": 25,
+    "progressivo": "4.1.1-25",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Punta della Testa (Ovest Elba) alle ore 10:00 diretti a Punta del Grottone (Isola Pianosa). La nostra velocità è di 8.3 nodi, il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 8.0, "max": 8.6 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "10:58", "max": "11:02" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 12.5, "max": 13.5 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°44'.8÷45'.4 N  long.010°06'.6÷07'.2 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°36'.5÷37'.1 N  long.010°05'.1÷05'.7 E" }
+    ]
+  },
+  {
+    "id": 26,
+    "progressivo": "4.1.1-26",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Punta del Marchese (Isola Pianosa) alle ore 10:00 con una rotta per Punta le Tombe (Isola d'Elba) che si vuole raggiungere dopo 2 ore di navigazione. Il consumo medio del motore è di 15 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.9, "max": 7.5 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 3.4, "max": 3.7 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 39, "max": 39 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°36'.8÷37'.4 N  long.010°04'.5÷05'.1 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.6÷44'.2 N  long.010°07'.9÷08'.5 E" }
+    ]
+  },
+  {
+    "id": 27,
+    "progressivo": "4.1.1-27",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Punta le Tombe (Isola d'Elba) alle ore 08:00 con una rotta per Scoglio Forano (Isola Pianosa) che si vuole raggiungere alle ore 09:30. Il motore ha un consumo orario di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.9, "max": 7.5 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 4.6, "max": 5.0 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 39, "max": 39 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.6÷44'.2 N  long.010°07'.9÷08'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°36'.7÷37'.3 N  long.010°04'.9÷05'.5 E" }
+    ]
+  },
+  {
+    "id": 28,
+    "progressivo": "4.1.1-28",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Punta del Nasuto (Nord Isola d'Elba) alle ore 09:00 diretti a Capo S. Andrea che si vuole raggiungere alle ore 09:30. Il motore ha un consumo orario di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 1.7, "max": 2.3 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 3.4, "max": 4.6 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 6.5, "max": 6.5 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°48'.4÷49'.0 N  long.010°10'.9÷11'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°48'.2÷48'.8 N  long.010°08'.1÷08'.7 E" }
+    ]
+  },
+  {
+    "id": 29,
+    "progressivo": "4.1.1-29",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza alle ore 10:00 da Punta del Marchese (Isola Pianosa) con una rotta per raggiungere Punta Nera (Isola d'Elba). La nostra velocità è pari a 4.4 nodi, il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 8.5, "max": 9.1 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "11:56", "max": "12:04" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 25.1, "max": 26.9 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°36'.8÷37'.4 N  long.010°04'.5÷05'.1 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°45'.6÷46'.2 N  long.010°05'.9÷06'.5 E" }
+    ]
+  },
+  {
+    "id": 30,
+    "progressivo": "4.1.1-30",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza alle ore 10:00 da Punta del Grottone (Isola Pianosa) con una rotta per Punta di Fetovaia (Elba) da raggiungere alle ore 12:00. Il consumo medio del motore è di 15 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.9, "max": 7.5 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 3.4, "max": 3.7 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 39, "max": 39 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°36'.5÷37'.1 N  long.010°05'.1÷05'.7 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.2÷43'.8 N  long.010°09'.2÷09'.8 E" }
+    ]
+  },
+  {
+    "id": 31,
+    "progressivo": "4.1.1-31",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza, alle ore 10:00 da Scoglio Forano (Isola Pianosa) con una rotta per Punta di Fetovaia da raggiungere alle ore 10:30. Il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.9, "max": 7.5 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 13.8, "max": 15.0 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 6.5, "max": 6.5 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°36'.7÷37'.3 N  long.010°04'.9÷05'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°43'.2÷43'.8 N  long.010°09'.2÷09'.8 E" }
+    ]
+  },
+  {
+    "id": 32,
+    "progressivo": "4.1.1-32",
+    "settore": "Nord Ovest Verticale",
+    "domanda": "Partenza da Punta le Tombe (Isola d'Elba) alle ore 09:00 diretti a Punta del Marchese (Isola Pianosa). La nostra velocità è pari a 3.6 nodi, il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.9, "max": 7.5 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "10:55", "max": "11:05" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 24.9, "max": 27.1 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°43'.6÷44'.2 N  long.010°07'.9÷08'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°36'.8÷37'.4 N  long.010°04'.5÷05'.1 E" }
+    ]
+  },
+  {
+    "id": 33,
+    "progressivo": "4.1.1-33",
+    "settore": "Sud Est",
+    "domanda": "Partenza alle ore 10:00 da Giglio Porto diretti a Punta Lividonia dove dobbiamo arrivare alle ore 12:00. Il consumo orario del motore è pari a 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 9.4, "max": 10.0 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 4.7, "max": 5.0 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 26, "max": 26 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°21'.3÷21'.9 N  long.010°55'.0÷55'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°26'.5÷27'.1 N  long.011°06'.0÷06'.6 E" }
+    ]
+  },
+  {
+    "id": 34,
+    "progressivo": "4.1.1-34",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Punta Lividonia (Promontorio dell'Argentario) alle ore 10:30 diretti a Talamone (Faro). La nostra velocità è di 6.4 nodi ed il consumo del motore pari a 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.1, "max": 6.7 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "11:27", "max": "11:33" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 12.4, "max": 13.6 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°26'.5÷27'.1 N  long.011°06'.0÷06'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°32'.8÷33'.4 N  long.011°07'.7÷08'.3 E" }
+    ]
+  },
+  {
+    "id": 35,
+    "progressivo": "4.1.1-35",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Talamone (faro) alle ore 08:00 diretti a Formica Piccola (Formiche di Grosseto) dove si deve arrivare alle ore 09:00. Il consumo orario del motore è pari a 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 10.4, "max": 11.0 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 10.4, "max": 11.0 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 13, "max": 13 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°32'.8÷33'.4 N  long.011°07'.7÷08'.3 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°33'.4÷34'.0 N  long.010°53'.4÷54'.0 E" }
+    ]
+  },
+  {
+    "id": 36,
+    "progressivo": "4.1.1-36",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Giglio Porto alle ore 08:00 diretti a Capo d'Uomo (Argentario) con una velocità di 4 nodi. Il motore ha un consumo orario di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 7.7, "max": 8.3 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "09:55", "max": "10:05" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 25.0, "max": 27.0 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°21'.3÷21'.9 N  long.010°55'.0÷55'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°23'.2÷23'.8 N  long.011°05'.5÷06'.1 E" }
+    ]
+  },
+  {
+    "id": 37,
+    "progressivo": "4.1.1-37",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Talamone (faro) alle ore 09:00 diretti a Punta Nera (Nord promontorio Argentario) che si vuole raggiungere alle ore 10:30. Il consumo orario del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.5, "max": 7.1 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 4.3, "max": 4.7 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 19.5, "max": 19.5 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°32'.8÷33'.4 N  long.011°07'.7÷08'.3 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°26'.0÷26'.6 N  long.011°07'.7÷08'.3 E" }
+    ]
+  },
+  {
+    "id": 38,
+    "progressivo": "4.1.1-38",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Punta di Torre Ciana (Argentario) alle ore 10:00 diretti a Punta Torricella (Isola del Giglio), con velocità di 4 nodi. Il consumo del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 9.7, "max": 10.3 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "12:25", "max": "12:35" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 31.5, "max": 33.5 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°21'.3÷21'.9 N  long.011°08'.9÷09'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°20'.0÷20'.6 N  long.010°55'.6÷56'.2 E" }
+    ]
+  },
+  {
+    "id": 39,
+    "progressivo": "4.1.1-39",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Talamone (faro) alle ore 09:00 con una rotta per Punta Nera (Nord Argentario). La nostra velocità è pari a 3.4 nodi, il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.5, "max": 7.1 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "10:55", "max": "11:05" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 24.8, "max": 27.1 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°32'.8÷33'.4 N  long.011°07'.7÷08'.3 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°26'.0÷26'.6 N  long.011°07'.7÷08'.3 E" }
+    ]
+  },
+  {
+    "id": 40,
+    "progressivo": "4.1.1-40",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Giglio Porto alle ore 10:00 diretti a Punta Lividonia con velocità 4.8 nodi. Il consumo orario del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 9.3, "max": 9.9 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "11:56", "max": "12:04" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 25.2, "max": 26.8 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°21'.3÷21'.9 N  long.010°55'.0÷55'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°26'.5÷27'.1 N  long.011°06'.0÷06'.6 E" }
+    ]
+  },
+  {
+    "id": 41,
+    "progressivo": "4.1.1-41",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Talamone (faro) alle ore 09:00 diretti a Punta Nera (Nord Argentario) che si vuole raggiungere alle ore 11:00. Il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.5, "max": 7.1 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 3.1, "max": 3.7 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 26, "max": 26 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°32'.8÷33'.4 N  long.011°07'.7÷08'.3 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°26'.0÷26'.6 N  long.011°07'.7÷08'.3 E" }
+    ]
+  },
+  {
+    "id": 42,
+    "progressivo": "4.1.1-42",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Punta di Torre Ciana (Argentario) alle ore 10:00 con una rotta per Punta Torricella (Isola del Giglio). La velocità è di 4 nodi, il consumo del motore è di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 9.7, "max": 10.3 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "12:25", "max": "12:35" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 63.0, "max": 67.0 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°21'.3÷21'.9 N  long.011°08'.9÷09'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°20'.0÷20'.6 N  long.010°55'.6÷56'.2 E" }
+    ]
+  },
+  {
+    "id": 43,
+    "progressivo": "4.1.1-43",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Giglio Porto alle ore 14:00 diretti a Punta Cala Grande, dove bisogna arrivare alle ore 16:00. Il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 8.2, "max": 8.8 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 4.1, "max": 4.4 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 26, "max": 26 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°21'.3÷21'.9 N  long.010°55'.0÷55'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°25'.5÷26'.1 N  long.011°04'.9÷05'.5 E" }
+    ]
+  },
+  {
+    "id": 44,
+    "progressivo": "4.1.1-44",
+    "settore": "Sud Est",
+    "domanda": "Partenza alle ore 09:00 da Punta Lividonia (Nord Argentario) diretti a Talamone (faro). La nostra velocità è di 6.5 nodi, il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 6.2, "max": 6.8 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "09:57", "max": "10:03" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 12.4, "max": 13.6 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°26'.5÷27'.1 N  long.011°06'.0÷06'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°32'.8÷33'.4 N  long.011°07'.7÷08'.3 E" }
+    ]
+  },
+  {
+    "id": 45,
+    "progressivo": "4.1.1-45",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Punta del Fenaio (Nord Isola del Giglio) alle ore 18:00 diretti verso l'Isola di Formica Piccola, che bisogna raggiungere alle ore 19:00. Il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 10.2, "max": 10.8 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 10.2, "max": 10.8 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 13, "max": 13 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°23'.0÷23'.6 N  long.010°52'.5÷53'.1 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°33'.4÷34'.0 N  long.010°53'.4÷54'.0 E" }
+    ]
+  },
+  {
+    "id": 46,
+    "progressivo": "4.1.1-46",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Talamone (faro) alle ore 08:00 con una rotta per raggiungere Formica Piccola. La nostra velocità è pari a 10.7 nodi, il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 10.4, "max": 11.0 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "08:58", "max": "09:02" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 12.6, "max": 13.4 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°32'.8÷33'.4 N  long.011°07'.7÷08'.3 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°33'.4÷34'.0 N  long.010°53'.4÷54'.0 E" }
+    ]
+  },
+  {
+    "id": 47,
+    "progressivo": "4.1.1-47",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Giglio Porto alle ore 08:00 con una rotta per raggiungere Capo d'Uomo (Argentario) da raggiungere alle ore 10:00. Il consumo medio del motore è di 10 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 7.7, "max": 8.3 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 3.8, "max": 4.2 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 26, "max": 26 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°21'.3÷21'.9 N  long.010°55'.0÷55'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°23'.2÷23'.8 N  long.011°05'.5÷06'.1 E" }
+    ]
+  },
+  {
+    "id": 48,
+    "progressivo": "4.1.1-48",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Punta di Torre Ciana (Argentario) alle ore 10:00 con una rotta per Punta Torricella (Isola del Giglio) che si vuole raggiungere alle ore 12:30. Il consumo medio del motore è di 20 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 9.7, "max": 10.3 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 3.8, "max": 4.2 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 65, "max": 65 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°21'.3÷21'.9 N  long.011°08'.9÷09'.5 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°20'.0÷20'.6 N  long.010°55'.6÷56'.2 E" }
+    ]
+  },
+  {
+    "id": 49,
+    "progressivo": "4.1.1-49",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Punta Lividonia (Promontorio Argentario) alle ore 10:00 diretti a Punta del Morto (Isola del Giglio) che si vuole raggiungere dopo 2 ore di navigazione. Il consumo orario del motore è di 15 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 9.9, "max": 10.5 },
+      { "n": 2, "tipo": "velocita", "label": "Velocità (n)", "min": 4.9, "max": 5.2 },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 39, "max": 39 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°26'.5÷27'.1 N  long.011°06'.0÷06'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°23'.0÷23'.6 N  long.010°53'.0÷53'.6 E" }
+    ]
+  },
+  {
+    "id": 50,
+    "progressivo": "4.1.1-50",
+    "settore": "Sud Est",
+    "domanda": "Partenza da Punta Lividonia (Promontorio Argentario) alle ore 10:00 diretti a Punta del Morto (Isola del Giglio) con velocità 5.1 nodi. Il consumo orario del motore è di 15 l/h.",
+    "quesiti": [
+      { "n": 1, "tipo": "distanza", "label": "Distanza (M)", "min": 9.9, "max": 10.5 },
+      { "n": 2, "tipo": "ora_arrivo", "label": "Ora di arrivo", "min": "11:56", "max": "12:03" },
+      { "n": 3, "tipo": "carburante", "label": "Carburante da imbarcare (lt)", "min": 37.8, "max": 40.1 },
+      { "n": 4, "tipo": "coord_partenza", "label": "Coordinate punto di partenza", "valore": "lat.42°26'.5÷27'.1 N  long.011°06'.0÷06'.6 E" },
+      { "n": 5, "tipo": "coord_arrivo", "label": "Coordinate punto di arrivo", "valore": "lat.42°23'.0÷23'.6 N  long.010°53'.0÷53'.6 E" }
+    ]
+  }
+]

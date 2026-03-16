@@ -1,0 +1,398 @@
+[
+  {
+    "id": 847,
+    "categoria": "meteorologia",
+    "domanda": "Attraverso quale scala viene misurata la forza del vento?",
+    "risposte": [
+      "la scala Douglas",
+      "la scala Beaufort",
+      "la scala di Coriolis"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 848,
+    "categoria": "meteorologia",
+    "domanda": "Quale tra queste affermazioni è corretta?",
+    "risposte": [
+      "la brezza diurna e quella notturna hanno la medesima intensità",
+      "la brezza di notte è più intensa di quella diurna",
+      "la brezza che spira durante le ore diurne è più intensa rispetto a quella notturna"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 849,
+    "categoria": "meteorologia",
+    "domanda": "Cosa si intende per escursione diurna di temperatura?",
+    "risposte": [
+      "la differenza che intercorre tra il valore di temperatura misurato alle ore 00:00 locali e quello misurato alle ore 12:00 locali",
+      "la differenza che intercorre tra il valore massimo di temperatura e quello minimo nel corso della giornata",
+      "la differenza che intercorre tra il valore di temperatura rilevato all'alba e quello rilevato al tramonto"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 850,
+    "categoria": "meteorologia",
+    "domanda": "Quali fenomeni sono generati dal vapore acqueo?",
+    "risposte": [
+      "genera neve e grandine",
+      "genera l'effetto serra, mentre sulla superficie terrestre si forma l'effetto albedo",
+      "a seguito della sua condensazione, nell'aria si generano nubi e nebbie mentre sulla superficie terrestre si formano rugiada e brina"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 851,
+    "categoria": "meteorologia",
+    "domanda": "Qual è l'unità di misura internazionale per indicare il valore della pressione atmosferica?",
+    "risposte": [
+      "Hectopascal (hPa)",
+      "Newton (N)",
+      "Millimetri Torricelli (mmT)"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 852,
+    "categoria": "meteorologia",
+    "domanda": "Cosa si intende per isobare?",
+    "risposte": [
+      "Linee di uguale pressione",
+      "Linee di uguale temperatura",
+      "linee di uguale differenza di pressione"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 853,
+    "categoria": "meteorologia",
+    "domanda": "Cosa si intende per nebbia?",
+    "risposte": [
+      "qualsiasi forma di condensazione del vapore acqueo negli strati atmosferici a immediato contatto con il suolo o gli specchi acquei",
+      "qualsiasi forma di condensazione del vapore acqueo negli strati atmosferici superiori",
+      "è un sinonimo di foschia"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 854,
+    "categoria": "meteorologia",
+    "domanda": "Come si definisce il vento?",
+    "risposte": [
+      "il movimento obliquo dell'aria i cui caratteri distintivi sono l'accelerazione e la turbolenza",
+      "il movimento verticale dell'aria i cui caratteri distintivi sono la frequenza e la provenienza",
+      "lo spostamento pressocché orizzontale di una massa d'aria i cui caratteri distintivi sono la direzione e la velocità"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 855,
+    "categoria": "meteorologia",
+    "domanda": "Quali sono i principali movimenti a cui è soggetto il mare?",
+    "risposte": [
+      "correnti, onde e maree",
+      "orizzontali, laterali e sussultori",
+      "oceanografici, torrenziali e convergenti"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 856,
+    "categoria": "meteorologia",
+    "domanda": "Come si definiscono le maree?",
+    "risposte": [
+      "movimenti oscillanti delle masse d'acqua generati dalla rotazione terrestre",
+      "movimento orizzontale del mare generato dal magnetismo terrestre",
+      "l'oscillazione del livello del mare generata dalla forza di attrazione gravitazionale esercitata principalmente dal sole e dalla luna"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 858,
+    "categoria": "meteorologia",
+    "domanda": "Quale elemento risulta fondamentale al fine di prevedere l'evoluzione delle condizioni meteorologiche durante la navigazione?",
+    "risposte": [
+      "la conoscenza della tendenza della pressione atmosferica nel tempo",
+      "la conoscenza della variazione di temperatura atmosferica nel tempo",
+      "la conoscenza della variazione dell'umidità atmosferica nel tempo"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 860,
+    "categoria": "meteorologia",
+    "domanda": "Quali sono i principali effetti meteorologici generati dalle nubi tipo 'cumulonembo'?",
+    "risposte": [
+      "neve, nebbia e foschia",
+      "rovesci, temporali o grandine",
+      "tuoni, trombe d'aria e arcobaleno"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 872,
+    "categoria": "meteorologia",
+    "domanda": "Nell'ambito delle previsioni locali, quali segni premonitori possono indicare il possibile peggioramento del tempo?",
+    "risposte": [
+      "addensamento dei cirri in cirrostrati, repentina riduzione della pressione e presenza di vento sostenuto già dalle prime ore del mattino",
+      "movimento delle nubi da Sud verso Nord e incremento repentino dell'umidità al tramonto",
+      "rotazione del vento da Sud verso Est e riduzione del livello del mare indipendentemente dalla marea"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 873,
+    "categoria": "meteorologia",
+    "domanda": "Nell'ambito delle previsioni locali, quali segni premonitori possono indicare il possibile miglioramento del tempo?",
+    "risposte": [
+      "abbassamento delle nubi e brusco calo della pressione atmosferica",
+      "innalzamento delle basi delle nubi, rotazione in senso orario del vento da Est verso Sud e poi Ovest e rapido innalzamento della pressione",
+      "repentino annuvolamento del cielo e movimento delle nubi a differenti altezze e in diverse direzioni"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 882,
+    "categoria": "meteorologia",
+    "domanda": "Quali sono i venti del I quadrante?",
+    "risposte": [
+      "Mezzogiorno, Libeccio e Ponente",
+      "Ponente, Maestrale e Tramontana",
+      "Tramontana, Grecale e Levante"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 883,
+    "categoria": "meteorologia",
+    "domanda": "Quali sono i venti del II quadrante?",
+    "risposte": [
+      "Levante, Scirocco e Mezzogiorno",
+      "Mezzogiorno, Libeccio e Ponente",
+      "Ponente, Maestrale e Tramontana"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 884,
+    "categoria": "meteorologia",
+    "domanda": "Quali sono i venti del III quadrante?",
+    "risposte": [
+      "Tramontana, Grecale e Levante",
+      "Ponente, Maestrale e Tramontana",
+      "Mezzogiorno, Libeccio e Ponente"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 885,
+    "categoria": "meteorologia",
+    "domanda": "Quali sono i venti del IV quadrante?",
+    "risposte": [
+      "Ponente, Maestrale e Tramontana",
+      "Tramontana, Grecale e Levante",
+      "Levante, Scirocco e Mezzogiorno"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 886,
+    "categoria": "meteorologia",
+    "domanda": "La rosa dei venti rappresenta:",
+    "risposte": [
+      "nome, forza e direzione dei venti",
+      "l'orizzonte visibile, con il nome e la direzione di provenienza dei venti tipici del Mediterraneo",
+      "la destinazione dei venti principali"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 887,
+    "categoria": "meteorologia",
+    "domanda": "Gli 'Avvisi di Burrasca' sono diffusi via radio:",
+    "risposte": [
+      "preceduti dal segnale di sicurezza 'SECURITÈ'",
+      "preceduti dal segnale di sicurezza 'MAYDAY'",
+      "preceduti dal segnale di sicurezza 'PANPAN'"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 889,
+    "categoria": "meteorologia",
+    "domanda": "Il Ponente spira dalla direzione cardinale:",
+    "risposte": [
+      "Est",
+      "Nord",
+      "Ovest"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 891,
+    "categoria": "meteorologia",
+    "domanda": "Da quale direzione proviene il vento di Scirocco?",
+    "risposte": [
+      "Sud-Est",
+      "Sud-Ovest",
+      "Nord-Ovest"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 893,
+    "categoria": "meteorologia",
+    "domanda": "Da quale direzione proviene il vento di Grecale?",
+    "risposte": [
+      "Nord-Est",
+      "Sud-Est",
+      "Sud-Ovest"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 906,
+    "categoria": "meteorologia",
+    "domanda": "La brezza:",
+    "risposte": [
+      "di notte risente della condizione in base alla quale il mare si raffredda più in fretta della terraferma",
+      "di giorno soffia dal mare verso la terraferma",
+      "è un indicatore di condizioni generali di cattivo tempo"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 907,
+    "categoria": "meteorologia",
+    "domanda": "La brezza di terra spira:",
+    "risposte": [
+      "ininterrottamente per 24 ore al giorno",
+      "di notte",
+      "di giorno"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 908,
+    "categoria": "meteorologia",
+    "domanda": "Con corrente e vento, l'un l'altro contro in direzione opposta, l'onda è:",
+    "risposte": [
+      "ripida",
+      "alta",
+      "incomprensibile"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 909,
+    "categoria": "meteorologia",
+    "domanda": "La brezza di terra è innescata:",
+    "risposte": [
+      "dal rapido raffreddamento della terraferma rispetto al mare",
+      "dal raffreddamento del mare",
+      "dal riscaldamento della terraferma da parte del sole"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 910,
+    "categoria": "meteorologia",
+    "domanda": "La brezza:",
+    "risposte": [
+      "è più consistente nelle giornate di pioggia",
+      "di notte spira dalla terraferma verso il mare",
+      "di giorno è dovuta alla pressione più alta sulla terraferma che sul mare"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 914,
+    "categoria": "meteorologia",
+    "domanda": "La brezza:",
+    "risposte": [
+      "di notte soffia dal mare verso la terra",
+      "è un indicatore di condizioni generali di cattivo tempo",
+      "di notte è ragionevolmente dovuta al più rapido raffreddamento della terraferma rispetto al mare"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 935,
+    "categoria": "meteorologia",
+    "domanda": "La violenza di un temporale è in funzione:",
+    "risposte": [
+      "dello sviluppo verticale della nube",
+      "dell'escursione termica",
+      "della stagione"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 940,
+    "categoria": "meteorologia",
+    "domanda": "Sono nuvole temporalesche:",
+    "risposte": [
+      "gli altocumuli",
+      "i cumulonembi",
+      "i nembostrati"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 944,
+    "categoria": "meteorologia",
+    "domanda": "Una corrente marina è:",
+    "risposte": [
+      "un movimento di masse d'acqua non derivante dal moto ondoso o dalla marea",
+      "un movimento di masse d'acqua generato dal moto ondoso o dalla marea",
+      "un movimento di masse d'acqua generato dall'azione combinata delle maree e del moto ondoso"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 947,
+    "categoria": "meteorologia",
+    "domanda": "La corrente di marea:",
+    "risposte": [
+      "si verifica in acque relativamente basse e negli stretti, e relative adiacenze, colleganti due bacini",
+      "è un fenomeno stagionale",
+      "la massa d'acqua interessata ha una sua densità e temperatura diversa dalla massa d'acqua circostante"
+    ],
+    "risposta": 0,
+    "immagine": null
+  }
+]

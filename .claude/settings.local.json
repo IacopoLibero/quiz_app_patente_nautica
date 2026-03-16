@@ -11,7 +11,8 @@
       "Bash(pdfimages -j /home/iacopolibero/Downloads/domande_quiz_patente_nautica.pdf /tmp/pdf_extract/img)",
       "Read(//tmp/**)",
       "Bash(ls:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "mcp__openmemory__openmemory_list"
     ]
   }
 }

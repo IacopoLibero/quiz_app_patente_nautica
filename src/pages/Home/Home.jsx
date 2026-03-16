@@ -45,6 +45,20 @@ export default function Home() {
             </div>
             <ArrowRight className={styles.navArrow} size={20} strokeWidth={1.5} aria-hidden="true" />
           </button>
+
+          <div className={styles.rule} role="separator" />
+
+          <button
+            className={styles.navItem}
+            onClick={() => navigate('/carteggio')}
+          >
+            <span className={styles.navNum} aria-hidden="true">03</span>
+            <div className={styles.navContent}>
+              <span className={styles.navTitle}>Carteggio 12 Miglia</span>
+              <span className={styles.navDesc}>50 domande · Calcoli nautici</span>
+            </div>
+            <ArrowRight className={styles.navArrow} size={20} strokeWidth={1.5} aria-hidden="true" />
+          </button>
         </nav>
 
         <div className={styles.rule} role="separator" />

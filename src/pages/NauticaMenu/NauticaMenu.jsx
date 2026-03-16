@@ -11,14 +11,14 @@ import {
 import { getNauticaStats } from '../../utils/localStorage';
 import styles from './NauticaMenu.module.css';
 
-import scafo from '../../data/quiz_nautica_scafo.json';
-import motori from '../../data/quiz_nautica_motori.json';
-import sicurezza from '../../data/quiz_nautica_sicurezza.json';
-import manovre from '../../data/quiz_nautica_manovre.json';
-import colreg from '../../data/quiz_nautica_colreg.json';
-import meteorologia from '../../data/quiz_nautica_meteorologia.json';
-import navigazione from '../../data/quiz_nautica_navigazione.json';
-import normativa from '../../data/quiz_nautica_normativa.json';
+import scafo from '../../data/patente_A/quiz_nautica_scafo.json';
+import motori from '../../data/patente_A/quiz_nautica_motori.json';
+import sicurezza from '../../data/patente_A/quiz_nautica_sicurezza.json';
+import manovre from '../../data/patente_A/quiz_nautica_manovre.json';
+import colreg from '../../data/patente_A/quiz_nautica_colreg.json';
+import meteorologia from '../../data/patente_A/quiz_nautica_meteorologia.json';
+import navigazione from '../../data/patente_A/quiz_nautica_navigazione.json';
+import normativa from '../../data/patente_A/quiz_nautica_normativa.json';
 
 const ALL_QUESTIONS = [
   ...scafo, ...motori, ...sicurezza, ...manovre,

@@ -64,3 +64,27 @@ export function saveNauticaStats(stats) {
 export function saveVelaStats(stats) {
   setItem('vela_stats', stats);
 }
+
+const DEFAULT_CARTEGGIO_STATS = {
+  sessioni: [],
+  rispostePerSettore: {},
+};
+
+export function getCarteggioStats() {
+  return getItem('carteggio_stats', DEFAULT_CARTEGGIO_STATS);
+}
+
+export function saveCarteggioStats(stats) {
+  setItem('carteggio_stats', stats);
+}
+
+export function addCarteggioSession({ score, totale, settore, progressivo, passed }) {
+  const stats = getCarteggioStats();
+  stats.sessioni.push({ score, totale, settore, progressivo, passed, data: new Date().toISOString() });
+  if (!stats.rispostePerSettore[settore]) {
+    stats.rispostePerSettore[settore] = { sessioni: 0, promossi: 0 };
+  }
+  stats.rispostePerSettore[settore].sessioni += 1;
+  if (passed) stats.rispostePerSettore[settore].promossi += 1;
+  saveCarteggioStats(stats);
+}

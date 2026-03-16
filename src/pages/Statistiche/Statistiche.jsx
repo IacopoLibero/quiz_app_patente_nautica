@@ -3,18 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import { BookOpen, Trash2 } from 'lucide-react';
 import Header from '../../components/Header/Header';
 import BarChart from '../../components/BarChart/BarChart';
-import { getNauticaStats, getVelaStats } from '../../utils/localStorage';
+import { getNauticaStats, getVelaStats, getCarteggioStats, saveCarteggioStats } from '../../utils/localStorage';
 import { useNauticaStats, useVelaStats } from '../../hooks/useStats';
 import styles from './Statistiche.module.css';
 
-import scafo from '../../data/quiz_nautica_scafo.json';
-import motori from '../../data/quiz_nautica_motori.json';
-import sicurezza from '../../data/quiz_nautica_sicurezza.json';
-import manovre from '../../data/quiz_nautica_manovre.json';
-import colreg from '../../data/quiz_nautica_colreg.json';
-import meteorologia from '../../data/quiz_nautica_meteorologia.json';
-import navigazione from '../../data/quiz_nautica_navigazione.json';
-import normativa from '../../data/quiz_nautica_normativa.json';
+import scafo from '../../data/patente_A/quiz_nautica_scafo.json';
+import motori from '../../data/patente_A/quiz_nautica_motori.json';
+import sicurezza from '../../data/patente_A/quiz_nautica_sicurezza.json';
+import manovre from '../../data/patente_A/quiz_nautica_manovre.json';
+import colreg from '../../data/patente_A/quiz_nautica_colreg.json';
+import meteorologia from '../../data/patente_A/quiz_nautica_meteorologia.json';
+import navigazione from '../../data/patente_A/quiz_nautica_navigazione.json';
+import normativa from '../../data/patente_A/quiz_nautica_normativa.json';
 import velaData from '../../data/quiz_vela.json';
 
 const ALL_NAUTICA = [...scafo, ...motori, ...sicurezza, ...manovre, ...colreg, ...meteorologia, ...navigazione, ...normativa];
@@ -29,6 +29,7 @@ export default function Statistiche() {
 
   const nautica = getNauticaStats();
   const vela = getVelaStats();
+  const carteggio = getCarteggioStats();
 
   function calcStats(sessioni) {
     if (!sessioni || sessioni.length === 0) return { total: 0, media: 0, best: 0 };
@@ -39,12 +40,14 @@ export default function Statistiche() {
     return { total, media, best };
   }
 
-  function handleResetNautica() { setConfirmReset('nautica'); }
-  function handleResetVela()    { setConfirmReset('vela'); }
+  function handleResetNautica()   { setConfirmReset('nautica'); }
+  function handleResetVela()      { setConfirmReset('vela'); }
+  function handleResetCarteggio() { setConfirmReset('carteggio'); }
 
   function confirmDoReset() {
     if (confirmReset === 'nautica') nauticaHook.resetStats();
     else if (confirmReset === 'vela') velaHook.resetStats();
+    else if (confirmReset === 'carteggio') saveCarteggioStats({ sessioni: [], rispostePerSettore: {} });
     setConfirmReset(null);
     setRefreshKey(k => k + 1);
   }
@@ -61,6 +64,16 @@ export default function Statistiche() {
 
   const ns = calcStats(nautica.sessioni);
   const vs = calcStats(vela.sessioni);
+
+  const cs = (() => {
+    const s = carteggio.sessioni;
+    if (!s || s.length === 0) return { total: 0, promossi: 0, media: 0, best: 0 };
+    const promossi = s.filter(x => x.passed).length;
+    const punteggi = s.map(x => (x.score / x.totale) * 100);
+    const media = Math.round(punteggi.reduce((a, b) => a + b, 0) / s.length);
+    const best = Math.round(Math.max(...punteggi));
+    return { total: s.length, promossi, media, best };
+  })();
 
   const barData = Object.entries(nautica.rispostePerCategoria || {}).map(([label, v]) => ({
     label, corrette: v.corrette, totale: v.totale,
@@ -91,12 +104,22 @@ export default function Statistiche() {
         >
           Vela
         </button>
+        <button
+          role="tab"
+          aria-selected={tab === 'carteggio'}
+          aria-controls="panel-carteggio"
+          id="tab-carteggio"
+          className={`${styles.tab} ${tab === 'carteggio' ? styles.tabActive : ''}`}
+          onClick={() => setTab('carteggio')}
+        >
+          Carteggio
+        </button>
       </div>
 
       {confirmReset && (
         <div className={styles.confirmBanner} role="alertdialog" aria-live="assertive">
           <p className={styles.confirmText}>
-            Resettare le statistiche {confirmReset === 'nautica' ? 'Patente Nautica' : 'Vela'}?
+            Resettare le statistiche {confirmReset === 'nautica' ? 'Patente Nautica' : confirmReset === 'vela' ? 'Vela' : 'Carteggio'}?
             {' '}Questa azione è irreversibile.
           </p>
           <div className={styles.confirmActions}>
@@ -151,7 +174,7 @@ export default function Statistiche() {
               <Trash2 size={14} strokeWidth={1.75} aria-hidden="true" /> Reset statistiche Nautica
             </button>
           </div>
-        ) : (
+        ) : tab === 'vela' ? (
           <div role="tabpanel" id="panel-vela" aria-labelledby="tab-vela">
 
             <div className={styles.statsRow}>
@@ -187,7 +210,45 @@ export default function Statistiche() {
               <Trash2 size={14} strokeWidth={1.75} aria-hidden="true" /> Reset statistiche Vela
             </button>
           </div>
-        )}
+        ) : tab === 'carteggio' ? (
+          <div role="tabpanel" id="panel-carteggio" aria-labelledby="tab-carteggio">
+
+            <div className={styles.statsRow}>
+              <div className={styles.statItem}>
+                <span className={styles.statNum}>{cs.total}</span>
+                <span className={styles.statLabel}>Sessioni</span>
+              </div>
+              <div className={styles.statItem}>
+                <span className={styles.statNum}>{cs.promossi}</span>
+                <span className={styles.statLabel}>Promossi</span>
+              </div>
+              <div className={styles.statItem}>
+                <span className={styles.statNum}>{cs.total > 0 ? cs.media + '%' : '—'}</span>
+                <span className={styles.statLabel}>Media</span>
+              </div>
+            </div>
+
+            {Object.keys(carteggio.rispostePerSettore || {}).length > 0 && (
+              <section className={styles.section}>
+                <div className={styles.rule} />
+                <h3 className={styles.sectionTitle}>Per Settore</h3>
+                {Object.entries(carteggio.rispostePerSettore).map(([settore, v]) => (
+                  <div key={settore} className={styles.settoreRow}>
+                    <span className={styles.settoreLabel}>{settore}</span>
+                    <span className={styles.settoreVal}>
+                      {v.promossi}/{v.sessioni} promossi
+                    </span>
+                  </div>
+                ))}
+              </section>
+            )}
+
+            <div className={styles.rule} style={{ marginTop: 32 }} />
+            <button className={styles.resetBtn} onClick={handleResetCarteggio}>
+              <Trash2 size={14} strokeWidth={1.75} aria-hidden="true" /> Reset statistiche Carteggio
+            </button>
+          </div>
+        ) : null}
       </main>
     </div>
   );

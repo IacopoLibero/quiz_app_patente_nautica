@@ -217,3 +217,23 @@
   color: var(--error);
   border-color: var(--error);
 }
+
+.settoreRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.settoreLabel {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.settoreVal {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--ink-2);
+}

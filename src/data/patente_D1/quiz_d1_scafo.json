@@ -1,0 +1,1526 @@
+[
+  {
+    "id": 1,
+    "categoria": "scafo",
+    "domanda": "Com'è denominata la massima lunghezza dell'unità navale, cioè quella misurata tra le estremità prodiera e poppiera?",
+    "risposte": [
+      "lunghezza tra le perpendicolari",
+      "lunghezza al galleggiamento",
+      "lunghezza fuori tutto"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 2,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per asse longitudinale di un'unità navale?",
+    "risposte": [
+      "l'asse di rotazione di riferimento per il movimento di beccheggio",
+      "l'asse passante per la prua e la poppa, parallelo alla chiglia",
+      "l'asse orizzontale compreso tra le due murate, posto perpendicolarmente a quello trasversale"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 3,
+    "categoria": "scafo",
+    "domanda": "Quale funzione svolge la sentina di un'unità navale?",
+    "risposte": [
+      "contenere il carburante",
+      "contenere le acque sporche e i residui liquidi",
+      "contenere le acque dolci"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 4,
+    "categoria": "scafo",
+    "domanda": "Le murate sono:",
+    "risposte": [
+      "la porzione esterna e laterale dello scafo (opera morta) che si estende tra la prora e la poppa",
+      "la superficie laterale verticale della tuga dell'unità navale",
+      "la paratia divisoria verticale che separa due locali posti all'interno dello scafo"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 5,
+    "categoria": "scafo",
+    "domanda": "Cos'è il ponte di coperta?",
+    "risposte": [
+      "il ponte che si estende longitudinalmente e trasversalmente, in modo continuo, racchiudendo interamente lo scafo",
+      "la superficie orizzontale atta a ricoprire la parte più alta dell'unità",
+      "la struttura che ricopre le cabine"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 6,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per prua dell'unità?",
+    "risposte": [
+      "la parte priva di spigoli dello scafo",
+      "la parte estrema posteriore dello scafo",
+      "la porzione anteriore posta all'estremità dell'unità"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 7,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per poppa di un'unità?",
+    "risposte": [
+      "la parte più arrotondata dello scafo",
+      "la porzione posteriore posta all'estremità dello scafo",
+      "la porzione estrema anteriore dello scafo"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 8,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per specchio di poppa di un'unità?",
+    "risposte": [
+      "la porzione esterna e superiore della poppa",
+      "la paratia interna che separa gli organi del timone dal resto delle cabine",
+      "la superficie verticale interna del pozzetto"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 9,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per locale macchine o locale apparato motore di un'unità?",
+    "risposte": [
+      "l'ambiente di bordo dove sono sistemati i motori principali e la gran parte dei sistemi ausiliari",
+      "il locale di bordo, generalmente situato a poppa, individuato come garage",
+      "l'ambiente dove sono collocati esclusivamente i sistemi ausiliari"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 10,
+    "categoria": "scafo",
+    "domanda": "Con riferimento alla figura, quale porzione dello scafo è indicata dalle linee trasversali?",
+    "risposte": [
+      "specchio di poppa",
+      "opera viva",
+      "opera morta"
+    ],
+    "risposta": 1,
+    "immagine": "/img/motore/img_010.jpg"
+  },
+  {
+    "id": 11,
+    "categoria": "scafo",
+    "domanda": "Con riferimento al disegno rappresentato in figura, quale porzione dello scafo è indicata dalle linee trasversali?",
+    "risposte": [
+      "opera morta",
+      "specchio di poppa",
+      "opera viva"
+    ],
+    "risposta": 0,
+    "immagine": "/img/motore/img_011.jpg"
+  },
+  {
+    "id": 12,
+    "categoria": "scafo",
+    "domanda": "Da cosa dipende la coppia di stabilità di forma di un'unità navale?",
+    "risposte": [
+      "dal peso",
+      "dalla forma della carena",
+      "dalla lunghezza tra le perpendicolari"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 13,
+    "categoria": "scafo",
+    "domanda": "Gli elementi che suddividono lo scafo in senso trasversale, sono:",
+    "risposte": [
+      "le paratie",
+      "gli osteriggi",
+      "i boccaporti"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 14,
+    "categoria": "scafo",
+    "domanda": "Lo specchio di poppa è:",
+    "risposte": [
+      "la parte della poppa al di sopra del dritto di poppa",
+      "l'apertura della poppa negli scafi autosvuotanti",
+      "il fondo del pozzetto in cui è alloggiata la barra del timone"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 15,
+    "categoria": "scafo",
+    "domanda": "La parte emersa dell'unità è denominata:",
+    "risposte": [
+      "sezione maestra",
+      "opera morta",
+      "opera viva"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 16,
+    "categoria": "scafo",
+    "domanda": "La parte sommersa dell'unità è denominata:",
+    "risposte": [
+      "opera viva",
+      "opera morta",
+      "bordo libero"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 17,
+    "categoria": "scafo",
+    "domanda": "La 'galloccia' è:",
+    "risposte": [
+      "un foro per l'uscita dell'acqua dal pozzetto",
+      "un sistema per tendere le draglie",
+      "un appiglio per rinviare e/o dare volta al cavo di ormeggio oppure ad una cima di bordo (come drizze/scotte)"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 18,
+    "categoria": "scafo",
+    "domanda": "La bitta è:",
+    "risposte": [
+      "un foro per l'uscita dell'acqua dal pozzetto",
+      "un tornichetto per tendere le draglie",
+      "bassa e robusta colonnetta, generalmente con una testa a fungo, posta sulle banchine e sui ponti delle navi per legarvi le catene o i cavi di ormeggio"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 19,
+    "categoria": "scafo",
+    "domanda": "Il gavone di un'imbarcazione da diporto è:",
+    "risposte": [
+      "il vano-ripostiglio, sia di prora sia di poppa",
+      "quella parte curva dello scafo prossima alla prora",
+      "quella parte arrotondata dello scafo prima della poppa"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 20,
+    "categoria": "scafo",
+    "domanda": "La freccia verso l'unità rappresentata in figura indica il:",
+    "risposte": [
+      "mascone di sinistra",
+      "giardinetto di sinistra",
+      "dritto di prora"
+    ],
+    "risposta": 0,
+    "immagine": "/img/motore/img_020.jpg"
+  },
+  {
+    "id": 21,
+    "categoria": "scafo",
+    "domanda": "La freccia verso l'unità rappresentata in figura indica il:",
+    "risposte": [
+      "mascone di dritta",
+      "giardinetto di dritta",
+      "dritto di prora"
+    ],
+    "risposta": 0,
+    "immagine": "/img/motore/img_021.jpg"
+  },
+  {
+    "id": 22,
+    "categoria": "scafo",
+    "domanda": "Il pescaggio di un'imbarcazione è:",
+    "risposte": [
+      "la distanza verticale tra la linea di galleggiamento e il punto inferiore estremo dello scafo",
+      "il peso totale della nave",
+      "la distanza tra la chiglia dell'unità e il fondo del mare"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 23,
+    "categoria": "scafo",
+    "domanda": "L'ordinata maestra è quella:",
+    "risposte": [
+      "di maggior spessore",
+      "che corrisponde alla sezione maestra dello scafo dell'unità",
+      "indicata con il numero 1"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 24,
+    "categoria": "scafo",
+    "domanda": "La freccia verso l'unità rappresentata in figura indica il:",
+    "risposte": [
+      "giardinetto di dritta",
+      "babordo",
+      "mascone di dritta"
+    ],
+    "risposta": 0,
+    "immagine": "/img/motore/img_024.jpg"
+  },
+  {
+    "id": 25,
+    "categoria": "scafo",
+    "domanda": "La freccia verso l'unità rappresentata in figura indica il:",
+    "risposte": [
+      "giardinetto di sinistra",
+      "babordo",
+      "mascone di sinistra"
+    ],
+    "risposta": 0,
+    "immagine": "/img/motore/img_025.jpg"
+  },
+  {
+    "id": 26,
+    "categoria": "scafo",
+    "domanda": "L'ombrinale è:",
+    "risposte": [
+      "il foro attraverso cui passa la catena dell'ancora quando viene dato fondo",
+      "la parte più bassa dello scafo, immediatamente al di sotto del motore, dove si raccolgono eventuali perdite di fluidi",
+      "una piccola apertura per far defluire l'acqua presente in coperta o nel pozzetto"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 27,
+    "categoria": "scafo",
+    "domanda": "La sentina di un'unità è lo spazio compreso tra:",
+    "risposte": [
+      "la poppa e la prima paratia",
+      "la dritta e la sinistra dell'unità",
+      "il fondo all'interno dello scafo e il pagliolo (o pagliolato)"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 28,
+    "categoria": "scafo",
+    "domanda": "La linea che separa l'opera viva dall'opera morta è denominata:",
+    "risposte": [
+      "linea di bordo libero",
+      "linea di galleggiamento",
+      "linea di chiglia"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 29,
+    "categoria": "scafo",
+    "domanda": "Come si chiama il pavimento interno di un'imbarcazione da diporto?",
+    "risposte": [
+      "murata",
+      "pagliolato",
+      "dormiente"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 30,
+    "categoria": "scafo",
+    "domanda": "La battagliola è:",
+    "risposte": [
+      "un'apertura praticata in coperta",
+      "un punto specifico della murata ove appoggiare i parabordi tutte le volte che si esegue l'ormeggio di fianco",
+      "una sorta di ringhiera laterale per aiutare il passaggio tra poppa e prora"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 31,
+    "categoria": "scafo",
+    "domanda": "Quale affermazione, tra le seguenti, è corretta:",
+    "risposte": [
+      "l'insieme di draglie e candelieri costituisce la battagliola a protezione del camminamento per il passaggio tra poppa e prora",
+      "la stazza esprime la larghezza totale della scafo",
+      "l'opera viva è la parte emersa dello scafo"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 32,
+    "categoria": "scafo",
+    "domanda": "Lo scafo di un'unità da diporto è la:",
+    "risposte": [
+      "sezione maestra dell'opera morta",
+      "sezione maestra dell'opera viva",
+      "struttura che costituisce il guscio dell'unità"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 33,
+    "categoria": "scafo",
+    "domanda": "La 'losca' è:",
+    "risposte": [
+      "un foro per il quale passa la catena dell'ancora quando viene dato fondo",
+      "un'apertura, ricavata nella poppa, per la quale passa l'asse del timone",
+      "la parte più bassa dello scafo, immediatamente al di sotto del motore, dove si raccolgono eventuali perdite di fluidi"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 34,
+    "categoria": "scafo",
+    "domanda": "Il beccheggio è l'oscillazione dell'unità intorno al suo asse:",
+    "risposte": [
+      "trasversale",
+      "longitudinale",
+      "verticale"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 35,
+    "categoria": "scafo",
+    "domanda": "La parte strutturale della poppa, alla quale si incardina il timone, se esterno, è:",
+    "risposte": [
+      "il dritto di poppa",
+      "la losca del timone",
+      "il ginocchio di poppa"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 36,
+    "categoria": "scafo",
+    "domanda": "Le strutture verticali, che suddividono internamente lo scafo, sono:",
+    "risposte": [
+      "le murate",
+      "le paratie",
+      "il pagliolato"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 37,
+    "categoria": "scafo",
+    "domanda": "La carena è:",
+    "risposte": [
+      "l'opera viva",
+      "la parte esterna dello scafo",
+      "l'opera morta"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 38,
+    "categoria": "scafo",
+    "domanda": "Una sovrastruttura è quella parte della nave che si eleva al di sopra del:",
+    "risposte": [
+      "pagliolato",
+      "paramezzale",
+      "ponte di coperta nel caso di unità con unico ponte"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 39,
+    "categoria": "scafo",
+    "domanda": "La tuga è:",
+    "risposte": [
+      "la sovrastruttura abitabile innalzata sopra un ponte",
+      "un elemento costruttivo ubicato sotto il ponte",
+      "un vano destinato al ricovero di cime, vele e accessori"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 40,
+    "categoria": "scafo",
+    "domanda": "La sagola è:",
+    "risposte": [
+      "la corda più lunga",
+      "una sartia volante",
+      "una cima di piccolo diametro"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 41,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per giardinetto?",
+    "risposte": [
+      "la parte esterna convessa (a dritta e sinistra) in corrispondenza della prua",
+      "la zona più esterna e centrale della poppa",
+      "la porzione terminale della parte esterna dello scafo, posto in prossimità della poppa (a dritta e a sinistra), con profilo spigoloso o tondeggiante"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 42,
+    "categoria": "scafo",
+    "domanda": "Cosa è il boccaporto?",
+    "risposte": [
+      "il giardinetto come la parte curva dello scafo vicino alla prora",
+      "il trincarino come la protezione esterna dello scafo",
+      "l'apertura nel ponte di coperta per il passaggio all'interno di persone o cose"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 43,
+    "categoria": "scafo",
+    "domanda": "Qual è la funzione degli zinchi?",
+    "risposte": [
+      "evitare le corrosioni galvaniche",
+      "aumentare la zavorra",
+      "impedire che l'acqua filtri all'interno dello scafo"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 44,
+    "categoria": "scafo",
+    "domanda": "Il flying bridge, detto anche fly, è:",
+    "risposte": [
+      "il ponte superiore di una unità a motore, dove è collocata la seconda timoneria",
+      "il ponte principale, dove si trova la timoneria principale",
+      "un tipo di vela"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 45,
+    "categoria": "scafo",
+    "domanda": "Cos'è il baglio massimo:",
+    "risposte": [
+      "la distanza verticale tra la linea di galleggiamento e la parte superiore della chiglia",
+      "il peso totale che la nave può trasportare",
+      "la larghezza massima dello scafo"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 46,
+    "categoria": "scafo",
+    "domanda": "Il pagliolo di un'imbarcazione da diporto è:",
+    "risposte": [
+      "una trave longitudinale che sostiene i bagli",
+      "un piano amovibile e calpestabile sotto coperta",
+      "un elemento essenziale per il rinforzo trasversale dell'imbarcazione"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 47,
+    "categoria": "scafo",
+    "domanda": "La distanza verticale posta tra la coperta e la linea di galleggiamento è:",
+    "risposte": [
+      "il bordo libero",
+      "l'immersione",
+      "l'opera viva"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 48,
+    "categoria": "scafo",
+    "domanda": "Cosa è la sezione maestra dello scafo?",
+    "risposte": [
+      "la sezione trasversale centrale che, normalmente, ha maggior larghezza",
+      "la zona in cui si comanda",
+      "la sezione iniziale dello scafo"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 49,
+    "categoria": "scafo",
+    "domanda": "In un'imbarcazione da diporto la tuga è:",
+    "risposte": [
+      "la sovrastruttura elevata sulla coperta, che non si estende per tutta la larghezza dell'unità",
+      "il pozzetto a poppa ovvero la parte ribassata rispetto al piano di coperta",
+      "la sovrastruttura elevata sulla coperta, che si estende per tutta la larghezza dell'unità"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 50,
+    "categoria": "scafo",
+    "domanda": "I candelieri sono:",
+    "risposte": [
+      "fanali bianchi da accendere in caso di emergenza",
+      "gli appigli orizzontali di sicurezza",
+      "elementi verticali delle battagliole"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 51,
+    "categoria": "scafo",
+    "domanda": "Il piano di calpestio più basso di un'imbarcazione da diporto si chiama:",
+    "risposte": [
+      "sentina",
+      "coperta",
+      "pagliolato"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 52,
+    "categoria": "scafo",
+    "domanda": "La carena viene detta dislocante se è del tipo:",
+    "risposte": [
+      "piatta",
+      "catamarano",
+      "tonda"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 53,
+    "categoria": "scafo",
+    "domanda": "La linea di galleggiamento:",
+    "risposte": [
+      "è la linea che divide lo scafo in opera viva e opera morta",
+      "è la parte terminale superiore della fiancata",
+      "indica il limite superiore del bordo libero"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 54,
+    "categoria": "scafo",
+    "domanda": "Un catamarano:",
+    "risposte": [
+      "non plana e navigando sposta l'acqua a destra e a sinistra",
+      "non plana e si alza sul filo dell'acqua",
+      "presenta due scafi"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 2000,
+    "categoria": "scafo",
+    "domanda": "Il timone è compensato quando:",
+    "risposte": [
+      "è composto da un particolare tipo di legno",
+      "una parte della pala è a proravia dell'asse",
+      "corregge eventuali errori del timoniere"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 56,
+    "categoria": "scafo",
+    "domanda": "Come si chiama la superficie del timone su cui agisce la pressione dell'acqua?",
+    "risposte": [
+      "asse",
+      "pala",
+      "ruota"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 57,
+    "categoria": "scafo",
+    "domanda": "Il timone è compensato se:",
+    "risposte": [
+      "una parte della pala è a proravia dell'asse",
+      "una parte della pala è a poppavia dell'asse",
+      "la pala è dotata di asse in alluminio"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 58,
+    "categoria": "scafo",
+    "domanda": "La freccia verso l'unità rappresentata in figura indica il:",
+    "risposte": [
+      "mascone",
+      "traverso",
+      "giardinetto"
+    ],
+    "risposta": 1,
+    "immagine": "/img/motore/img_058.jpg"
+  },
+  {
+    "id": 59,
+    "categoria": "scafo",
+    "domanda": "Le frecce in figura indicano:",
+    "risposte": [
+      "il mascone di sinistra",
+      "la murata sinistra",
+      "il giardinetto di sinistra"
+    ],
+    "risposta": 1,
+    "immagine": "/img/motore/img_059.jpg"
+  },
+  {
+    "id": 60,
+    "categoria": "scafo",
+    "domanda": "Le frecce in figura indicano:",
+    "risposte": [
+      "il baglio massimo",
+      "il mascone di dritta",
+      "la murata di dritta"
+    ],
+    "risposta": 2,
+    "immagine": "/img/motore/img_060.jpg"
+  },
+  {
+    "id": 61,
+    "categoria": "scafo",
+    "domanda": "I tubolari sono:",
+    "risposte": [
+      "i tubi di scarico del pozzetto, collegati agli ombrinali",
+      "le parti esterne di un battello pneumatico, che ne garantiscono una parte della riserva di galleggiamento",
+      "l'insieme degli elementi a protezione del camminamento per il passaggio tra poppa e prora"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 62,
+    "categoria": "scafo",
+    "domanda": "Per RIB (o RHIB) si intende:",
+    "risposte": [
+      "i battelli pneumatici con chiglia rigida",
+      "il musone di prua dove è alloggiata l'ancora",
+      "è un nome di fantasia"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 63,
+    "categoria": "scafo",
+    "domanda": "Si chiama musone:",
+    "risposte": [
+      "è un nome di fantasia",
+      "l'attacco del timone sullo specchio di poppa",
+      "la ferramenta che si trova a prua estrema, generalmente composta da un unico blocco, che comprende il passacatena dell'ancora"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 64,
+    "categoria": "scafo",
+    "domanda": "Il passascafo è:",
+    "risposte": [
+      "la parte filettata che attraversa lo spessore della carena e si connette alla presa a mare nelle tubazioni che trasportano l'acqua alle o dalle varie utenze",
+      "il foro da cui defluisce l'acqua dal pozzetto",
+      "il foro attraverso cui passa la catena dell'ancora quando viene dato fondo"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 65,
+    "categoria": "scafo",
+    "domanda": "Il pozzetto è:",
+    "risposte": [
+      "la parte esterna di un'imbarcazione dove solitamente sono posizionate le manovre e il timone, destinata ad accogliere gli ospiti in sicurezza",
+      "il punto di raccolta di eventuali perdite di fluidi del motore",
+      "l'apertura per far defluire l'acqua presente in coperta"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 66,
+    "categoria": "scafo",
+    "domanda": "Il pulpito è:",
+    "risposte": [
+      "l'attacco della ruota del timone",
+      "la protezione dalle cadute posta a estrema prua e estrema poppa, solitamente in tubo di acciaio, cui è ancorata la battagliola",
+      "la ferramenta che si trova a prua estrema, generalmente composta da un unico blocco, che comprende il passacatena dell'ancora"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 67,
+    "categoria": "scafo",
+    "domanda": "Si dicono prese a mare:",
+    "risposte": [
+      "le valvole, poste in connessione con i passascafo, che consentono di chiudere l'ingresso dell'acqua all'interno della barca",
+      "le elichette che fuoriescono dallo scafo con cui il log determina la velocità dello scafo",
+      "è un termine di fantasia"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 68,
+    "categoria": "scafo",
+    "domanda": "In base alle prestazioni nautiche dei principali tipi di scafo, si può affermare che:",
+    "risposte": [
+      "la carena a 'V' profonda affronta meglio il moto ondoso molto formato",
+      "la carena dislocante è la più adatta alla planata",
+      "la carena piatta è la più adatta per affrontare il moto ondoso formato"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 69,
+    "categoria": "scafo",
+    "domanda": "Il rollìo è l'oscillazione dell'unità intorno al suo asse:",
+    "risposte": [
+      "longitudinale",
+      "verticale",
+      "trasversale"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 70,
+    "categoria": "scafo",
+    "domanda": "La carena viene detta dislocante se:",
+    "risposte": [
+      "se in un dato momento non plana",
+      "plana e si alza sul filo dell'acqua",
+      "è tonda oppure a V profondo"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 71,
+    "categoria": "scafo",
+    "domanda": "La carena viene detta dislocante se è del tipo:",
+    "risposte": [
+      "non plana e navigando sposta l'acqua a destra e a sinistra",
+      "plana e si alza sul filo dell'acqua",
+      "presenta due scafi"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 72,
+    "categoria": "scafo",
+    "domanda": "Per trim si intende:",
+    "risposte": [
+      "una tipologia di carena",
+      "il pistone idraulico che va ad agire sulla posizione del motore fuoribordo modificando l'angolo tra lo specchio di poppa e il gambo del motore stesso",
+      "il sistema di comunicazione radio"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 73,
+    "categoria": "scafo",
+    "domanda": "I flaps sono:",
+    "risposte": [
+      "appendici immerse, montate sullo specchio di poppa, per influire sull'assetto della carena",
+      "le alette delle imbarcazioni a vela",
+      "non esistono, è un nome di fantasia"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 74,
+    "categoria": "scafo",
+    "domanda": "I flaps:",
+    "risposte": [
+      "sono montati sullo specchio di poppa, sono sempre due, uno sull'estremità destra e l'altro sull'estremità sinistra",
+      "sono montati uno sullo specchio di poppa e l'altro subito al di sotto della prua",
+      "sono sempre due, montati subito al di sotto della prua"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 75,
+    "categoria": "scafo",
+    "domanda": "Il controllo dei flaps è solitamente:",
+    "risposte": [
+      "manuale, effettuato tramite dei leveraggi disposti nella zona poppiera dell'unità",
+      "regolato dal cantiere all'atto della prima messa in acqua",
+      "realizzato attraverso il monitoraggio di un display, normalmente posto sulla plancia, analogico o digitale, che indica la loro altezza"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 150,
+    "categoria": "scafo",
+    "domanda": "La linea d'asse è:",
+    "risposte": [
+      "quella linea longitudinale solitamente chiamata carena",
+      "un insieme di organi meccanici che trasmette il movimento all'elica",
+      "la linea che divide l'opera viva e l'opera morta"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 125,
+    "categoria": "scafo",
+    "domanda": "Il peso della nave corrisponde a:",
+    "risposte": [
+      "la portata",
+      "la stazza",
+      "il dislocamento"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 76,
+    "categoria": "scafo",
+    "domanda": "Tra un'elica a passo fisso, una a pale abbattibili ed una a pale orientabili, l'elica che ha il minor rendimento a marcia indietro è quella a:",
+    "risposte": [
+      "pale orientabili",
+      "pale fisse",
+      "pale abbattibili"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 77,
+    "categoria": "scafo",
+    "domanda": "In retromarcia con un'unica elica destrorsa:",
+    "risposte": [
+      "la poppa ruota più facilmente a sinistra",
+      "la poppa ruota più facilmente a dritta",
+      "è indifferente"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 78,
+    "categoria": "scafo",
+    "domanda": "Unità da diporto a motore con a dritta elica destrorsa; si può ragionevolmente ritenere che quella di sinistra:",
+    "risposte": [
+      "non ha importanza, perché può essere indifferentemente sinistrorsa o destrorsa",
+      "è sinistrorsa",
+      "tende a spostare la prua lateralmente verso sinistra"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 2001,
+    "categoria": "scafo",
+    "domanda": "In retromarcia con un'unica elica destrorsa:",
+    "risposte": [
+      "la poppa ruota più facilmente a sinistra",
+      "la poppa ruota più facilmente a dritta",
+      "è indifferente"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 80,
+    "categoria": "scafo",
+    "domanda": "Su un'unità munita di due motori, le eliche generalmente sono:",
+    "risposte": [
+      "sinistrorsa a sinistra e destrorsa a dritta",
+      "entrambe sinistrorse",
+      "entrambe destrorse"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 81,
+    "categoria": "scafo",
+    "domanda": "In navigazione a motore, dov'è ubicato, rispetto al centro nave, l'asse di rotazione intorno al quale l'unità accosta?",
+    "risposte": [
+      "verso prua",
+      "verso poppa",
+      "al centro"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 82,
+    "categoria": "scafo",
+    "domanda": "Un'elica è destrorsa se, guardando la poppa dall'esterno, le pale:",
+    "risposte": [
+      "girano in senso orario in marcia indietro",
+      "girano in senso orario in marcia avanti",
+      "girano in senso antiorario in marcia avanti"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 83,
+    "categoria": "scafo",
+    "domanda": "Cosa, oltre la spinta esercitata dalle singole pale, influisce sull'effetto evolutivo dell'elica?",
+    "risposte": [
+      "la rapidità dell'invertitore di inserire una marcia",
+      "il diametro del mozzo dell'elica",
+      "il flusso d'acqua spinto contro la pala del timone o la carena"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 84,
+    "categoria": "scafo",
+    "domanda": "Il timone compensato serve a:",
+    "risposte": [
+      "avere un timone più robusto",
+      "allontanare dall'asse di rotazione il punto di applicazione della risultante della pressione esercitata dall'acqua sulle pale",
+      "ridurre la resistenza della pala alla rotazione e quindi la durezza della barra/ruota"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 85,
+    "categoria": "scafo",
+    "domanda": "Un timone compensato è quel timone:",
+    "risposte": [
+      "di rispetto",
+      "i cui effetti evolutivi sono compensati da quelli dell'elica",
+      "che presenta una parte della pala a proravia dell'asse"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 86,
+    "categoria": "scafo",
+    "domanda": "Com'è definita la differenza tra la distanza teorica e quella effettiva percorsa da un'elica in un giro completo?",
+    "risposte": [
+      "passo",
+      "diametro",
+      "regresso"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 87,
+    "categoria": "scafo",
+    "domanda": "L'effetto evolutivo di un'elica destrorsa in rotazione all'indietro (retromarcia) fa ruotare:",
+    "risposte": [
+      "sia la poppa sia la prora verso dritta",
+      "la poppa verso dritta, quindi la prora verso sinistra",
+      "la poppa verso sinistra, quindi la prora verso dritta"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 88,
+    "categoria": "scafo",
+    "domanda": "Qual è l'angolo di rotazione del timone (intorno al suo asse) per ottenere il massimo effetto di governo?",
+    "risposte": [
+      "tra 90 gradi e 115 gradi",
+      "tra 50 gradi e 90 gradi",
+      "tra 30 gradi e 40 gradi"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 89,
+    "categoria": "scafo",
+    "domanda": "In marcia avanti, portando la ruota del timone a sinistra, come si comporta la poppa dell'unità?",
+    "risposte": [
+      "accosta a dritta",
+      "accosta a sinistra",
+      "orza"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 90,
+    "categoria": "scafo",
+    "domanda": "Un'elica si definisce sinistrorsa quando, guardando la poppa dall'esterno, le pale girano in senso:",
+    "risposte": [
+      "antiorario nella marcia avanti",
+      "antiorario nella marcia indietro",
+      "orario nella marcia avanti"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 91,
+    "categoria": "scafo",
+    "domanda": "La distanza teorica che un'elica percorrerebbe in un giro completo se l'acqua fosse solida è denominata:",
+    "risposte": [
+      "passo teorico",
+      "diametro teorico",
+      "regresso teorico"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 92,
+    "categoria": "scafo",
+    "domanda": "L'elica con passo lungo e diametro piccolo, rispetto a una che ha passo piccolo e diametro più grande:",
+    "risposte": [
+      "produce maggiore velocità",
+      "produce maggior spinta",
+      "è indifferente"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 93,
+    "categoria": "scafo",
+    "domanda": "In generale, oltre all'accostata, l'impiego del timone con pala produce i seguenti effetti:",
+    "risposte": [
+      "spostamento laterale sul lato dell'accostata, lieve appoppamento",
+      "riduzione di velocità, spostamento laterale sul lato opposto a quello della pala, leggero appruamento",
+      "esclusivamente lo sbandamento"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 94,
+    "categoria": "scafo",
+    "domanda": "La curva di evoluzione:",
+    "risposte": [
+      "è riferita alla velocità dell'unità",
+      "è la traiettoria descritta dall'unità che accosta verso dritta ovvero sinistra",
+      "descrive la rotazione del timone"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 95,
+    "categoria": "scafo",
+    "domanda": "Riguardo al funzionamento del timone a barra, abbiamo che:",
+    "risposte": [
+      "se in moto avanti, con barra a dritta la prora accosta a dritta",
+      "se in moto indietro, con barra a dritta la poppa accosta a sinistra",
+      "se in moto indietro, con barra a dritta la poppa accosta a dritta"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 579,
+    "categoria": "scafo",
+    "domanda": "Per effettuare un corretto accosto di poppa alla banchina:",
+    "risposte": [
+      "si retrocede perpendicolarmente alla banchina presentando il mascone e correggendo solo col timone",
+      "con elica sinistrorsa, si retrocede perpendicolarmente alla banchina presentando il giardinetto di dritta alla banchina",
+      "con elica destrorsa, si retrocede perpendicolarmente alla banchina correggendo con il timone a sinistra"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 581,
+    "categoria": "scafo",
+    "domanda": "Per accostarsi di fianco (all'inglese) a una banchina con un'unità dotata di un'elica destrorsa:",
+    "risposte": [
+      "se aziono il motore in marcia indietro avvicino la prua alla banchina",
+      "l'unità si muove parallelamente alla banchina",
+      "con la banchina a sinistra, si dà marcia indietro con il mascone di sinistra alla banchina, avvicinando la poppa e arrestando l'abbrivio"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 98,
+    "categoria": "scafo",
+    "domanda": "L'effetto evolutivo dell'elica è maggiore con un'unità:",
+    "risposte": [
+      "abbriviata a marcia indietro",
+      "abbriviata a marcia avanti",
+      "senza abbrivio e con marcia inserita"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 99,
+    "categoria": "scafo",
+    "domanda": "Si ha cavitazione nel momento in cui l'elica:",
+    "risposte": [
+      "non raggiunge il regime minimo dei giri",
+      "oltrepassa il limite dei giri e non si ha più la spinta propulsiva",
+      "s'impiglia in un cavo"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 100,
+    "categoria": "scafo",
+    "domanda": "Con elica sinistrorsa, se manovro in marcia indietro:",
+    "risposte": [
+      "con il timone al centro, la poppa accosta a sinistra",
+      "con il timone al centro, la poppa accosta a dritta",
+      "l'unità procede dritta"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 101,
+    "categoria": "scafo",
+    "domanda": "Se un'unità da diporto a motore bielica ha a sinistra un'elica sinistrorsa, si può ragionevolmente ritenere che quella di dritta:",
+    "risposte": [
+      "è destrorsa",
+      "può essere indifferentemente destrorsa o sinistrorsa",
+      "è destrorsa anch'essa"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 55,
+    "categoria": "scafo",
+    "domanda": "Il timone è compensato quando:",
+    "risposte": [
+      "è dotato di sistema di comando idraulico",
+      "una parte della pala è a proravia dell'asse",
+      "è fissato allo specchio di poppa a mezzo di cerniere"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 103,
+    "categoria": "scafo",
+    "domanda": "Con elica destrorsa, manovro in marcia indietro:",
+    "risposte": [
+      "tenendo il timone al centro, la poppa accosta a dritta",
+      "con il timone a dritta, limito l'accostata della poppa a sinistra",
+      "con il timone a sinistra, accentuo l'accostata della poppa a dritta"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 104,
+    "categoria": "scafo",
+    "domanda": "Manovrando una unità da diporto dotata di due linee d'asse (destrorsa a dritta e sinistrorsa a sinistra); si ha che:",
+    "risposte": [
+      "con il solo motore di dritta in marcia indietro (fermo il motore di sinistra), la prora accosta a dritta",
+      "con il motore di dritta in marcia avanti e con quello di sinistra in marcia indietro, si ruota sul posto in senso orario",
+      "con il solo motore di sinistra in marcia indietro (fermo il motore di dritta), la poppa accosti a sinistra"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 105,
+    "categoria": "scafo",
+    "domanda": "Un'elica destrorsa:",
+    "risposte": [
+      "in marcia avanti tende a far accostare la poppa a sinistra",
+      "se vista da poppa, in marcia avanti l'elica gira in senso antiorario",
+      "in marcia indietro, l'elica tende a far accostare la poppa a sinistra"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 106,
+    "categoria": "scafo",
+    "domanda": "Sulla manovra e il funzionamento del timone a barra, senza considerare l'effetto dell'elica, abbiamo che:",
+    "risposte": [
+      "con barra a sinistra, la prua va a sinistra",
+      "con barra a sinistra, la prua va a dritta",
+      "con barra a sinistra, in moto indietro la poppa va a sinistra"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 107,
+    "categoria": "scafo",
+    "domanda": "Ruotando la ruota a sinistra nel moto in avanti; accade che la:",
+    "risposte": [
+      "prora vada a sinistra",
+      "prora vada a dritta",
+      "poppa vada a sinistra"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 108,
+    "categoria": "scafo",
+    "domanda": "Un'elica sinistrorsa:",
+    "risposte": [
+      "guardando la poppa dall'esterno, in marcia avanti gira in senso antiorario",
+      "in marcia avanti, tende a fare accostare la poppa a dritta",
+      "in marcia indietro, tende a fare accostare la prora a dritta"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 109,
+    "categoria": "scafo",
+    "domanda": "Con un motore fuoribordo:",
+    "risposte": [
+      "in marcia avanti, ruotando il piede a dritta, la poppa accosta a dritta",
+      "l'effetto evolutivo dell'elica è più importante rispetto a quello generato con un entrobordo monoelica",
+      "in marcia avanti, ruotando il piede a dritta, la poppa accosta a sinistra"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 110,
+    "categoria": "scafo",
+    "domanda": "Un'elica destrorsa:",
+    "risposte": [
+      "in marcia indietro, l'elica ruota in senso antiorario",
+      "in marcia indietro, con timone al centro, la poppa si sposta verso dritta",
+      "in marcia avanti, con timone al centro, la poppa si sposta verso sinistra"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 111,
+    "categoria": "scafo",
+    "domanda": "Il timone avente tutta la pala a poppavia dell'anima è denominato:",
+    "risposte": [
+      "compensato",
+      "ordinario",
+      "comune"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 112,
+    "categoria": "scafo",
+    "domanda": "Installando un timone compensato si ottiene che:",
+    "risposte": [
+      "si riesce a far ruotare il timone fino a circa 90 gradi",
+      "è richiesto uno sforzo minore per girare la ruota",
+      "l'unità ruota decisamente di più"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 113,
+    "categoria": "scafo",
+    "domanda": "Come ci si deve comportare per manovrare in caso di avaria al timone su una barca di piccole dimensioni?",
+    "risposte": [
+      "non si può manovrare per cui conviene chiedere aiuto",
+      "immergendo un remo sul lato sinistro per virare a sinistra",
+      "immergendo un remo sul lato sinistro per virare a dritta"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 114,
+    "categoria": "scafo",
+    "domanda": "Con motore entrobordo ed elica sinistrorsa, in marcia avanti e con il timone al centro:",
+    "risposte": [
+      "la poppa tende ad evoluire verso sinistra",
+      "l'unità avanza con moto diritto",
+      "la prora tende ad evoluire verso sinistra"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 115,
+    "categoria": "scafo",
+    "domanda": "Con motore entrobordo ed elica sinistrorsa, in retromarcia e con il timone al centro, accade che:",
+    "risposte": [
+      "l'unità indietreggia con moto diritto",
+      "la poppa tende ad evoluire verso dritta",
+      "la poppa tende ad evoluire verso sinistra"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 116,
+    "categoria": "scafo",
+    "domanda": "L'effetto evolutivo dell'elica su un motore entrobordo si compensa:",
+    "risposte": [
+      "usando un'elica particolare",
+      "inclinando leggermente l'asse portaelica",
+      "con il timone"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 117,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per timoni accoppiati di un'unità?",
+    "risposte": [
+      "la condizione in cui il timone principale e quello di emergenza si muovono in sincronia",
+      "due timoni uguali e simmetrici utilizzati su alcune unità navali bielica che agiscono in sincronia",
+      "la condizione in cui i due timoni montati a bordo sono collegati al pilota automatico"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 118,
+    "categoria": "scafo",
+    "domanda": "In un'unità bielica (con due assi portaelica), per quale motivo l'elica di dritta è destrorsa e l'elica di sinistra è sinistrorsa?",
+    "risposte": [
+      "per garantire una costante velocità di crociera",
+      "per eliminare il fenomeno di cavitazione dell'elica",
+      "per eliminare l'effetto laterale delle pale"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 119,
+    "categoria": "scafo",
+    "domanda": "In generale, quale effetto produce un'elica destrorsa in marcia avanti su un'unità navale monoelica con il timone al centro?",
+    "risposte": [
+      "la prua si sposterà verso sinistra e la poppa verso dritta",
+      "la prua si sposterà verso dritta e la poppa verso sinistra",
+      "poppa tenderà ad abbassarsi e la prua ad innalzarsi"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 120,
+    "categoria": "scafo",
+    "domanda": "In generale, quale effetto produce un'elica sinistrorsa in marcia avanti su un'unità navale monoelica con il timone al centro?",
+    "risposte": [
+      "la poppa tenderà ad abbassarsi e la prua ad innalzarsi",
+      "la prua si sposterà verso sinistra e la poppa verso dritta",
+      "la prua si sposterà verso dritta e la poppa verso sinistra"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 121,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per assetto di un'unità navale?",
+    "risposte": [
+      "la posizione di equilibrio assunta nel piano longitudinale (prua - poppa)",
+      "la posizione di equilibrio assunta nel piano trasversale (dritta - sinistra)",
+      "la posizione di equilibrio assunta nel piano verticale"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 122,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per rollio di un'unità navale?",
+    "risposte": [
+      "la rotazione lungo l'asse longitudinale dell'unità, che determina l'inclinazione della stessa a dritta e a sinistra",
+      "la rotazione che si verifica lungo l'asse trasversale, che determina l'immersione della prua e il contestuale sollevamento della poppa e viceversa",
+      "la rotazione che si manifesta lungo l'asse verticale, che determina la contestuale deviazione della prua da un lato e della poppa dal lato opposto"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 123,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per beccheggio di un'unità?",
+    "risposte": [
+      "la rotazione lungo l'asse longitudinale dell'unità navale, che determina l'inclinazione della stessa a dritta e a sinistra",
+      "la rotazione che si verifica lungo l'asse trasversale, che determina l'immersione della prua e il contestuale sollevamento della poppa e viceversa",
+      "la rotazione che si manifesta lungo l'asse verticale, che determina la contestuale deviazione della prua da un lato e della poppa dal lato opposto"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 124,
+    "categoria": "scafo",
+    "domanda": "Cosa si intende per accostata di un'unità?",
+    "risposte": [
+      "la rotazione dell'unità lungo l'asse longitudinale dell'unità, che determina l'inclinazione della stessa in maniera alternata a dritta e a sinistra",
+      "la rotazione dell'unità lungo l'asse trasversale, che determina l'immersione della parte prodiera e il contestuale sollevamento della parte poppiera",
+      "la rotazione dell'unità lungo l'asse verticale, che determina la contestuale deviazione della prua da un lato e della poppa dal lato opposto"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 170,
+    "categoria": "scafo",
+    "domanda": "Quali sono le parti principali di cui è composta l'elica?",
+    "risposte": [
+      "perno, superficie, stondatura ed inclinazione",
+      "alesaggio, corsa, fusto e diamante",
+      "mozzo e pale"
+    ],
+    "risposta": 2,
+    "immagine": null
+  }
+]

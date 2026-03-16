@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1142,
+    "categoria": "navigazione",
+    "domanda": "Qual è l'unità di misura per le velocità in mare?",
+    "risposte": [
+      "il metro al secondo",
+      "il nodo",
+      "il chilometro orario"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 1143,
+    "categoria": "navigazione",
+    "domanda": "Considerato il calcolo delle velocità in mare, a cosa corrisponde il nodo?",
+    "risposte": [
+      "a un miglio marino percorso in un'ora",
+      "a un chilometro percorso in un'ora",
+      "a un metro percorso in un secondo"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 1149,
+    "categoria": "navigazione",
+    "domanda": "Un miglio marino equivale a:",
+    "risposte": [
+      "1.825 metri",
+      "1.852 metri",
+      "1.609 metri"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 1154,
+    "categoria": "navigazione",
+    "domanda": "Il nodo è:",
+    "risposte": [
+      "la velocità di 1850 metri all'ora",
+      "la grandezza che equivale a 1.850 metri, pari alla lunghezza di 1' (un primo) di Longitudine",
+      "l'unità di misura della velocità della nave"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 1155,
+    "categoria": "navigazione",
+    "domanda": "Il miglio marino è l'unità di misura:",
+    "risposte": [
+      "delle distanze in mare",
+      "dell'angolo che si forma tra le rotte di due imbarcazioni",
+      "degli angoli in mare"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 1180,
+    "categoria": "navigazione",
+    "domanda": "Cosa significa l'affermazione 'velocità 5 nodi'?",
+    "risposte": [
+      "che la velocità di navigazione è di 5 km ogni ora",
+      "una distanza di 5 miglia",
+      "che in un'ora si percorrono 5 miglia"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 1273,
+    "categoria": "navigazione",
+    "domanda": "Lo scarroccio:",
+    "risposte": [
+      "con lo stesso vento, la velocità di scarroccio è uguale per tutte le navi anche se diverse tra loro",
+      "quanto minore è l'opera viva tanto minore sarà la superficie esposta al vento",
+      "dipende dall'intensità del vento, dalla velocità dell'unità, dalla superficie esposta al vento e dal tipo di carena"
+    ],
+    "risposta": 2,
+    "immagine": null
+  },
+  {
+    "id": 1274,
+    "categoria": "navigazione",
+    "domanda": "Tra i possibili moti sull'acqua che la nave può compiere o subire, si può affermare che:",
+    "risposte": [
+      "la deriva è il movimento dovuto alla presenza di correnti",
+      "la velocità di deriva dipende dalla forma della carena",
+      "lo scarroccio è il movimento dovuto al sistema di governo"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 1275,
+    "categoria": "navigazione",
+    "domanda": "La deriva è:",
+    "risposte": [
+      "l'effetto perturbatore prodotto dalla corrente marina sul moto dell'unità",
+      "la somma degli effetti prodotti dal vento sul moto dell'unità",
+      "l'effetto perturbatore prodotto dal vento sull'opera morta dell'unità"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 1276,
+    "categoria": "navigazione",
+    "domanda": "Lo scarroccio è dovuto:",
+    "risposte": [
+      "all'azione del vento",
+      "all'azione combinata di vento e corrente",
+      "all'effetto della corrente"
+    ],
+    "risposta": 0,
+    "immagine": null
+  },
+  {
+    "id": 1277,
+    "categoria": "navigazione",
+    "domanda": "La deriva è dovuta:",
+    "risposte": [
+      "all'azione combinata di vento e corrente",
+      "all'effetto della corrente",
+      "all'azione del vento"
+    ],
+    "risposta": 1,
+    "immagine": null
+  },
+  {
+    "id": 1278,
+    "categoria": "navigazione",
+    "domanda": "Con vento, di poppa, la cui direzione coincide con la direzione del moto della nave:",
+    "risposte": [
+      "si ha un effetto sulla velocità della nave ma non sulla direzione del suo percorso",
+      "si ha un effetto sulla velocità della nave ed anche sulla direzione del suo percorso",
+      "si ha un effetto non sulla velocità della nave ma sulla direzione del suo percorso"
+    ],
+    "risposta": 0,
+    "immagine": null
+  }
+]
