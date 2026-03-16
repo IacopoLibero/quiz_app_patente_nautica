@@ -22,9 +22,23 @@ export default function Home() {
         <nav aria-label="Scegli patente">
           <button
             className={styles.navItem}
-            onClick={() => navigate('/nautica')}
+            onClick={() => navigate('/d1')}
           >
             <span className={styles.navNum} aria-hidden="true">01</span>
+            <div className={styles.navContent}>
+              <span className={styles.navTitle}>Patente D1</span>
+              <span className={styles.navDesc}>792 domande · 8 materie</span>
+            </div>
+            <ArrowRight className={styles.navArrow} size={20} strokeWidth={1.5} aria-hidden="true" />
+          </button>
+
+          <div className={styles.rule} role="separator" />
+
+          <button
+            className={styles.navItem}
+            onClick={() => navigate('/nautica')}
+          >
+            <span className={styles.navNum} aria-hidden="true">02</span>
             <div className={styles.navContent}>
               <span className={styles.navTitle}>Patente Nautica</span>
               <span className={styles.navDesc}>1.472 domande · 8 materie</span>
@@ -38,7 +52,7 @@ export default function Home() {
             className={styles.navItem}
             onClick={() => navigate('/vela')}
           >
-            <span className={styles.navNum} aria-hidden="true">02</span>
+            <span className={styles.navNum} aria-hidden="true">03</span>
             <div className={styles.navContent}>
               <span className={styles.navTitle}>Integrazione Vela</span>
               <span className={styles.navDesc}>250 domande · Vero / Falso</span>
@@ -52,7 +66,7 @@ export default function Home() {
             className={styles.navItem}
             onClick={() => navigate('/carteggio')}
           >
-            <span className={styles.navNum} aria-hidden="true">03</span>
+            <span className={styles.navNum} aria-hidden="true">04</span>
             <div className={styles.navContent}>
               <span className={styles.navTitle}>Carteggio 12 Miglia</span>
               <span className={styles.navDesc}>50 domande · Calcoli nautici</span>
@@ -62,14 +76,15 @@ export default function Home() {
 
           <div className={styles.rule} role="separator" />
 
+
           <button
             className={styles.navItem}
-            onClick={() => navigate('/d1')}
+            onClick={() => navigate('/carteggio-oltre')}
           >
-            <span className={styles.navNum} aria-hidden="true">04</span>
+            <span className={styles.navNum} aria-hidden="true">05</span>
             <div className={styles.navContent}>
-              <span className={styles.navTitle}>Patente D1</span>
-              <span className={styles.navDesc}>792 domande · 8 materie</span>
+              <span className={styles.navTitle}>Carteggio Oltre 12 Miglia</span>
+              <span className={styles.navDesc}>135 esercizi · Carte 42D e 5D</span>
             </div>
             <ArrowRight className={styles.navArrow} size={20} strokeWidth={1.5} aria-hidden="true" />
           </button>

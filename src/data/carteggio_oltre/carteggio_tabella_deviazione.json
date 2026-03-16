@@ -1,0 +1,371 @@
+{
+  "carta": "5D",
+  "descrizione": "Tabella di deviazione per Carta Nautica 5D",
+  "voci": [
+    {
+      "pm": 0,
+      "deviazione": -2,
+      "pb": 2
+    },
+    {
+      "pm": 5,
+      "deviazione": -2,
+      "pb": 7
+    },
+    {
+      "pm": 10,
+      "deviazione": -2,
+      "pb": 12
+    },
+    {
+      "pm": 15,
+      "deviazione": -3,
+      "pb": 18
+    },
+    {
+      "pm": 20,
+      "deviazione": -3,
+      "pb": 23
+    },
+    {
+      "pm": 25,
+      "deviazione": -3,
+      "pb": 28
+    },
+    {
+      "pm": 30,
+      "deviazione": -3,
+      "pb": 33
+    },
+    {
+      "pm": 35,
+      "deviazione": -3,
+      "pb": 38
+    },
+    {
+      "pm": 40,
+      "deviazione": -3,
+      "pb": 43
+    },
+    {
+      "pm": 45,
+      "deviazione": -4,
+      "pb": 49
+    },
+    {
+      "pm": 50,
+      "deviazione": -4,
+      "pb": 54
+    },
+    {
+      "pm": 55,
+      "deviazione": -4,
+      "pb": 59
+    },
+    {
+      "pm": 60,
+      "deviazione": -4,
+      "pb": 64
+    },
+    {
+      "pm": 65,
+      "deviazione": -4,
+      "pb": 69
+    },
+    {
+      "pm": 70,
+      "deviazione": -4,
+      "pb": 74
+    },
+    {
+      "pm": 75,
+      "deviazione": -4,
+      "pb": 79
+    },
+    {
+      "pm": 80,
+      "deviazione": -5,
+      "pb": 85
+    },
+    {
+      "pm": 85,
+      "deviazione": -5,
+      "pb": 90
+    },
+    {
+      "pm": 90,
+      "deviazione": -5,
+      "pb": 95
+    },
+    {
+      "pm": 95,
+      "deviazione": -4,
+      "pb": 99
+    },
+    {
+      "pm": 100,
+      "deviazione": -3,
+      "pb": 103
+    },
+    {
+      "pm": 105,
+      "deviazione": -2,
+      "pb": 107
+    },
+    {
+      "pm": 110,
+      "deviazione": -2,
+      "pb": 112
+    },
+    {
+      "pm": 115,
+      "deviazione": -1,
+      "pb": 116
+    },
+    {
+      "pm": 120,
+      "deviazione": -1,
+      "pb": 121
+    },
+    {
+      "pm": 125,
+      "deviazione": 0,
+      "pb": 125
+    },
+    {
+      "pm": 130,
+      "deviazione": 1,
+      "pb": 129
+    },
+    {
+      "pm": 135,
+      "deviazione": 2,
+      "pb": 133
+    },
+    {
+      "pm": 140,
+      "deviazione": 2,
+      "pb": 138
+    },
+    {
+      "pm": 145,
+      "deviazione": 2,
+      "pb": 143
+    },
+    {
+      "pm": 150,
+      "deviazione": 2,
+      "pb": 148
+    },
+    {
+      "pm": 155,
+      "deviazione": 2,
+      "pb": 153
+    },
+    {
+      "pm": 160,
+      "deviazione": 3,
+      "pb": 157
+    },
+    {
+      "pm": 165,
+      "deviazione": 3,
+      "pb": 162
+    },
+    {
+      "pm": 170,
+      "deviazione": 3,
+      "pb": 167
+    },
+    {
+      "pm": 175,
+      "deviazione": 3,
+      "pb": 172
+    },
+    {
+      "pm": 180,
+      "deviazione": 3,
+      "pb": 177
+    },
+    {
+      "pm": 185,
+      "deviazione": 4,
+      "pb": 181
+    },
+    {
+      "pm": 190,
+      "deviazione": 4,
+      "pb": 186
+    },
+    {
+      "pm": 195,
+      "deviazione": 4,
+      "pb": 191
+    },
+    {
+      "pm": 200,
+      "deviazione": 4,
+      "pb": 196
+    },
+    {
+      "pm": 205,
+      "deviazione": 5,
+      "pb": 200
+    },
+    {
+      "pm": 210,
+      "deviazione": 5,
+      "pb": 205
+    },
+    {
+      "pm": 215,
+      "deviazione": 5,
+      "pb": 210
+    },
+    {
+      "pm": 220,
+      "deviazione": 5,
+      "pb": 215
+    },
+    {
+      "pm": 225,
+      "deviazione": 5,
+      "pb": 220
+    },
+    {
+      "pm": 230,
+      "deviazione": 4,
+      "pb": 226
+    },
+    {
+      "pm": 235,
+      "deviazione": 4,
+      "pb": 231
+    },
+    {
+      "pm": 240,
+      "deviazione": 3,
+      "pb": 237
+    },
+    {
+      "pm": 245,
+      "deviazione": 3,
+      "pb": 242
+    },
+    {
+      "pm": 250,
+      "deviazione": 2,
+      "pb": 248
+    },
+    {
+      "pm": 255,
+      "deviazione": 2,
+      "pb": 253
+    },
+    {
+      "pm": 260,
+      "deviazione": 1,
+      "pb": 259
+    },
+    {
+      "pm": 265,
+      "deviazione": 0,
+      "pb": 265
+    },
+    {
+      "pm": 270,
+      "deviazione": -1,
+      "pb": 271
+    },
+    {
+      "pm": 275,
+      "deviazione": -1,
+      "pb": 276
+    },
+    {
+      "pm": 280,
+      "deviazione": -1,
+      "pb": 281
+    },
+    {
+      "pm": 285,
+      "deviazione": -2,
+      "pb": 287
+    },
+    {
+      "pm": 290,
+      "deviazione": -2,
+      "pb": 292
+    },
+    {
+      "pm": 295,
+      "deviazione": -2,
+      "pb": 297
+    },
+    {
+      "pm": 300,
+      "deviazione": -3,
+      "pb": 303
+    },
+    {
+      "pm": 305,
+      "deviazione": -3,
+      "pb": 308
+    },
+    {
+      "pm": 310,
+      "deviazione": -3,
+      "pb": 313
+    },
+    {
+      "pm": 315,
+      "deviazione": -3,
+      "pb": 318
+    },
+    {
+      "pm": 320,
+      "deviazione": -3,
+      "pb": 323
+    },
+    {
+      "pm": 325,
+      "deviazione": -2,
+      "pb": 327
+    },
+    {
+      "pm": 330,
+      "deviazione": -2,
+      "pb": 332
+    },
+    {
+      "pm": 335,
+      "deviazione": -2,
+      "pb": 337
+    },
+    {
+      "pm": 340,
+      "deviazione": -2,
+      "pb": 342
+    },
+    {
+      "pm": 345,
+      "deviazione": -2,
+      "pb": 347
+    },
+    {
+      "pm": 350,
+      "deviazione": -2,
+      "pb": 352
+    },
+    {
+      "pm": 355,
+      "deviazione": -2,
+      "pb": 357
+    },
+    {
+      "pm": 360,
+      "deviazione": -2,
+      "pb": 2
+    }
+  ]
+}

@@ -9,6 +9,8 @@ import Statistiche from './pages/Statistiche/Statistiche';
 import CarteggioMenu from './pages/CarteggioMenu/CarteggioMenu';
 import CarteggioQuiz from './pages/CarteggioQuiz/CarteggioQuiz';
 import D1Menu from './pages/D1Menu/D1Menu';
+import CarteggioOltreMenu from './pages/CarteggioOltreMenu/CarteggioOltreMenu';
+import CarteggioOltreQuiz from './pages/CarteggioOltreQuiz/CarteggioOltreQuiz';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/carteggio" element={<CarteggioMenu />} />
         <Route path="/carteggio/quiz" element={<CarteggioQuiz />} />
         <Route path="/d1" element={<D1Menu />} />
+        <Route path="/carteggio-oltre" element={<CarteggioOltreMenu />} />
+        <Route path="/carteggio-oltre/quiz" element={<CarteggioOltreQuiz />} />
       </Routes>
     </HashRouter>
   );

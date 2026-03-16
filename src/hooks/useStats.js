@@ -12,13 +12,8 @@ export function useNauticaStats() {
   const saveSessione = useCallback((sessione, domandeSbagliate, domandeTotali) => {
     const stats = getNauticaStats();
 
-    // Add session
-    stats.sessioni.push({
-      ...sessione,
-      data: new Date().toISOString(),
-    });
+    stats.sessioni.push({ ...sessione, data: new Date().toISOString() });
 
-    // Update wrong/correct questions
     const sbagliateSet = new Set(stats.domandeSbagliate);
     const corretteSet = new Set(stats.domandeCorrette || []);
     const corretteConsecutive = { ...stats.corretteConsecutive };
@@ -41,18 +36,20 @@ export function useNauticaStats() {
     stats.domandeCorrette = [...corretteSet];
     stats.corretteConsecutive = corretteConsecutive;
 
-    // Update per-category stats
-    for (const q of domandeTotali) {
-      const cat = q.categoria;
-      if (!cat) continue;
-      if (!stats.rispostePerCategoria[cat]) {
-        stats.rispostePerCategoria[cat] = { corrette: 0, totale: 0 };
-      }
-      stats.rispostePerCategoria[cat].totale += 1;
-      if (!domandeSbagliate.includes(q.id)) {
-        stats.rispostePerCategoria[cat].corrette += 1;
+    // Build/update question→category map, then recompute per-category from current sets
+    const qMap = { ...(stats.questionCategories || {}) };
+    for (const q of domandeTotali) { if (q.categoria) qMap[q.id] = q.categoria; }
+    stats.questionCategories = qMap;
+
+    const rpc = {};
+    for (const [id, cat] of Object.entries(qMap)) {
+      if (!rpc[cat]) rpc[cat] = { corrette: 0, totale: 0 };
+      if (corretteSet.has(id) || sbagliateSet.has(id)) {
+        rpc[cat].totale += 1;
+        if (corretteSet.has(id) && !sbagliateSet.has(id)) rpc[cat].corrette += 1;
       }
     }
+    stats.rispostePerCategoria = rpc;
 
     saveNauticaStats(stats);
   }, []);
@@ -129,10 +126,7 @@ export function useD1Stats() {
   const saveSessione = useCallback((sessione, domandeSbagliate, domandeTotali) => {
     const stats = getD1Stats();
 
-    stats.sessioni.push({
-      ...sessione,
-      data: new Date().toISOString(),
-    });
+    stats.sessioni.push({ ...sessione, data: new Date().toISOString() });
 
     const sbagliateSet = new Set(stats.domandeSbagliate);
     const corretteSet = new Set(stats.domandeCorrette || []);
@@ -156,17 +150,19 @@ export function useD1Stats() {
     stats.domandeCorrette = [...corretteSet];
     stats.corretteConsecutive = corretteConsecutive;
 
-    for (const q of domandeTotali) {
-      const cat = q.categoria;
-      if (!cat) continue;
-      if (!stats.rispostePerCategoria[cat]) {
-        stats.rispostePerCategoria[cat] = { corrette: 0, totale: 0 };
-      }
-      stats.rispostePerCategoria[cat].totale += 1;
-      if (!domandeSbagliate.includes(q.id)) {
-        stats.rispostePerCategoria[cat].corrette += 1;
+    const qMap = { ...(stats.questionCategories || {}) };
+    for (const q of domandeTotali) { if (q.categoria) qMap[q.id] = q.categoria; }
+    stats.questionCategories = qMap;
+
+    const rpc = {};
+    for (const [id, cat] of Object.entries(qMap)) {
+      if (!rpc[cat]) rpc[cat] = { corrette: 0, totale: 0 };
+      if (corretteSet.has(id) || sbagliateSet.has(id)) {
+        rpc[cat].totale += 1;
+        if (corretteSet.has(id) && !sbagliateSet.has(id)) rpc[cat].corrette += 1;
       }
     }
+    stats.rispostePerCategoria = rpc;
 
     saveD1Stats(stats);
   }, []);

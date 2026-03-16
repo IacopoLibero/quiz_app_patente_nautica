@@ -90,6 +90,28 @@ export function saveD1Stats(stats) {
   setItem('d1_stats', stats);
 }
 
+const DEFAULT_CARTEGGIO_OLTRE_STATS = {
+  sessioni: [],
+  perCarta: {},
+};
+
+export function getCarteggioOltreStats() {
+  return getItem('carteggio_oltre_stats', DEFAULT_CARTEGGIO_OLTRE_STATS);
+}
+
+export function saveCarteggioOltreStats(stats) {
+  setItem('carteggio_oltre_stats', stats);
+}
+
+export function addCarteggioOltreResult({ carta, settore, argomento, progressivo, passed }) {
+  const stats = getCarteggioOltreStats();
+  stats.sessioni.push({ carta, settore, argomento, progressivo, passed, data: new Date().toISOString() });
+  if (!stats.perCarta[carta]) stats.perCarta[carta] = { totale: 0, corrette: 0 };
+  stats.perCarta[carta].totale += 1;
+  if (passed) stats.perCarta[carta].corrette += 1;
+  saveCarteggioOltreStats(stats);
+}
+
 const DEFAULT_CARTEGGIO_STATS = {
   sessioni: [],
   rispostePerSettore: {},

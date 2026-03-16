@@ -2,25 +2,22 @@ import React, { useState } from 'react';
 import { CheckCircle, XCircle } from 'lucide-react';
 import styles from './QuestionCard.module.css';
 
-export default function QuestionCard({ question, onAnswer, answered, selectedAnswer }) {
+export default function QuestionCard({ question, onAnswer, answered, selectedAnswer, hideResult }) {
   const [imgError, setImgError] = useState(false);
   const isVF = !question.risposte;
-  const isCorrect = answered && (
-    isVF
-      ? selectedAnswer === question.risposta
-      : selectedAnswer === question.risposta
-  );
+  const isCorrect = answered && selectedAnswer === question.risposta;
   const correctAnswer = question.risposta;
 
   const getButtonClass = (index) => {
     if (!answered) return styles.btn;
+    if (hideResult) return index === selectedAnswer ? `${styles.btn} ${styles.selected}` : styles.btn;
     if (index === correctAnswer) return `${styles.btn} ${styles.correct}`;
     if (index === selectedAnswer && index !== correctAnswer) return `${styles.btn} ${styles.wrong}`;
     return `${styles.btn} ${styles.dimmed}`;
   };
 
   return (
-    <div className={`${styles.card} ${answered ? (isCorrect ? styles.cardCorrect : styles.cardWrong) : ''}`}>
+    <div className={`${styles.card} ${answered && !hideResult ? (isCorrect ? styles.cardCorrect : styles.cardWrong) : ''}`}>
       {question.immagine && !imgError && (
         <img
           src={`${process.env.PUBLIC_URL}${question.immagine}`}
@@ -36,7 +33,7 @@ export default function QuestionCard({ question, onAnswer, answered, selectedAns
 
       <p className={styles.domanda}>{question.domanda}</p>
 
-      {answered && (
+      {answered && !hideResult && (
         <div
           className={`${styles.feedback} ${isCorrect ? styles.feedbackCorrect : styles.feedbackWrong}`}
           role="status"

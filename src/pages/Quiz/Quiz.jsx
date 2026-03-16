@@ -72,6 +72,7 @@ export default function Quiz() {
             onAnswer={quiz.answer}
             answered={quiz.answered}
             selectedAnswer={quiz.selectedAnswer}
+            hideResult
           />
         )}
 

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { BookOpen, Trash2 } from 'lucide-react';
 import Header from '../../components/Header/Header';
 import BarChart from '../../components/BarChart/BarChart';
-import { getNauticaStats, getVelaStats, getCarteggioStats, saveCarteggioStats, getD1Stats } from '../../utils/localStorage';
+import { getNauticaStats, getVelaStats, getCarteggioStats, saveCarteggioStats, getD1Stats, getCarteggioOltreStats, saveCarteggioOltreStats } from '../../utils/localStorage';
 import { useNauticaStats, useVelaStats, useD1Stats } from '../../hooks/useStats';
 import styles from './Statistiche.module.css';
 
@@ -42,6 +42,7 @@ export default function Statistiche() {
   const vela = getVelaStats();
   const carteggio = getCarteggioStats();
   const d1 = getD1Stats();
+  const oltre = getCarteggioOltreStats();
 
   function calcStats(sessioni) {
     if (!sessioni || sessioni.length === 0) return { total: 0, media: 0, best: 0 };
@@ -55,12 +56,14 @@ export default function Statistiche() {
   function handleResetNautica()   { setConfirmReset('nautica'); }
   function handleResetVela()      { setConfirmReset('vela'); }
   function handleResetCarteggio() { setConfirmReset('carteggio'); }
+  function handleResetOltre()     { setConfirmReset('oltre'); }
   function handleResetD1()        { setConfirmReset('d1'); }
 
   function confirmDoReset() {
     if (confirmReset === 'nautica') nauticaHook.resetStats();
     else if (confirmReset === 'vela') velaHook.resetStats();
     else if (confirmReset === 'carteggio') saveCarteggioStats({ sessioni: [], rispostePerSettore: {} });
+    else if (confirmReset === 'oltre') saveCarteggioOltreStats({ sessioni: [], perCarta: {} });
     else if (confirmReset === 'd1') d1Hook.resetStats();
     setConfirmReset(null);
     setRefreshKey(k => k + 1);
@@ -101,8 +104,9 @@ export default function Statistiche() {
   const confirmLabel = {
     nautica: 'Patente Nautica',
     vela: 'Vela',
-    carteggio: 'Carteggio',
+    carteggio: 'Carteggio Entro 12 Miglia',
     d1: 'Patente D1',
+    oltre: 'Carteggio Oltre 12 Miglia',
   };
 
   return (
@@ -281,8 +285,57 @@ export default function Statistiche() {
 
             <div className={styles.rule} style={{ marginTop: 32 }} />
             <button className={styles.resetBtn} onClick={handleResetCarteggio}>
-              <Trash2 size={14} strokeWidth={1.75} aria-hidden="true" /> Reset statistiche Carteggio
+              <Trash2 size={14} strokeWidth={1.75} aria-hidden="true" /> Reset statistiche Entro 12 Miglia
             </button>
+
+            {/* ── Oltre 12 Miglia ── */}
+            <div className={styles.rule} style={{ marginTop: 32 }} />
+            <h3 className={styles.sectionTitle} style={{ marginTop: 20 }}>Oltre 12 Miglia</h3>
+
+            {(() => {
+              const s = oltre.sessioni || [];
+              const totale = s.length;
+              const corrette = s.filter(x => x.passed).length;
+              const pct = totale > 0 ? Math.round((corrette / totale) * 100) : 0;
+              return (
+                <>
+                  <div className={styles.statsRow}>
+                    <div className={styles.statItem}>
+                      <span className={styles.statNum}>{totale}</span>
+                      <span className={styles.statLabel}>Tentate</span>
+                    </div>
+                    <div className={styles.statItem}>
+                      <span className={styles.statNum}>{corrette}</span>
+                      <span className={styles.statLabel}>Corrette</span>
+                    </div>
+                    <div className={styles.statItem}>
+                      <span className={styles.statNum}>{totale > 0 ? pct + '%' : '—'}</span>
+                      <span className={styles.statLabel}>Accuratezza</span>
+                    </div>
+                  </div>
+
+                  {Object.keys(oltre.perCarta || {}).length > 0 && (
+                    <section className={styles.section}>
+                      <div className={styles.rule} />
+                      <h3 className={styles.sectionTitle}>Per Carta</h3>
+                      {Object.entries(oltre.perCarta).map(([carta, v]) => (
+                        <div key={carta} className={styles.settoreRow}>
+                          <span className={styles.settoreLabel}>Carta {carta}</span>
+                          <span className={styles.settoreVal}>
+                            {v.corrette}/{v.totale} corrette ({v.totale > 0 ? Math.round((v.corrette / v.totale) * 100) : 0}%)
+                          </span>
+                        </div>
+                      ))}
+                    </section>
+                  )}
+
+                  <div className={styles.rule} style={{ marginTop: 20 }} />
+                  <button className={styles.resetBtn} onClick={handleResetOltre}>
+                    <Trash2 size={14} strokeWidth={1.75} aria-hidden="true" /> Reset statistiche Oltre 12 Miglia
+                  </button>
+                </>
+              );
+            })()}
           </div>
         ) : tab === 'd1' ? (
           <div role="tabpanel" id="panel-d1" aria-labelledby="tab-d1">
