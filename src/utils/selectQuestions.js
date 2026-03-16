@@ -11,7 +11,9 @@ export function shuffle(array) {
 // Select N questions spread across the full range (for vela exam)
 export function selectSpread(array, count) {
   if (array.length <= count) return shuffle(array);
-  const sorted = [...array].sort((a, b) => a.id - b.id);
+  const sorted = [...array].sort((a, b) =>
+    String(a.id).localeCompare(String(b.id), undefined, { numeric: true })
+  );
   const segmentSize = Math.floor(sorted.length / count);
   const result = [];
   for (let i = 0; i < count; i++) {
@@ -105,7 +107,9 @@ export function selectShuffleCategorie(categorieData, total = 20) {
 
 // Select 20 questions from a single category in sequential order (by id)
 export function selectCategoria(catData, total = 20) {
-  const sorted = [...catData].sort((a, b) => a.id - b.id);
+  const sorted = [...catData].sort((a, b) =>
+    String(a.id).localeCompare(String(b.id), undefined, { numeric: true })
+  );
   return sorted.slice(0, total);
 }
 

@@ -50,11 +50,15 @@ const DEFAULT_VELA_STATS = {
 };
 
 export function getNauticaStats() {
-  return getItem('nautica_stats', DEFAULT_NAUTICA_STATS);
+  const stored = getItem('nautica_stats', null);
+  if (!stored) return { ...DEFAULT_NAUTICA_STATS };
+  return { ...DEFAULT_NAUTICA_STATS, ...stored };
 }
 
 export function getVelaStats() {
-  return getItem('vela_stats', DEFAULT_VELA_STATS);
+  const stored = getItem('vela_stats', null);
+  if (!stored) return { ...DEFAULT_VELA_STATS };
+  return { ...DEFAULT_VELA_STATS, ...stored };
 }
 
 export function saveNauticaStats(stats) {
@@ -83,7 +87,9 @@ const DEFAULT_D1_STATS = {
 };
 
 export function getD1Stats() {
-  return getItem('d1_stats', DEFAULT_D1_STATS);
+  const stored = getItem('d1_stats', null);
+  if (!stored) return { ...DEFAULT_D1_STATS };
+  return { ...DEFAULT_D1_STATS, ...stored };
 }
 
 export function saveD1Stats(stats) {

@@ -48,12 +48,12 @@ export default function D1Menu() {
 
   const stats = getD1Stats();
   const numSbagliate = stats.domandeSbagliate.length;
-  const corretteSet = new Set(stats.domandeCorrette || []);
+  const corretteSet = new Set((stats.domandeCorrette || []).map(id => String(id)));
   const numCorrette = corretteSet.size;
 
   function filterPool(questions) {
     if (!escludiCorrette) return questions;
-    return questions.filter(q => !corretteSet.has(q.id));
+    return questions.filter(q => !corretteSet.has(String(q.id)));
   }
 
   function startQuiz(domande, modalita, timerMinuti = null, maxErrori = null) {
@@ -69,7 +69,12 @@ export default function D1Menu() {
 
   function handleEsame() {
     const pool = filterPool(ALL_QUESTIONS);
-    startQuiz(selectEsameD1(pool), 'esame', 30, 3);
+    const domande = selectEsameD1(pool);
+    if (domande.length < 15) {
+      setErrorMsg(`Solo ${domande.length}/15 domande disponibili con il filtro attivo. Disattiva "Escludi già corrette" per un esame completo.`);
+      return;
+    }
+    startQuiz(domande, 'esame', 30, 3);
   }
 
   function handleCategoria(cat) {

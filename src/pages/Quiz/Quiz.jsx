@@ -18,12 +18,20 @@ export default function Quiz() {
     }
   }, [domande, navigate]);
 
+  // Prevent browser back button from exiting mid-quiz
+  useEffect(() => {
+    window.history.pushState(null, '', window.location.href);
+    const block = () => window.history.pushState(null, '', window.location.href);
+    window.addEventListener('popstate', block);
+    return () => window.removeEventListener('popstate', block);
+  }, []);
+
   const quiz = useQuiz({ domande: domande || [], timerMinuti, maxErrori });
 
   useEffect(() => {
     if (quiz.finished) {
       const sbagliate = quiz.getSbagliate();
-      const corrette = domande.length - sbagliate.length;
+      const corrette = Math.max(0, domande.length - sbagliate.length);
       navigate('/risultato', {
         state: {
           domande,
@@ -45,8 +53,6 @@ export default function Quiz() {
 
   if (!domande || domande.length === 0) return null;
 
-  const isEsame = modalita === 'esame';
-
   return (
     <div className={styles.page}>
       <Header
@@ -54,8 +60,6 @@ export default function Quiz() {
         showBack={false}
         current={quiz.currentIndex + 1}
         total={quiz.totalDomande}
-        errori={isEsame ? quiz.errori : undefined}
-        maxErrori={isEsame ? maxErrori : undefined}
       />
 
       <ProgressBar current={quiz.currentIndex + 1} total={quiz.totalDomande} />

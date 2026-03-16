@@ -44,8 +44,9 @@ export default function CarteggioOltreMenu() {
 
   function startEsercitazione() {
     if (filtered.length === 0) return;
+    const pool = shuffle(filtered);
     navigate('/carteggio-oltre/quiz', {
-      state: { mode: 'esercitazione', pool: shuffle(filtered) },
+      state: { mode: 'esercitazione', pool, fullPool: pool },
     });
   }
 

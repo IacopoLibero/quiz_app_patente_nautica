@@ -33,7 +33,7 @@ export default function useQuiz({ domande, timerMinuti, maxErrori }) {
     : null;
   const answered = selectedAnswer !== null && selectedAnswer !== undefined;
 
-  const allAnswered = domande.every(q => selectedAnswers[q.id] !== undefined && selectedAnswers[q.id] !== null);
+  const allAnswered = domande.length > 0 && domande.every(q => selectedAnswers[q.id] !== undefined && selectedAnswers[q.id] !== null);
 
   const answer = useCallback((answerIndex) => {
     const q = domande[currentIndex];
@@ -45,7 +45,7 @@ export default function useQuiz({ domande, timerMinuti, maxErrori }) {
       clearInterval(timerRef.current);
       setFinished(true);
     } else {
-      setCurrentIndex(prev => prev + 1);
+      setCurrentIndex(currentIndex + 1); // use closure value, not functional update — prevents double-click jumping
     }
   }, [currentIndex, domande.length]);
 

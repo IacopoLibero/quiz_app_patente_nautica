@@ -26,6 +26,7 @@ export default function CarteggioOltreQuiz() {
 
   const mode          = location.state?.mode || 'esercitazione';
   const pool          = location.state?.pool          || []; // esercitazione
+  const fullPool      = location.state?.fullPool      || pool; // for reshuffling when pool exhausted
   const examQuestions = location.state?.questions     || []; // esame
 
   // Current question list for this session
@@ -51,6 +52,15 @@ export default function CarteggioOltreQuiz() {
       setRevealed(true);
     }
   }, [mode]);
+
+  // Prevent browser back button from exiting mid-quiz
+  useEffect(() => {
+    window.history.pushState(null, '', window.location.href);
+    const block = () => { if (!done) window.history.pushState(null, '', window.location.href); };
+    window.addEventListener('popstate', block);
+    return () => window.removeEventListener('popstate', block);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     timerRef.current = setInterval(() => {
@@ -93,9 +103,9 @@ export default function CarteggioOltreQuiz() {
 
   function nextQuestion() {
     const remaining = pool.slice(1);
-    const nextPool = remaining.length > 0 ? remaining : shuffle(pool);
+    const nextPool = remaining.length > 0 ? remaining : shuffle(fullPool);
     navigate('/carteggio-oltre/quiz', {
-      state: { mode: 'esercitazione', pool: nextPool },
+      state: { mode: 'esercitazione', pool: nextPool, fullPool },
       replace: true,
     });
   }
@@ -154,15 +164,20 @@ export default function CarteggioOltreQuiz() {
           </div>
 
           <div className={styles.summaryList}>
-            {selfResults.map((r, i) => (
-              <div key={i} className={`${styles.summaryItem} ${r.passed ? styles.summaryCorrect : styles.summaryWrong}`}>
-                {r.passed
-                  ? <CheckCircle size={14} strokeWidth={2} className={styles.summaryIcon} />
-                  : <XCircle size={14} strokeWidth={2} className={styles.summaryIcon} />}
-                <span className={styles.summaryItemText}>{r.carta} · {r.settore} · {r.argomento}</span>
-                <span className={styles.summaryProg}>{r.progressivo}</span>
-              </div>
-            ))}
+            {questions.map((q, i) => {
+              const r = selfResults[i];
+              const assessed = !!r;
+              const passed = assessed ? r.passed : false;
+              return (
+                <div key={i} className={`${styles.summaryItem} ${passed ? styles.summaryCorrect : styles.summaryWrong}`}>
+                  {passed
+                    ? <CheckCircle size={14} strokeWidth={2} className={styles.summaryIcon} />
+                    : <XCircle size={14} strokeWidth={2} className={styles.summaryIcon} />}
+                  <span className={styles.summaryItemText}>{q.carta} · {q.settore} · {q.argomento}</span>
+                  <span className={styles.summaryProg}>{assessed ? q.progressivo : '—'}</span>
+                </div>
+              );
+            })}
           </div>
 
           <div className={styles.actions}>

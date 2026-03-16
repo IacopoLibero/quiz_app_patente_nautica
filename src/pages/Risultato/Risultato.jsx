@@ -32,13 +32,13 @@ export default function Risultato() {
   } = location.state || {};
 
   const totale = domande.length;
-  // Show pass/fail whenever maxErrori is set (exam and all vela modes)
   let promosso = null;
   if (maxErrori !== null && maxErrori !== undefined) {
     promosso = !failed && !timerExpired && sbagliate.length <= maxErrori;
   }
 
   useEffect(() => {
+    if (!location.state) { navigate('/', { replace: true }); return; }
     if (savedRef.current || domande.length === 0) return;
     savedRef.current = true;
     const sessione = { modalita, punteggio: corrette, totale, tempoSecondi, sbagliate };
@@ -52,6 +52,8 @@ export default function Risultato() {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  if (!location.state) return null;
 
   const domandeSbagliate = domande.filter(q => sbagliate.includes(q.id));
 

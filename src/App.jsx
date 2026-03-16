@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import NauticaMenu from './pages/NauticaMenu/NauticaMenu';
 import VelaMenu from './pages/VelaMenu/VelaMenu';
@@ -27,6 +27,7 @@ function App() {
         <Route path="/d1" element={<D1Menu />} />
         <Route path="/carteggio-oltre" element={<CarteggioOltreMenu />} />
         <Route path="/carteggio-oltre/quiz" element={<CarteggioOltreQuiz />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>
   );

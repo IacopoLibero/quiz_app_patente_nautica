@@ -48,12 +48,12 @@ export default function NauticaMenu() {
 
   const stats = getNauticaStats();
   const numSbagliate = stats.domandeSbagliate.length;
-  const corretteSet = new Set(stats.domandeCorrette || []);
+  const corretteSet = new Set((stats.domandeCorrette || []).map(id => String(id)));
   const numCorrette = corretteSet.size;
 
   function filterPool(questions) {
     if (!escludiCorrette) return questions;
-    return questions.filter(q => !corretteSet.has(q.id));
+    return questions.filter(q => !corretteSet.has(String(q.id)));
   }
 
   function startQuiz(domande, modalita, timerMinuti = null, maxErrori = null) {
@@ -69,7 +69,12 @@ export default function NauticaMenu() {
 
   function handleEsame() {
     const pool = filterPool(ALL_QUESTIONS);
-    startQuiz(selectEsameNautica(pool), 'esame', 30, 4);
+    const domande = selectEsameNautica(pool);
+    if (domande.length < 20) {
+      setErrorMsg(`Solo ${domande.length}/20 domande disponibili con il filtro attivo. Disattiva "Escludi già corrette" per un esame completo.`);
+      return;
+    }
+    startQuiz(domande, 'esame', 30, 4);
   }
 
   function handleCategoria(cat) {

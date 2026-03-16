@@ -107,21 +107,27 @@ export default function CarteggioQuiz() {
     setSubmitted(true);
   }, [submitted, domanda, answers]);
 
+  const submitRef = useRef(null);
+  useEffect(() => { submitRef.current = submit; });
+
+  // Prevent browser back button from exiting mid-quiz
+  useEffect(() => {
+    window.history.pushState(null, '', window.location.href);
+    const block = () => { if (!submitted) window.history.pushState(null, '', window.location.href); };
+    window.addEventListener('popstate', block);
+    return () => window.removeEventListener('popstate', block);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   useEffect(() => {
     timerRef.current = setInterval(() => {
       setSecondsLeft(s => {
-        if (s <= 1) { clearInterval(timerRef.current); submit(); return 0; }
+        if (s <= 1) { clearInterval(timerRef.current); submitRef.current(); return 0; }
         return s - 1;
       });
     }, 1000);
     return () => clearInterval(timerRef.current);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  // When submit() is available after mount, wire timer expiry
-  useEffect(() => {
-    if (secondsLeft === 0 && !submitted) submit();
-  }, [secondsLeft, submitted, submit]);
 
   const setAnswer = (n, val) => setAnswers(prev => ({ ...prev, [n]: val }));
 

@@ -17,29 +17,29 @@ export default function VelaMenu() {
 
   const stats = getVelaStats();
   const numSbagliate = stats.domandeSbagliate.length;
-  const corretteSet = new Set(stats.domandeCorrette || []);
+  const corretteSet = new Set((stats.domandeCorrette || []).map(id => String(id)));
   const numCorrette = corretteSet.size;
 
   function filterPool(questions) {
     if (!escludiCorrette) return questions;
-    return questions.filter(q => !corretteSet.has(q.id));
+    return questions.filter(q => !corretteSet.has(String(q.id)));
   }
 
-  function startQuiz(domande, modalita, timerMinuti = null) {
+  function startQuiz(domande, modalita, timerMinuti = null, maxErrori = null) {
     if (domande.length === 0) {
       setErrorMsg('Nessuna domanda disponibile. Disattiva il filtro per ripassarle.');
       return;
     }
     setErrorMsg(null);
     navigate('/quiz', {
-      state: { domande, modalita, timerMinuti, maxErrori: 1, tipo: 'vela' },
+      state: { domande, modalita, timerMinuti, maxErrori, tipo: 'vela' },
     });
   }
 
   function handleEsame() {
     const pool = filterPool(velaData);
     const domande = selectCategoria(pool, 5);
-    startQuiz(domande, 'esame', 15);
+    startQuiz(domande, 'esame', 15, 1);
   }
 
   function handleStudia() {
@@ -110,7 +110,7 @@ export default function VelaMenu() {
         <button className={styles.modeRow} onClick={handleStudia}>
           <div>
             <p className={styles.modeTitle}>Studia Tutto</p>
-            <p className={styles.modeDesc}>5 domande · max 1 errore</p>
+            <p className={styles.modeDesc}>5 domande</p>
           </div>
           <ArrowRight size={16} strokeWidth={1.5} aria-hidden="true" className={styles.modeArrow} />
         </button>
@@ -120,7 +120,7 @@ export default function VelaMenu() {
         <button className={styles.modeRow} onClick={handleShuffle}>
           <div>
             <p className={styles.modeTitle}>Shuffle</p>
-            <p className={styles.modeDesc}>5 domande casuali · max 1 errore</p>
+            <p className={styles.modeDesc}>5 domande casuali</p>
           </div>
           <ArrowRight size={16} strokeWidth={1.5} aria-hidden="true" className={styles.modeArrow} />
         </button>
