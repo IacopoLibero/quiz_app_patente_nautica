@@ -50,7 +50,7 @@ export default function Quiz() {
   return (
     <div className={styles.page}>
       <Header
-        title={tipo === 'vela' ? 'Vela' : 'Patente Nautica'}
+        title={tipo === 'vela' ? 'Vela' : tipo === 'd1' ? 'Patente D1' : 'Patente Nautica'}
         current={quiz.currentIndex + 1}
         total={quiz.totalDomande}
         errori={isEsame ? quiz.errori : undefined}

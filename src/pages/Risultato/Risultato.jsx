@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Clock, CornerDownRight } from 'lucide-react';
 import Header from '../../components/Header/Header';
-import { useNauticaStats, useVelaStats } from '../../hooks/useStats';
+import { useNauticaStats, useVelaStats, useD1Stats } from '../../hooks/useStats';
 import styles from './Risultato.module.css';
 
 function formatTime(seconds) {
@@ -17,6 +17,7 @@ export default function Risultato() {
   const savedRef = useRef(false);
   const nauticaStats = useNauticaStats();
   const velaStats = useVelaStats();
+  const d1Stats = useD1Stats();
 
   const {
     domande = [],
@@ -43,6 +44,8 @@ export default function Risultato() {
     const sessione = { modalita, punteggio: corrette, totale, tempoSecondi, sbagliate };
     if (tipo === 'vela') {
       velaStats.saveSessione(sessione, sbagliate, domande);
+    } else if (tipo === 'd1') {
+      d1Stats.saveSessione(sessione, sbagliate, domande);
     } else {
       nauticaStats.saveSessione(sessione, sbagliate, domande);
     }
@@ -52,7 +55,7 @@ export default function Risultato() {
   const domandeSbagliate = domande.filter(q => sbagliate.includes(q.id));
 
   function handleRiprova() {
-    navigate(tipo === 'vela' ? '/vela' : '/nautica');
+    navigate(tipo === 'vela' ? '/vela' : tipo === 'd1' ? '/d1' : '/nautica');
   }
 
   const failReason = failed

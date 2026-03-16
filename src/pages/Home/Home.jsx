@@ -59,6 +59,20 @@ export default function Home() {
             </div>
             <ArrowRight className={styles.navArrow} size={20} strokeWidth={1.5} aria-hidden="true" />
           </button>
+
+          <div className={styles.rule} role="separator" />
+
+          <button
+            className={styles.navItem}
+            onClick={() => navigate('/d1')}
+          >
+            <span className={styles.navNum} aria-hidden="true">04</span>
+            <div className={styles.navContent}>
+              <span className={styles.navTitle}>Patente D1</span>
+              <span className={styles.navDesc}>792 domande · 8 materie</span>
+            </div>
+            <ArrowRight className={styles.navArrow} size={20} strokeWidth={1.5} aria-hidden="true" />
+          </button>
         </nav>
 
         <div className={styles.rule} role="separator" />

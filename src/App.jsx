@@ -8,6 +8,7 @@ import Risultato from './pages/Risultato/Risultato';
 import Statistiche from './pages/Statistiche/Statistiche';
 import CarteggioMenu from './pages/CarteggioMenu/CarteggioMenu';
 import CarteggioQuiz from './pages/CarteggioQuiz/CarteggioQuiz';
+import D1Menu from './pages/D1Menu/D1Menu';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/statistiche" element={<Statistiche />} />
         <Route path="/carteggio" element={<CarteggioMenu />} />
         <Route path="/carteggio/quiz" element={<CarteggioQuiz />} />
+        <Route path="/d1" element={<D1Menu />} />
       </Routes>
     </HashRouter>
   );

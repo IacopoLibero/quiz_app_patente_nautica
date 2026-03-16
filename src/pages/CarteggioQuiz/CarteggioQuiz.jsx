@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Calculator as CalcIcon, CheckCircle, XCircle } from 'lucide-react';
+import { Calculator as CalcIcon, CheckCircle, XCircle, Maximize2, X as XIcon } from 'lucide-react';
 import Header from '../../components/Header/Header';
 import Timer from '../../components/Timer/Timer';
 import Calculator from '../../components/Calculator/Calculator';
@@ -89,6 +89,7 @@ export default function CarteggioQuiz() {
   const [submitted, setSubmitted] = useState(false);
   const [results, setResults] = useState(null);
   const [calcOpen, setCalcOpen] = useState(false);
+  const [mapOpen, setMapOpen] = useState(false);
   const timerRef = useRef(null);
 
   const submit = useCallback(() => {
@@ -148,6 +149,27 @@ export default function CarteggioQuiz() {
           <p className={styles.scenarioText}>{domanda.domanda}</p>
           <p className={styles.scenarioMeta}>Domanda {domanda.progressivo}</p>
         </div>
+
+        {/* Carta nautica */}
+        {domanda.immagine && (
+          <div className={styles.mapSection}>
+            <button
+              className={styles.mapThumbBtn}
+              onClick={() => setMapOpen(true)}
+              aria-label="Apri carta nautica a schermo intero"
+            >
+              <img
+                src={domanda.immagine}
+                alt={`Carta nautica – ${domanda.settore}`}
+                className={styles.mapThumb}
+              />
+              <div className={styles.mapOverlay}>
+                <Maximize2 size={20} strokeWidth={1.75} aria-hidden="true" />
+                <span>Apri carta</span>
+              </div>
+            </button>
+          </div>
+        )}
 
         {/* Quesiti */}
         {submitted && (
@@ -248,6 +270,31 @@ export default function CarteggioQuiz() {
       )}
 
       {calcOpen && <Calculator onClose={() => setCalcOpen(false)} />}
+
+      {/* Fullscreen map lightbox */}
+      {mapOpen && domanda.immagine && (
+        <div
+          className={styles.lightbox}
+          onClick={() => setMapOpen(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Carta nautica"
+        >
+          <button
+            className={styles.lightboxClose}
+            onClick={() => setMapOpen(false)}
+            aria-label="Chiudi carta"
+          >
+            <XIcon size={20} strokeWidth={2} aria-hidden="true" />
+          </button>
+          <img
+            src={domanda.immagine}
+            alt={`Carta nautica – ${domanda.settore}`}
+            className={styles.lightboxImg}
+            onClick={e => e.stopPropagation()}
+          />
+        </div>
+      )}
     </div>
   );
 }

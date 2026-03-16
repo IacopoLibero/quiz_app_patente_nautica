@@ -53,6 +53,35 @@ export function selectEsameNautica(allQuestions) {
   return shuffle(selected);
 }
 
+// Select questions for patente D1 exam (15 questions, fixed distribution)
+export function selectEsameD1(allQuestions) {
+  const distribution = {
+    navigazione: 1,
+    manovre: 3,
+    normativa: 3,
+    sicurezza: 2,
+    colreg: 1,
+    meteorologia: 1,
+    motori: 2,
+    scafo: 2,
+  };
+
+  const grouped = {};
+  for (const q of allQuestions) {
+    if (!grouped[q.categoria]) grouped[q.categoria] = [];
+    grouped[q.categoria].push(q);
+  }
+
+  const selected = [];
+  for (const [cat, count] of Object.entries(distribution)) {
+    const available = grouped[cat] || [];
+    const shuffled = shuffle(available);
+    selected.push(...shuffled.slice(0, count));
+  }
+
+  return shuffle(selected);
+}
+
 // Select random questions
 export function selectShuffle(array, count = null) {
   const shuffled = shuffle(array);

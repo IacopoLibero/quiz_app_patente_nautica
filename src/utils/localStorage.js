@@ -65,6 +65,31 @@ export function saveVelaStats(stats) {
   setItem('vela_stats', stats);
 }
 
+const DEFAULT_D1_STATS = {
+  sessioni: [],
+  domandeSbagliate: [],
+  domandeCorrette: [],
+  rispostePerCategoria: {
+    scafo: { corrette: 0, totale: 0 },
+    motori: { corrette: 0, totale: 0 },
+    sicurezza: { corrette: 0, totale: 0 },
+    manovre: { corrette: 0, totale: 0 },
+    colreg: { corrette: 0, totale: 0 },
+    meteorologia: { corrette: 0, totale: 0 },
+    navigazione: { corrette: 0, totale: 0 },
+    normativa: { corrette: 0, totale: 0 },
+  },
+  corretteConsecutive: {},
+};
+
+export function getD1Stats() {
+  return getItem('d1_stats', DEFAULT_D1_STATS);
+}
+
+export function saveD1Stats(stats) {
+  setItem('d1_stats', stats);
+}
+
 const DEFAULT_CARTEGGIO_STATS = {
   sessioni: [],
   rispostePerSettore: {},

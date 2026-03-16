@@ -12,7 +12,8 @@
       "Read(//tmp/**)",
       "Bash(ls:*)",
       "Bash(node:*)",
-      "mcp__openmemory__openmemory_list"
+      "mcp__openmemory__openmemory_list",
+      "Bash(cat:*)"
     ]
   }
 }

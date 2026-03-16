@@ -311,6 +311,96 @@
 
 .homeBtn:hover { color: var(--ink); border-color: var(--border-strong); }
 
+/* Carta nautica thumbnail */
+.mapSection {
+  margin-bottom: 24px;
+}
+
+.mapThumbBtn {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  background: none;
+  line-height: 0;
+}
+
+.mapThumb {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.mapOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 31, 46, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.18s;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.mapThumbBtn:hover .mapOverlay,
+.mapThumbBtn:focus-visible .mapOverlay {
+  opacity: 1;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 12, 18, 0.9);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.lightboxClose {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 201;
+  transition: background 0.15s;
+}
+
+.lightboxClose:hover { background: rgba(255, 255, 255, 0.28); }
+
+.lightboxImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+  touch-action: pinch-zoom;
+}
+
 /* Floating calculator button */
 .calcFab {
   position: fixed;
