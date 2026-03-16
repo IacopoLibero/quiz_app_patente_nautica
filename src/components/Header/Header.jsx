@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, X } from 'lucide-react';
 import styles from './Header.module.css';
 
-export default function Header({ title, showBack = true, current, total, errori, maxErrori }) {
+export default function Header({ title, showBack = true, backTo, current, total, errori, maxErrori }) {
   const navigate = useNavigate();
 
   return (
@@ -12,7 +12,7 @@ export default function Header({ title, showBack = true, current, total, errori,
         {showBack && (
           <button
             className={styles.backBtn}
-            onClick={() => navigate(-1)}
+            onClick={() => backTo ? navigate(backTo) : navigate(-1)}
             aria-label="Torna indietro"
           >
             <ArrowLeft size={18} strokeWidth={1.75} aria-hidden="true" />

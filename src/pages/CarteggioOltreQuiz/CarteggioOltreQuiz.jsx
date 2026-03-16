@@ -104,7 +104,7 @@ export default function CarteggioOltreQuiz() {
   if (!q && !done) {
     return (
       <div className={styles.page}>
-        <Header title="Carteggio Oltre 12 Miglia" />
+        <Header title="Carteggio Oltre 12 Miglia" backTo="/carteggio-oltre" />
         <main className={styles.main}>
           <p className={styles.emptyMsg}>Nessuna domanda disponibile.</p>
           <button className={styles.homeBtn} onClick={() => navigate('/carteggio-oltre')}>
@@ -121,7 +121,7 @@ export default function CarteggioOltreQuiz() {
     const passed = result?.passed;
     return (
       <div className={styles.page}>
-        <Header title="Carteggio Oltre 12 Miglia" />
+        <Header title="Carteggio Oltre 12 Miglia" backTo="/carteggio-oltre" />
         <main className={styles.main}>
           <div className={`${styles.verdict} ${passed ? styles.verdictPass : styles.verdictFail}`}>
             <span className={styles.verdictTitle}>{passed ? 'Corretto' : 'Sbagliato'}</span>
@@ -145,7 +145,7 @@ export default function CarteggioOltreQuiz() {
     const promosso = !timerExpired && corrette >= PASS_MIN_CORRECT;
     return (
       <div className={styles.page}>
-        <Header title="Carteggio Oltre 12 Miglia" showBack={false} />
+        <Header title="Carteggio Oltre 12 Miglia" backTo="/" />
         <main className={styles.main}>
           <div className={`${styles.examVerdict} ${promosso ? styles.verdictPass : styles.verdictFail}`}>
             <span className={styles.examVerdictTitle}>{promosso ? 'Promosso' : 'Bocciato'}</span>
@@ -181,7 +181,7 @@ export default function CarteggioOltreQuiz() {
   // ── Quiz view ──
   return (
     <div className={styles.page}>
-      <Header title="Carteggio Oltre 12 Miglia" />
+      <Header title="Carteggio Oltre 12 Miglia" showBack={false} />
 
       {/* Timer bar */}
       <div className={styles.timerBar}>

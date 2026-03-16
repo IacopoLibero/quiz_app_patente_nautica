@@ -11,7 +11,9 @@ import velaData from '../../data/quiz_vela.json';
 export default function VelaMenu() {
   const navigate = useNavigate();
   const [errorMsg, setErrorMsg] = useState(null);
-  const [escludiCorrette, setEscludiCorrette] = useState(false);
+  const [escludiCorrette, setEscludiCorrette] = useState(
+    () => (getVelaStats().domandeCorrette || []).length > 0
+  );
 
   const stats = getVelaStats();
   const numSbagliate = stats.domandeSbagliate.length;
@@ -57,7 +59,7 @@ export default function VelaMenu() {
 
   return (
     <div className={styles.page}>
-      <Header title="Integrazione Vela" />
+      <Header title="Integrazione Vela" backTo="/" />
 
       <main className={styles.main}>
         {errorMsg && (

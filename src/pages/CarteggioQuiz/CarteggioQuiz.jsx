@@ -134,7 +134,7 @@ export default function CarteggioQuiz() {
 
   return (
     <div className={styles.page}>
-      <Header title="Carteggio 12 Miglia" />
+      <Header title="Carteggio 12 Miglia" showBack={false} />
 
       <div className={styles.timerBar}>
         <Timer secondsLeft={secondsLeft} />

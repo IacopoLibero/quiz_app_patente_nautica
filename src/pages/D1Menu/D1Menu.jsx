@@ -41,7 +41,9 @@ export default function D1Menu() {
   const [mode, setMode] = useState(null);
   const [shuffleSelected, setShuffleSelected] = useState([]);
   const [sbagliateSelected, setSbagliateSelected] = useState([]);
-  const [escludiCorrette, setEscludiCorrette] = useState(false);
+  const [escludiCorrette, setEscludiCorrette] = useState(
+    () => (getD1Stats().domandeCorrette || []).length > 0
+  );
   const [errorMsg, setErrorMsg] = useState(null);
 
   const stats = getD1Stats();
@@ -109,7 +111,7 @@ export default function D1Menu() {
 
   return (
     <div className={styles.page}>
-      <Header title="Patente D1" />
+      <Header title="Patente D1" backTo="/" />
 
       <main className={styles.main}>
         {errorMsg && (

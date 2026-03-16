@@ -41,7 +41,9 @@ export default function NauticaMenu() {
   const [mode, setMode] = useState(null);
   const [shuffleSelected, setShuffleSelected] = useState([]);
   const [sbagliateSelected, setSbagliateSelected] = useState([]);
-  const [escludiCorrette, setEscludiCorrette] = useState(false);
+  const [escludiCorrette, setEscludiCorrette] = useState(
+    () => (getNauticaStats().domandeCorrette || []).length > 0
+  );
   const [errorMsg, setErrorMsg] = useState(null);
 
   const stats = getNauticaStats();
@@ -112,7 +114,7 @@ export default function NauticaMenu() {
 
   return (
     <div className={styles.page}>
-      <Header title="Patente Nautica" />
+      <Header title="Patente Nautica" backTo="/" />
 
       <main className={styles.main}>
         {errorMsg && (

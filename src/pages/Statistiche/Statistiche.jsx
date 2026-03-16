@@ -111,7 +111,7 @@ export default function Statistiche() {
 
   return (
     <div className={styles.page} key={refreshKey}>
-      <Header title="Statistiche" />
+      <Header title="Statistiche" backTo="/" />
 
       <div className={styles.tabs} role="tablist" aria-label="Seleziona patente">
         <button

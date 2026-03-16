@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight, Clock, CheckCircle } from 'lucide-react';
+import { ArrowRight, Clock, CheckCircle, Calculator } from 'lucide-react';
 import Header from '../../components/Header/Header';
 import styles from './CarteggioMenu.module.css';
 
@@ -9,7 +9,7 @@ export default function CarteggioMenu() {
 
   return (
     <div className={styles.page}>
-      <Header title="Carteggio Entro 12 Miglia" />
+      <Header title="Carteggio Entro 12 Miglia" backTo="/" />
 
       <main className={styles.main}>
         <div className={styles.intro}>
@@ -46,7 +46,7 @@ export default function CarteggioMenu() {
         <div className={styles.rule} role="separator" />
 
         <p className={styles.hint}>
-          Usa la calcolatrice integrata (tasto <strong>⊞</strong> in basso a destra) per fare i calcoli durante la prova.
+          Usa la calcolatrice integrata (tasto <Calculator size={16} strokeWidth={1.5} /> in basso a destra) per fare i calcoli durante la prova.
         </p>
       </main>
     </div>

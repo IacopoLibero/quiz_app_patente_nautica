@@ -51,7 +51,7 @@ export default function CarteggioOltreMenu() {
 
   return (
     <div className={styles.page}>
-      <Header title="Carteggio Oltre 12 Miglia" />
+      <Header title="Carteggio Oltre 12 Miglia" backTo="/" />
 
       <main className={styles.main}>
         <div className={styles.intro}>
