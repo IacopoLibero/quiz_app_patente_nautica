@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Calculator as CalcIcon, CheckCircle, XCircle, Maximize2, X as XIcon } from 'lucide-react';
+import { Calculator as CalcIcon, CheckCircle, XCircle, Maximize2 } from 'lucide-react';
 import Header from '../../components/Header/Header';
 import Timer from '../../components/Timer/Timer';
 import Calculator from '../../components/Calculator/Calculator';
+import MapLightbox from '../../components/MapLightbox/MapLightbox';
 import { validateQuesito, formatCorrectAnswer } from '../../utils/carteggioValidation';
 import { addCarteggioSession } from '../../utils/localStorage';
 import carteggioData from '../../data/patente_A/quiz_carteggio_entro_12_miglia.json';
@@ -271,29 +272,12 @@ export default function CarteggioQuiz() {
 
       {calcOpen && <Calculator onClose={() => setCalcOpen(false)} />}
 
-      {/* Fullscreen map lightbox */}
       {mapOpen && domanda.immagine && (
-        <div
-          className={styles.lightbox}
-          onClick={() => setMapOpen(false)}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Carta nautica"
-        >
-          <button
-            className={styles.lightboxClose}
-            onClick={() => setMapOpen(false)}
-            aria-label="Chiudi carta"
-          >
-            <XIcon size={20} strokeWidth={2} aria-hidden="true" />
-          </button>
-          <img
-            src={domanda.immagine}
-            alt={`Carta nautica – ${domanda.settore}`}
-            className={styles.lightboxImg}
-            onClick={e => e.stopPropagation()}
-          />
-        </div>
+        <MapLightbox
+          src={domanda.immagine}
+          alt={`Carta nautica – ${domanda.settore}`}
+          onClose={() => setMapOpen(false)}
+        />
       )}
     </div>
   );

@@ -1,0 +1,164 @@
+/* ── Lightbox container ── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: #08090e;
+  z-index: 200;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ── Zoomable viewport ── */
+.viewport {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+
+.viewport:active {
+  cursor: grabbing;
+}
+
+/* ── Zoom/pan transform layer ── */
+.transformLayer {
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* ── Image wrapper (sets positioning context for SVG overlay) ── */
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.mapImage {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  border-radius: 2px;
+}
+
+/* ── Close button ── */
+.closeBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 210;
+  transition: background 0.15s;
+  backdrop-filter: blur(6px);
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+/* ── Bottom toolbar ── */
+.toolbar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  z-index: 210;
+  flex-wrap: nowrap;
+}
+
+.toolBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 15px;
+  background: rgba(20, 24, 38, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.88);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  white-space: nowrap;
+  min-height: 38px;
+}
+
+.toolBtn:hover {
+  background: rgba(40, 48, 72, 0.9);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Compass active */
+.toolBtnActive {
+  background: rgba(21, 101, 192, 0.55);
+  border-color: rgba(100, 170, 255, 0.55);
+  color: #fff;
+}
+
+.toolBtnActive:hover {
+  background: rgba(21, 101, 192, 0.7);
+}
+
+/* Spread locked */
+.toolBtnLocked {
+  background: rgba(230, 81, 0, 0.45);
+  border-color: rgba(255, 140, 60, 0.55);
+  color: #fff;
+}
+
+.toolBtnLocked:hover {
+  background: rgba(230, 81, 0, 0.6);
+}
+
+/* ── Usage hint ── */
+.hint {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 24, 38, 0.72);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  z-index: 210;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hintDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
